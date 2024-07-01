@@ -1,12 +1,12 @@
 {
-    "version": "MatriX.130",
+    "version": "MatriX.133t",
     "description": "Torrent stream server.",
     "homepage": "https://github.com/YouROK/TorrServer",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/YouROK/TorrServer/releases/download/MatriX.130/TorrServer-windows-amd64.exe#/torrserver.exe",
-            "hash": "e2783efc06b31adbad14974d3d8b2fb1c22450ce9e33bf713630b85ff07794a3",
+            "url": "https://github.com/YouROK/TorrServer/releases/download/MatriX.133t/TorrServer-windows-amd64.exe#/torrserver.exe",
+            "hash": "d818128da4630b868a11a0f2edee7cd34380484f492e2db9fe5113e6c3db9946",
             "bin": [
                 [
                     "torrserver.exe",
@@ -16,8 +16,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/YouROK/TorrServer/releases/download/MatriX.130/TorrServer-windows-386.exe#/torrserver.exe",
-            "hash": "6b239c83ea153106b3dc8305146e6d0a242004e992e170cf217d9604307ef4c3",
+            "url": "https://github.com/YouROK/TorrServer/releases/download/MatriX.133t/TorrServer-windows-386.exe#/torrserver.exe",
+            "hash": "c665205c90bd52bee8b89a6f6f59f0ef322ecfbc78cf293e416579c16b9ee76c",
             "bin": [
                 [
                     "torrserver.exe",

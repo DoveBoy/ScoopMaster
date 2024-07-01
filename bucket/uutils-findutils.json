@@ -1,0 +1,26 @@
+{
+    "version": "0.6.0",
+    "description": "Rust implementation of GNU findutils (binaries compiled with MSVC)",
+    "homepage": "https://uutils.github.io/findutils/",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/uutils/findutils/releases/download/0.6.0/findutils-x86_64-pc-windows-msvc.zip",
+            "hash": "2fe55a0328f360b6331d8fcf244e2075fb6d9a9572c55f245dc0b7f8da638d77"
+        }
+    },
+    "bin": [
+        "find.exe",
+        "xargs.exe"
+    ],
+    "checkver": {
+        "github": "https://github.com/uutils/findutils"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/uutils/findutils/releases/download/$version/findutils-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}

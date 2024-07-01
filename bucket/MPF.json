@@ -5,9 +5,9 @@
     "autoupdate": {
         "url": "https://github.com/SabreTools/MPF/releases/download/$version/MPF_$version_net8.0-windows_win-x64_release.zip"
     },
-    "version": "3.1.2",
-    "url": "https://github.com/SabreTools/MPF/releases/download/3.1.2/MPF_3.1.2_net8.0-windows_win-x64_release.zip",
-    "hash": "8f8f4f27efd2893787b8968b56bbb4051b272a762161b53c2e100b13bfb5999a",
+    "version": "3.1.8",
+    "url": "https://github.com/SabreTools/MPF/releases/download/3.1.8/MPF_3.1.8_net8.0-windows_win-x64_release.zip",
+    "hash": "0b25920d6cae4aa00c6ba1dfd3598ef211a645209fb05d51bb5ea9c73bb9dd25",
     "shortcuts": [
         [
             "MPF.exe",

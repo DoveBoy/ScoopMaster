@@ -1,16 +1,16 @@
 {
     "homepage": "https://www.nushell.sh/",
     "description": "A new type of shell",
-    "version": "0.91.0",
+    "version": "0.93.0",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-x86_64-pc-windows-msvc.zip",
-            "hash": "5b07f751cf5e75d857ff2e5d6f2da607b532e7ac0e508452369ad1b467a58569"
+            "url": "https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-x86_64-pc-windows-msvc.zip",
+            "hash": "843e0fe63cb789a81be715b5db7334109b28b2d9e95551ca739f352f99bd24ae"
         },
         "arm64": {
-            "url": "https://github.com/nushell/nushell/releases/download/0.91.0/nu-0.91.0-aarch64-windows-msvc-full.zip",
-            "hash": "99981ac7350c1d6eaa3900427e1e88cbfef909d0c589c252170e210ca9fce727"
+            "url": "https://github.com/nushell/nushell/releases/download/0.93.0/nu-0.93.0-aarch64-windows-msvc-full.zip",
+            "hash": "b6119525f1d1672edef6984101ae9705dcf46cae7ac2bdcf4ee29787a087cf5f"
         }
     },
     "shortcuts": [

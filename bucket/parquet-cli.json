@@ -2,9 +2,9 @@
     "homepage": "https://github.com/quotidian-ennui/parquet-cli-wrapper",
     "description": "Wraps parquet-cli from https://github.com/apache/parquet-mr",
     "license": "Apache-2.0",
-    "version": "1.13.1",
-    "hash": "f95ca53cf12f2700cd57f7a7dd39759aaa6ed72774bb3e4835f2f32319f0d0ed",
-    "url": "https://github.com/quotidian-ennui/parquet-cli-wrapper/releases/download/1.13.1/parquet-cli.tar.gz",
+    "version": "1.14.1",
+    "hash": "787fb0b57a052e106f87180f62b7767d2d9a1aaa3c0cc141d49e852030514cdf",
+    "url": "https://github.com/quotidian-ennui/parquet-cli-wrapper/releases/download/1.14.1/parquet-cli.tar.gz",
     "suggest": {
         "JDK": [
             "java/openjdk",

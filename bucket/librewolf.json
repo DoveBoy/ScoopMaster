@@ -1,21 +1,23 @@
 {
-    "version": "123.0.1-1",
+    "version": "127.0.2-2",
     "description": "A fork of Firefox, focused on privacy, security and freedom.",
     "homepage": "https://librewolf.net/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/123.0.1-1/librewolf-123.0.1-1-windows-x86_64-portable.zip",
-            "hash": "f6c13208a1218e69ad8343e4c3a1082d876a0b5043ba96da4c2124a980abbe2e"
+            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/127.0.2-2/librewolf-127.0.2-2-windows-x86_64-portable.zip",
+            "hash": "cdb18780a685ff6d3085bf272a7989dcc220caf3dad65998ab7307c023f09e0b"
         },
         "32bit": {
-            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/123.0.1-1/librewolf-123.0.1-1-windows-i686-portable.zip",
-            "hash": "11b5a42997cd9758feac1db22d96a0d0243fc72af21429497c30a0fe64be0bbc"
+            "url": "https://gitlab.com/api/v4/projects/44042130/packages/generic/librewolf/127.0.2-2/librewolf-127.0.2-2-windows-i686-portable.zip",
+            "hash": "d9d5d3404a0329ccef4637f2337a37514a8e51b846981f454e22dade86f01625"
         }
     },
-    "extract_dir": "librewolf-123.0.1-1",
+    "extract_dir": "librewolf-127.0.2-2",
     "pre_install": [
         "Remove-Item \"$dir\\LibreWolf-WinUpdater.exe\"",
+        "Remove-Item \"$dir\\ScheduledTask-Create.ps1\"",
+        "Remove-Item \"$dir\\ScheduledTask-Remove.ps1\"",
         "# Customizing LibreWolf Using AutoConfig",
         "# https://support.mozilla.org/en-US/kb/customizing-firefox-using-autoconfig",
         "ensure \"$persist_dir\\LibreWolf\\defaults\\pref\" | Out-Null",

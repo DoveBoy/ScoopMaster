@@ -1,28 +1,54 @@
 {
-    "version": "0.7.2.8",
-    "description": "One Remote Access Manager to Rule Them All",
-    "homepage": "https://1remote.github.io/",
-    "license": "GPL-3.0-or-later",
-    "notes": "config location: C:\\Users\\<your username>\\AppData\\Local\\PRemoteM\nconfig location: C:\\Users\\<your username>\\\\AppData\\\\Roaming\\PRemoteM - https://github.com/ViCrack/scoop-bucket/blob/master/bucket/1remote.json",
+    "version": "1.0.0.20240617",
+    "description": "1Remote is a modern personal remote session manager and launcher. It is a single place to manage all your remote sessions supporting number of different protocols.",
+    "homepage": "https://github.com/1Remote/1Remote",
+    "license": "License",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/1Remote/1Remote/releases/download/0.7.2.8/PRemoteM.zip",
-            "hash": "2c3bb69e165249681225283e8208573c2e6691467ff1b83e99eb475837b6d36e"
+            "url": "https://github.com/1Remote/1Remote/releases/download/Nightly/1Remote-1.0.0.0-beta.07-net6-x64-nightly-20240608-049eb1.zip",
+            "hash": "4412542d4034c7048cb9c68de53f3cc1612589bb8541f4c9daf4bbddd7b7fac2"
         }
     },
-    "shortcuts": [
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\\1Remote.db\")) {",
+        "  New-Item -Path \"$persist_dir\\1Remote.db\" -Type File | Out-Null",
+        "  New-Item -Path \"$persist_dir\\1Remote.json\" -Type File | Out-Null",
+        "  Set-Content -Path \"$persist_dir\\FORCE_INTO_PORTABLE_MODE\" -Value \"rename to 'FORCE_INTO_APPDATA_MODE' can save to AppData\"",
+        "}"
+    ],
+    "bin": [
         [
-            "PRemoteM.exe",
-            "PRemoteM"
+            "1Remote.exe",
+            "1Remote"
         ]
     ],
+    "shortcuts": [
+        [
+            "1Remote.exe",
+            "1Remote"
+        ]
+    ],
+    "persist": [
+        "1Remote.db",
+        "1Remote.json",
+        "FORCE_INTO_PORTABLE_MODE",
+        ".logs",
+        ".locality",
+        "kitty",
+        "Protocols"
+    ],
     "checkver": {
-        "github": "https://github.com/1Remote/1Remote"
+        "url": "https://community.chocolatey.org/packages/1remote/#versionhistory",
+        "regex": ">1Remote ([\\d.]+)<"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/1Remote/1Remote/releases/download/$version/PRemoteM.zip"
+                "url": "https://github.com/1Remote/1Remote/releases/download/Nightly/1Remote-1.0.0.0-beta.07-net6-x64-nightly-20240608-049eb1.zip",
+                "hash": {
+                    "url": "https://community.chocolatey.org/packages/1remote/$version#files",
+                    "regex": "\\| sha256: $sha256"
+                }
             }
         }
     }

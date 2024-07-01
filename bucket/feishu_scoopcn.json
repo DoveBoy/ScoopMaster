@@ -1,12 +1,12 @@
 {
-    "version": "7.13.8",
+    "version": "7.20.6",
     "description": "飞书",
     "homepage": "https://www.feishu.cn/",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/966dccae/Feishu-win32_ia32-7.13.8-signed.exe#/dl.7z",
-    "hash": "md5:c52a8a686fe4902ee89de9a3060c2cec",
+    "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/537aa319/Feishu-win32_ia32-7.20.6-signed.exe#/dl.7z",
+    "hash": "md5:e8ad868ede3d13b2fea13583e4160451",
     "shortcuts": [
         [
             "Feishu.exe",

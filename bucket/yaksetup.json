@@ -1,5 +1,5 @@
 {
-    "version": "0.2.1",
+    "version": "0.3.1",
     "description": "Setup utility PowerShell module for yak_ex",
     "homepage": "https://github.com/yak1ex/configurator/tree/master",
     "license": "Unlicense",
@@ -8,8 +8,8 @@
         "https://raw.githubusercontent.com/yak1ex/configurator/master/bootstrap/YakSetup.psd1"
     ],
     "hash": [
-        "f553c70248799c53174a73f5a14aaa9829427d7a22af5e632b4e135d2767cffd",
-        "830570408309966b0b4143d9e202bff337f6ef5cf4db9f2619e682b94d6a8d27"
+        "4db4018a095e38145fd698a278e20ccfc20cfff932cc7ed19428cf262bc158aa",
+        "182471479f83c287351eaa5e55e65ba006d7f834e3b8884a6b5c2eefead6c94f"
     ],
     "psmodule": {
         "name": "YakSetup"

@@ -1,5 +1,5 @@
 {
-    "version": "2.24.1",
+    "version": "2.24.6",
     "description": "BrickLink Studio. Studio is a desktop application that allows users to build LEGO models using virtual parts.",
     "homepage": "https://www.bricklink.com/v2/build/studio.page",
     "license": "Unknown",
@@ -8,11 +8,11 @@
     "architecture": {
         "64bit": {
             "url": "https://s3.amazonaws.com/blstudio/Studio2.0/Studio+2.0.exe#/dl.7z",
-            "hash": "15e3033f9de579c326b4f4c653a2f1c0a1586b3d4a8eff8512f5e2c4c3564288"
+            "hash": "29b00368f04544ac4d9ebdbb3fa9b59c473520e547273f95aaaba45c5153302f"
         },
         "32bit": {
             "url": "https://s3.amazonaws.com/blstudio/Studio2.0/Studio+2.0_32.exe#/dl.7z",
-            "hash": "562c6a27cb81ca89b68b34a4aa1df731b00b3e7164c45cce132e6c2e91375392"
+            "hash": "a6c005260b09f8f69490fa81a9fdf9376766e7f21af59cf0db23a76f6ee4c4bb"
         }
     },
     "bin": "Studio.exe",

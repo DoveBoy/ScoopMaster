@@ -1,0 +1,33 @@
+{
+    "version": "1.8.0",
+    "description": "This tool is for making X.509 Cert, CRL, CSR and KeyPair(RSA and ECDSA)",
+    "homepage": "https://jykim74.tistory.com/37",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://jykim74.github.io/msi/CertMan-enV180.msi",
+            "hash": "ebf9c2451545c53e0526753be1d8b5c79d927bc12f570eeb3ebc8b01e6f65d55"
+        }
+    },
+    "extract_dir": "PFiles\\JS Inc\\CertMan",
+    "uninstaller": {
+        "script": "if ($purge) { Remove-Item \"HKCU:\\SOFTWARE\\JS Inc\\CertMan\" -ErrorAction 'SilentlyContinue' -Force -Recurse }"
+    },
+    "shortcuts": [
+        [
+            "CertMan.exe",
+            "CertMan"
+        ]
+    ],
+    "checkver": {
+        "url": "https://jykim74.github.io/appcast/certman_appcast_win.xml",
+        "xpath": "/rss/channel/item/enclosure/@sparkle:version"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://jykim74.github.io/msi/CertMan-enV$cleanVersion.msi"
+            }
+        }
+    }
+}

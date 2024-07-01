@@ -1,26 +1,26 @@
 {
-    "version": "1.1.0",
+    "version": "1.1.2",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.0/nginx-prometheus-exporter_1.1.0_windows_386.zip",
+            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.2/nginx-prometheus-exporter_1.1.2_windows_386.zip",
             "bin": [
                 "nginx-prometheus-exporter.exe"
             ],
-            "hash": "0e684f351aee083f75c02010c150d4df1b8dea598df271dc7596c75cad7ca208"
+            "hash": "3bb7f87454ee3be2040d4c25b6f3e83e531294e035c92c82659a14a4d2b2afb1"
         },
         "64bit": {
-            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.0/nginx-prometheus-exporter_1.1.0_windows_amd64.zip",
+            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.2/nginx-prometheus-exporter_1.1.2_windows_amd64.zip",
             "bin": [
                 "nginx-prometheus-exporter.exe"
             ],
-            "hash": "8dd453547b11e1f3ea3ebd80458166a51d40023716e4acce4eaa27bdac46c6ab"
+            "hash": "66e68c34bc4ae013c5fa71262a40570f3bfc993978e7df566dab1bf10d1f0e01"
         },
         "arm64": {
-            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.0/nginx-prometheus-exporter_1.1.0_windows_arm64.zip",
+            "url": "https://github.com/nginxinc/nginx-prometheus-exporter/releases/download/v1.1.2/nginx-prometheus-exporter_1.1.2_windows_arm64.zip",
             "bin": [
                 "nginx-prometheus-exporter.exe"
             ],
-            "hash": "332f6ec306893ad17db1b7c4cb2248ad2a8a6783e56c82ffb1f22bd9b697664e"
+            "hash": "473053d10d9c23341213c643b0448baf9d3e23a9e46f11804d53a4b8b87bfe54"
         }
     },
     "homepage": "https://github.com/nginxinc/nginx-prometheus-exporter",

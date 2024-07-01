@@ -1,0 +1,28 @@
+{
+    "version": "0.11.15",
+    "description": "Time tracker | 时间追踪 🍂",
+    "homepage": "https://github.com/shion-app/shion",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/shion-app/shion/releases/download/v0.11.15/shion_0.11.15_x64-setup.exe#/dl.7z",
+            "hash": "ffb2ea94803c9a0c24eab93a8bf179720b2c9d620b6d833e6bbc63a81312b514"
+        }
+    },
+    "bin": "shion.exe",
+    "shortcuts": [
+        [
+            "shion.exe",
+            "shion"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/shion-app/shion"
+    },
+    "autoupdate": {
+        "url": "https://github.com/shion-app/shion/releases/download/v$version/shion_$version_x64-setup.exe#/dl.7z",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}

@@ -1,5 +1,5 @@
 {
-    "version": "7.2.6",
+    "version": "8.0.15",
     "description": "Apipost = Postman + Swagger + Mock + Jmeter",
     "homepage": "https://www.apipost.cn/",
     "license": "Freeware",
@@ -19,15 +19,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://www.apipost.cn/dl.php?client=Win&arch=x64&version=7.2.6#/dl.7z",
-            "hash": "9283cf4ed7558fd6440857e3fbf50d65eca6c5e1b2e643923de6ff38ba95997b",
+            "url": "https://www.apipost.cn/dl.php?client=Win&arch=x64&version=8.0.15#/dl.7z",
+            "hash": "73cb7c8690ac240ca7444638e67aa3cbeb0336ab5be3c5c8ee8bb2d31bcda900",
             "installer": {
                 "script": "7z x $original_dir/PLUGINSDIR/app-64.7z -o\"$original_dir\""
             }
         },
         "32bit": {
-            "url": "https://www.apipost.cn/dl.php?client=Win&arch=ia32&version=7.2.6#/dl.7z",
-            "hash": "bbad7808b4b352a7fedf74a0f684697af694bd7f8852a8ad5343d4a93598d4e1",
+            "url": "https://www.apipost.cn/dl.php?client=Win&arch=ia32&version=8.0.15#/dl.7z",
+            "hash": "72c7fca586626c6ae8004030d17ae82eb355490f4cecb483bedb7cbb86119768",
             "installer": {
                 "script": "7z x $original_dir/PLUGINSDIR/app-32.7z -o\"$original_dir\""
             }

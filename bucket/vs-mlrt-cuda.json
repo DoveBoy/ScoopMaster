@@ -2,11 +2,11 @@
     "homepage": "https://github.com/AmusementClub/vs-mlrt",
     "description": "Efficient CPU/GPU/Vulkan ML Runtimes for VapourSynth",
     "license": "GPL-3.0-only",
-    "version": "v14.test3",
+    "version": "v15",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/AmusementClub/vs-mlrt/releases/download/v14.test3/vsmlrt-windows-x64-cuda.v14.test3.7z",
-            "hash": "ecc707494a3407f51a90babf31eae64bb855280d47a25591cf5a6692b56b5313"
+            "url": "https://github.com/AmusementClub/vs-mlrt/releases/download/v15/vsmlrt-windows-x64-cuda.v15.7z",
+            "hash": "78cc502aa4e0156c3941424b5febbb49eb8ca1c8a5d3f8b807dffe029601a6e1"
         }
     },
     "checkver": {

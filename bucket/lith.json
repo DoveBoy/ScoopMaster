@@ -1,12 +1,12 @@
 {
-    "version": "1.6.1",
+    "version": "1.6.3",
     "description": "Multiplatform, mobile-focused WeeChat relay client",
     "homepage": "https://lith.app",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/LithApp/Lith/releases/download/v1.6.1/Lith-win64-1.6.1.zip",
-            "hash": "31700f6ea0ddb77b8444f2e972467152fb73b1aee83e06bca783313a7f6b4fbf"
+            "url": "https://github.com/LithApp/Lith/releases/download/v1.6.3/Lith-win64-1.6.3.zip",
+            "hash": "e91f34d57145e4cd608e2ad38b92fe3c105ce56b4b991b91524117e55229b8d6"
         }
     },
     "shortcuts": [

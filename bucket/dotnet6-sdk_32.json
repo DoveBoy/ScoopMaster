@@ -1,0 +1,27 @@
+{
+    "version": "6.0.423",
+    "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
+    "homepage": "https://www.microsoft.com/net/",
+    "license": "MIT",
+    "suggest": {
+        "vcredist": "extras/vcredist2022"
+    },
+    "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/6.0.423/dotnet-sdk-6.0.423-win-x86.exe",
+    "hash": "sha512:5c7ede0c9d09dff69ac314ec3b4fdc41d5f31f89ec2d75a677ff8bd68d7b733ccb84c9dd51382ea4bed32712502dacfaddeafc7a9b98a18b676f4e3c588bf3ae",
+    "installer": {
+        "args": "/q"
+    },
+    "pre_uninstall": "info 'If the uninstall fails with a message saying that access is denied, you may need to log out of your current account, log back in and try again.'",
+    "checkver": {
+        "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
+        "jsonpath": "$..releases-index[?(@.channel-version == '6.0')].latest-sdk",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://dotnetcli.azureedge.net/dotnet/Sdk/$version/dotnet-sdk-$version-win-x86.exe",
+        "hash": {
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/$majorVersion.$minorVersion/releases.json",
+            "regex": "(?s)$basename.*?$sha512"
+        }
+    }
+}

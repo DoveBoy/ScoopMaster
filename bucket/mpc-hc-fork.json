@@ -1,12 +1,12 @@
 {
-    "version": "2.1.7.2",
+    "version": "2.3.1",
     "description": "An extremely light-weight, open source media player for Windows.",
     "homepage": "https://github.com/clsid2/mpc-hc",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/clsid2/mpc-hc/releases/download/2.1.7/MPC-HC.2.1.7.2.x64.zip",
-            "hash": "064f39fa4b2cb5fd93aa978a07b4d53865540647604a6a5ac96567761cc5c8ae",
+            "url": "https://github.com/clsid2/mpc-hc/releases/download/2.3.1/MPC-HC.2.3.1.x64.zip",
+            "hash": "527528b3ea852e241f2bbe8206dbc1f324f4339d15074a6492f0d6f0ae926df5",
             "bin": [
                 [
                     "mpc-hc64.exe",
@@ -21,8 +21,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/clsid2/mpc-hc/releases/download/2.1.7/MPC-HC.2.1.7.2.x86.zip",
-            "hash": "6b9bbb16a161a1bddd0f74fac49070d03f232993c171a054d4980389445278a7",
+            "url": "https://github.com/clsid2/mpc-hc/releases/download/2.3.1/MPC-HC.2.3.1.x86.zip",
+            "hash": "0a6197c276670b1d9c42bb738e45bd9f03407c97604743fdf874ec248285a82a",
             "bin": "mpc-hc.exe",
             "shortcuts": [
                 [

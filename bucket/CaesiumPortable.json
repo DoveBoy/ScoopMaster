@@ -12,7 +12,7 @@
         "url": "https://portableapps.com/apps/graphics_pictures/caesium-portable"
     },
     "description": "Image optimizer and converter",
-    "hash": "a383b486e302b9ed0e40b00618aa8ffda28f11b3e262b713c4da65ae3a2e3f52",
+    "hash": "2020ebe1a6fd9eea1ed4ec336f1cafebaa8c0e8d32df2cf97fdaf87447be7381",
     "homepage": "https://portableapps.com/apps/graphics_pictures/caesium-portable",
     "license": "",
     "persist": "Data",
@@ -23,6 +23,6 @@
             "CaesiumPortable"
         ]
     ],
-    "url": "https://phoenixnap.dl.sourceforge.net/project/portableapps/Caesium%20Portable/CaesiumPortable_2.5.1.paf.exe",
-    "version": "2.5.1"
+    "url": "https://phoenixnap.dl.sourceforge.net/project/portableapps/Caesium%20Portable/CaesiumPortable_2.7.1.paf.exe",
+    "version": "2.7.1"
 }

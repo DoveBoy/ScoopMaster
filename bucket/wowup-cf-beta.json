@@ -1,13 +1,13 @@
 {
-    "version": "2.11.1-beta.1",
+    "version": "2.12.0",
     "description": "World of Warcraft addon updater with CurseForge support. (Beta version)",
     "homepage": "https://wowup.io",
     "license": {
         "identifier": "GPL-3.0-or-later",
         "url": "https://github.com/WowUp/WowUp.CF/blob/main/LICENSE"
     },
-    "url": "https://github.com/WowUp/WowUp.CF/releases/download/v2.11.1-beta.1/WowUp-CF-Setup-2.11.1-beta.1.exe#/dl.7z",
-    "hash": "4beaeb622c2745e4c0cb407d8e6e0db5ded4f328419d953cb59202bf41baecff",
+    "url": "https://github.com/WowUp/WowUp.CF/releases/download/v2.12.0/WowUp-CF-Setup-2.12.0.exe#/dl.7z",
+    "hash": "f6ee38ad609cbb6456725db15555ebb5496ec092ef04951706e59d98443d2c9d",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [
@@ -15,16 +15,11 @@
             "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\" -Removal"
         ]
     },
-    "shortcuts": [
-        [
-            "WowUp-CF.exe",
-            "WowUp-CF"
-        ]
-    ],
+    "shortcuts": [["WowUp-CF.exe", "WowUp-CF"]],
     "checkver": {
         "url": "https://api.github.com/repos/WowUp/WowUp.CF/releases",
         "jsonpath": "$[0].tag_name",
-        "regex": "(?!v)(.+)"
+        "regex": "v(.+)"
     },
     "autoupdate": {
         "url": "https://github.com/WowUp/WowUp.CF/releases/download/v$version/WowUp-CF-Setup-$version.exe#/dl.7z"

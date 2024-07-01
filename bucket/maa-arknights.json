@@ -1,16 +1,16 @@
 {
-    "version": "5.2.0",
+    "version": "5.3.1",
     "description": "An Arknights game assissant",
     "homepage": "https://maa.plus/",
     "license": "AGPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v5.2.0/MAA-v5.2.0-win-x64.zip",
-            "hash": "8599139b4f959a8229341bba431e3391572e36b8c7d3ff24ede36b8831b9286d"
+            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v5.3.1/MAA-v5.3.1-win-x64.zip",
+            "hash": "2bab4f7274bc43c0b535cfe72dd3a9be93b5efe2a87ec40facb53e5a74696477"
         },
         "arm64": {
-            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v5.2.0/MAA-v5.2.0-win-arm64.zip",
-            "hash": "5fd63aa318b70dbd0ef63dba67c752a983af26ae84b5ef778212d478c5c391c7"
+            "url": "https://github.com/MaaAssistantArknights/MaaAssistantArknights/releases/download/v5.3.1/MAA-v5.3.1-win-arm64.zip",
+            "hash": "8a0a585813ce4eb76b17f467d51969231113093e086b1c668fef48be63b1733b"
         }
     },
     "bin": "MAA.exe",
@@ -20,6 +20,12 @@
             "MaaAssistantArknights"
         ]
     ],
+    "persist": [
+        "adb",
+        "cache",
+        "config",
+        "debug"
+    ],
     "suggest": {
         "emulators": [
             "nonportable/bluestacks-np",
@@ -27,10 +33,6 @@
         ],
         "adb": "adb"
     },
-    "persist": [
-        "config",
-        "resources"
-    ],
     "checkver": {
         "github": "https://github.com/MaaAssistantArknights/MaaAssistantArknights"
     },

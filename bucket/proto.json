@@ -1,0 +1,26 @@
+{
+    "version": "0.37.2",
+    "description": "proto is a pluggable next-generation version manager for multiple programming languages - a unified toolchain",
+    "homepage": "https://moonrepo.dev/proto",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/moonrepo/proto/releases/download/v0.37.2/proto_cli-x86_64-pc-windows-msvc.zip",
+            "hash": "d209d4afbe3ecc557d63e8a76e82c38cb8d535f93b192ed09523e1fac01f68b5"
+        }
+    },
+    "bin": "proto.exe",
+    "checkver": {
+        "github": "https://github.com/moonrepo/proto"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/moonrepo/proto/releases/download/v$version/proto_cli-x86_64-pc-windows-msvc.zip"
+            }
+        },
+        "hash": {
+            "url": "$url.sha256"
+        }
+    }
+}

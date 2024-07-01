@@ -1,20 +1,20 @@
 {
-    "version": "3.2.1",
+    "version": "3.3.1",
     "description": "TLS/SSL toolkit",
     "homepage": "https://slproweb.com/products/Win32OpenSSL.html",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://slproweb.com/download/Win64OpenSSL-3_2_1.exe",
-            "hash": "e6f9f7996ccc3e5fa07dcc436bc0125abfbac98737874cb7aeaabbe52d004346"
+            "url": "https://slproweb.com/download/Win64OpenSSL-3_3_1.exe",
+            "hash": "5abcdf40fc50cd86a34fb26977887f03cce0fac099f3617d1552b4b60a852bc4"
         },
         "32bit": {
-            "url": "https://slproweb.com/download/Win32OpenSSL-3_2_1.exe",
-            "hash": "4ee78b1bd648e676adeadc382705565fc707d781d8f958c9ac4d23307d7958ce"
+            "url": "https://slproweb.com/download/Win32OpenSSL-3_3_1.exe",
+            "hash": "cfb9e91955d113707a1f1c68597a3c718b2086e4b269fbf78f18c16c099f1532"
         },
         "arm64": {
-            "url": "https://slproweb.com/download/Win64ARMOpenSSL-3_2_1.exe",
-            "hash": "b39572c02cedfaf3cf68ff12c6b63fb6553d95173f6f1a8f62435f4edb48f490"
+            "url": "https://slproweb.com/download/Win64ARMOpenSSL-3_3_1.exe",
+            "hash": "6c8ca6ce15b09d4751f998e2dbff3ca788ce089ce9f60958a3e673d534374b3b"
         }
     },
     "pre_install": [

@@ -1,5 +1,5 @@
 {
-    "version": "44.3.0.28993",
+    "version": "44.6.0.29928",
     "description": "Video and audio conferencing",
     "homepage": "https://www.webex.com/",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex.msi",
-            "hash": "c0c1f547542ce11622cc5e440d512b1af2671c411f9ddc71d6c51c582a28fe54"
+            "hash": "b3e9d5a8cc9dbdccd87adf65da0fe3fbb00335751d9def724c86ae01d2257666"
         },
         "32bit": {
             "url": "https://binaries.webex.com/WebexTeamsDesktop-Windows-Gold/Webex_x86.msi",

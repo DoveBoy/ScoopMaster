@@ -1,12 +1,12 @@
 {
     "architecture": {
         "64bit": {
-            "hash": "e81bbcc14c255a2e2d2c80185c6bf15be675a9381b4fa222c6907dc2fc37b25c",
-            "url": "https://github.com/sileshn/ManjaroWSL2/releases/download/20240301/ManjaroWSL2.zip"
+            "hash": "ab8a393ded02417e54881bcaaf736da1ea9134aeaf64b91044c13267bbc5769a",
+            "url": "https://github.com/sileshn/ManjaroWSL2/releases/download/20240606/ManjaroWSL2.zip"
         },
         "arm64": {
-            "hash": "5dd3256ba6c12440243fe6e99f5c7953296b7263ff5c2a5e9b43feb477ee5134",
-            "url": "https://github.com/sileshn/ManjaroWSL2/releases/download/20240301/ManjaroWSL2_arm64.zip"
+            "hash": "cd376305c3a7ba4306647145ae3cb878e3b9dda2abc8b37e44f3574e17a7d66c",
+            "url": "https://github.com/sileshn/ManjaroWSL2/releases/download/20240606/ManjaroWSL2_arm64.zip"
         }
     },
     "autoupdate": {
@@ -70,5 +70,5 @@
             "Invoke-ExternalCommand \"$dir\\Manjaro.exe\" 'clean', '-y' | Out-Null"
         ]
     },
-    "version": "20240301"
+    "version": "20240606"
 }

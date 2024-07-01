@@ -1,5 +1,5 @@
 {
-    "version": "1.5.8",
+    "version": "1.6.3",
     "description": "Powerful knowledge base that works on top of a local folder of plain text Markdown files.",
     "homepage": "https://obsidian.md",
     "license": {
@@ -8,16 +8,16 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.8/Obsidian.1.5.8.exe#/dl.7z",
-            "hash": "c11cd0c22f98b638016dd33c7240d8544308929c7376e02eaa4bc450cbd3641d"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.3/Obsidian.1.6.3.exe#/dl.7z",
+            "hash": "e4489273eb27325f1b08ed1c5f210924c49a50ca617099d1ff69dd922eef00dd"
         },
         "32bit": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.8/Obsidian.1.5.8-32.exe#/dl.7z",
-            "hash": "e023b6988b38269832b0b314af5a91eb7c19fe416d147f214c2cf00b47800003"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.3/Obsidian.1.6.3-32.exe#/dl.7z",
+            "hash": "dc327055f55a73846e47d8229bf91395ddd4b23b129f3acff75580da5b9097be"
         },
         "arm64": {
-            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.8/Obsidian.1.5.8-arm64.exe#/dl.7z",
-            "hash": "c3eea0d5a9806be5cd1850b341efb5a3a42cf41372883e24cb0caf1614184eed"
+            "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.6.3/Obsidian.1.6.3-arm64.exe#/dl.7z",
+            "hash": "bfe74b51921fd002f0e3f6917aaa7da329616cf6aa07b96858066b27a833955c"
         }
     },
     "pre_install": [

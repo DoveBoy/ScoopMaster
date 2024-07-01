@@ -1,8 +1,8 @@
 {
-    "version": "0.1.22",
+    "version": "0.1.27",
     "description": "A tiling window manager for Windows",
     "homepage": "https://github.com/LGUG2Z/komorebi",
-    "license": "MIT",
+    "license": "PolyForm Strict",
     "notes": "Check out the quickstart guide on https://lgug2z.github.io/komorebi",
     "suggest": {
         "whkd": "extras/whkd",
@@ -10,14 +10,15 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/LGUG2Z/komorebi/releases/download/v0.1.22/komorebi-0.1.22-x86_64-pc-windows-msvc.zip",
-            "hash": "3b5c8f8ab38a1fade8c9cd8a9c3bd98f7095ddb9aedf04d54f995e64ca75f9b0"
+            "url": "https://github.com/LGUG2Z/komorebi/releases/download/v0.1.27/komorebi-0.1.27-x86_64-pc-windows-msvc.zip",
+            "hash": "8e71b58882a9e510574eb3838bf1128964d080eb9f3b9531f2e29f2480573ca3"
         }
     },
     "bin": [
         "komorebi.exe",
         "komorebic.exe",
-        "komorebic-no-console.exe"
+        "komorebic-no-console.exe",
+        "komorebi-gui.exe"
     ],
     "checkver": "github",
     "autoupdate": {

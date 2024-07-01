@@ -1,10 +1,10 @@
 {
-    "version": "0.2024.03.14",
+    "version": "0.2024.06.30",
     "description": "LOOT masterlist for TES V: Skyrim Special Edition",
     "homepage": "https://github.com/loot/skyrimse",
     "license": "CC0-1.0",
-    "url": "https://raw.githubusercontent.com/loot/skyrimse/14687e620320d8955c23ddfb4c1a0c21e81efb0d/masterlist.yaml",
-    "hash": "1364548a00184d89a82b4406ac9f205dedc2b501e195efcfb35f1161b4304ed9",
+    "url": "https://raw.githubusercontent.com/loot/skyrimse/5fad550e3eb2f29b7e76274730b475aa1981e264/masterlist.yaml",
+    "hash": "b48763461d15b9c5fb161eeb3ebd0fe77a8a51576e0b3f9a3140a251a8b91721",
     "checkver": {
         "url": "https://github.com/loot/skyrimse/commits/v0.21/masterlist.yaml.atom",
         "regex": "(?s)>(\\d+)-(\\d+)-(\\d+)T.*?/(?<sha>[0-9a-f]{40})",

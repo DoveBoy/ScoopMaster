@@ -1,15 +1,15 @@
 {
-    "version": "2.509",
+    "version": "2.511",
     "description": "A free, open-source Hei font with modern stroke style that balances between standard glyphs and typography conventions.",
     "homepage": "https://chiron-fonts.github.io/",
     "license": "OFL-1.1",
     "url": [
-        "https://github.com/chiron-fonts/chiron-hei-hk/raw/v2.509/VAR/ChironHeiHKVF.otf",
-        "https://github.com/chiron-fonts/chiron-hei-hk/raw/v2.509/VAR/ChironHeiHKItVF.otf"
+        "https://github.com/chiron-fonts/chiron-hei-hk/raw/v2.511/VAR/ChironHeiHKVF.otf",
+        "https://github.com/chiron-fonts/chiron-hei-hk/raw/v2.511/VAR/ChironHeiHKItVF.otf"
     ],
     "hash": [
-        "f2b45602dc4930be109efb23a04374a15e4f82a66d13e826dea751f28b18b478",
-        "421515f9c4dfd979c194b4723a4ccf3beb4d94b8521aecf429adf14c836a6131"
+        "bd443e0e3488d3b2e098517a4b4b3a30c7232aefe8e66cb561e7bbe9fcd6036c",
+        "cb0a74eea8b30401d4319744f3fd374818b7b71b4da72e907a432b854822f649"
     ],
     "checkver": {
         "github": "https://github.com/chiron-fonts/chiron-hei-hk"

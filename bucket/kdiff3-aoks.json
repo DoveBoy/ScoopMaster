@@ -1,12 +1,12 @@
 {
-    "version": "1.10.7",
+    "version": "1.11.2",
     "description": "Utility for comparing and merging files and directories",
     "homepage": "https://apps.kde.org/kdiff3/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://download.kde.org/stable/kdiff3/kdiff3-1.10.7-windows-x86_64.exe#/dl.7z",
-            "hash": "950d8403935a220c67ef68b831253ee22c6fbee7f1797aa24d2b61c2692a0a52"
+            "url": "https://download.kde.org/stable/kdiff3/kdiff3-1.11.2-windows-64-cl.exe#/dl.7z",
+            "hash": "44ab008e6c3e66a8afb3af536bed0d0595b779c2d6d21749e9a4dbe882d4aca7"
         }
     },
     "pre_install": [

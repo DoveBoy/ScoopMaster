@@ -1,11 +1,12 @@
 {
-  "version": "0.3.7.0",
+  "version": "1.2.0.0",
   "description": "Gladius by BITZER Electronics A/S",
-  "url": "https://apprelease.blob.core.windows.net/gladius-scoop/0.3.7.0/Gladius.zip",
-  "hash": "c8237e7b5ad8e182f1a080971579c22bc69bd8575826c7e15cbd7ddb4f98161e",
+  "url": "https://apprelease.blob.core.windows.net/gladius-scoop/1.2.0.0/Gladius.zip",
+  "hash": "79b7037fb8f06a277a9b78468eaa46691d55aafb5ffcb38f301a3c207cd4f91f",
   "bin": "Gladius.exe",
   "persist": [
-    "UserSettings"
+    "UserSettings",
+    "PlugIns"
   ],
   "shortcuts": [
     [

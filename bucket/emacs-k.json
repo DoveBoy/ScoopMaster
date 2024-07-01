@@ -1,11 +1,10 @@
 {
-    "##": "https://github.com/kiennq/scoop-misc/commits/master/bucket/emacs-k.json",
     "$schema": "https://raw.githubusercontent.com/ScoopInstaller/Scoop/master/schema.json",
     "homepage": "https://github.com/kiennq/emacs-build",
     "license": "GPLv3",
-    "version": "30.228.20240309.3e76e1a",
-    "url": "https://github.com/kiennq/emacs-build/releases/download/v30.228.20240309.3e76e1a/emacs-master-x86_64-full.zip",
-    "hash": "7037bcd0d2aa1e0e41303a5f58977a887ac5ca7b493b36b1766d448328b4084b",
+    "version": "30.239.20240611.7c9bac5",
+    "url": "https://github.com/kiennq/emacs-build/releases/download/v30.239.20240611.7c9bac5/emacs-master-x86_64-full.zip",
+    "hash": "881eb1e685680ad977a570be09db5fa69d6a476343fc4353c23a78cc9282b02b",
     "bin": [
         "bin\\runemacs.exe",
         "bin\\emacs.exe",
@@ -13,11 +12,6 @@
         "bin\\emacsclientw.exe",
         "bin\\etags.exe",
         "bin\\ctags.exe",
-        "bin\\gzip.exe",
-        [
-            "bin\\x86_64-w64-mingw32-agrep.exe",
-            "agrep"
-        ],
         [
             "bin\\emacsclientw.exe",
             "emw",
@@ -25,8 +19,9 @@
         ]
     ],
     "checkver": {
-        "github": "https://github.com/kiennq/emacs-build",
-        "re": "/tag/v([\\d\\w.-]+)"
+        "url": "https://api.github.com/repos/kiennq/emacs-build/releases/latest",
+        "jsonpath": "$.tag_name",
+        "re": "v([\\d\\w.-]+)"
     },
     "autoupdate": {
         "url": "https://github.com/kiennq/emacs-build/releases/download/v$version/emacs-master-x86_64-full.zip"

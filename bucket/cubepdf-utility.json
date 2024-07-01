@@ -1,16 +1,16 @@
 {
-    "version": "2.6.1",
+    "version": "4.0.0",
     "homepage": "https://www.cube-soft.jp/en/cubepdfutility/",
     "description": "A thumbnail-based Windows PDF editor designed for users who want to edit PDF files in a simple and intuitive way, such as merging, extracting, splitting, changing page order, setting passwords, and so on.",
     "license": "AGPL-3.0",
     "architecture": {
         "32bit": {
-            "url": "https://dl.cube-soft.jp/archive/cubepdf-utility-2.6.1.exe",
-            "hash": "ee64f98cb54a99b96bd3717610b506a0b8f26e64e13925dba673261b6740f3e0"
+            "url": "https://dl.cube-soft.jp/archive/cubepdf-utility-4.0.0.exe",
+            "hash": "224103c2482ed4a19fc1bb67eb427c7ca3905a652879771f0fe580bbebf4b7dc"
         },
         "64bit": {
-            "url": "https://dl.cube-soft.jp/archive/cubepdf-utility-2.6.1-x64.exe",
-            "hash": "2bdd9e562d058e15ebb5d83828c456b10871f115d640fd2c96c059c445b2a421"
+            "url": "https://dl.cube-soft.jp/archive/cubepdf-utility-4.0.0-x64.exe",
+            "hash": "d468d691f35262c8faaba414bbf8a5661181149c9a8658b5151d7dc9473f35fd"
         }
     },
     "innosetup": true,

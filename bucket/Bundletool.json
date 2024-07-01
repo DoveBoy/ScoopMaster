@@ -1,13 +1,13 @@
 {
-    "version": "1.15.6",
+    "version": "1.17.0",
     "description": "Bundletool",
     "homepage": "https://github.com/google/bundletool",
     "license": "Apache-2.0 license",
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://github.com/google/bundletool/releases/download/1.15.6/bundletool-all-1.15.6.jar",
-    "hash": "38ae8a10bcdacef07ecce8211188c5c92b376be96da38ff3ee1f2cf4895b2cb8",
+    "url": "https://github.com/google/bundletool/releases/download/1.17.0/bundletool-all-1.17.0.jar",
+    "hash": "54ebee1f1de8367d9ad26b4672bfb2976b0b12142e15d683fc7b8e254fc6cc1b",
     "bin": [
         [
             "bundletool-all-$version.jar",

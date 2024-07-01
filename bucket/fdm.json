@@ -1,9 +1,9 @@
 {
-    "version": "6.21.0.5629",
+    "version": "6.23.0.5754",
     "description": "下载工具 Free Download Manager",
     "homepage": "https://freedownloadmanager.org",
     "url": "https://files2.freedownloadmanager.org/6/latest/fdm_x64_setup.exe",
-    "hash": "be5427e4f85ea7055600d2c8bf45b8e9d413a8152fbbba08d45f58f50c526382",
+    "hash": "5427b39b22d32315db36e21f5afbd3bc7e626eee44d1b56bd4a122feeee66d0c",
     "innosetup": true,
     "shortcuts": [
         [

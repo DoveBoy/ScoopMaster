@@ -4,7 +4,7 @@
         "replace": "${ver}",
         "regex": "(?i)<d:Version>(?<ver>[^<]+)<.d:Version>"
     },
-    "hash": "sha512:fe921684b794c900cc306b6725794919606458c6f33f355f83953ed484f0adb8e026d6621a065cc08e22ae40a4f05de8633f29156af4d206b0b21c318b9ffe4d",
+    "hash": "sha512:6361f0a4396316496ea4dd1959482e6ab83765da8fdbc8459cb6b548b092310b48b2a6dc6e868f1e3ba3dce0fcd743e0856ddcf4b858fc28b096d4f523df7f51",
     "description": "Microsoft Azure PowerShell - Batch service cmdlets for Azure Resource Manager in Windows PowerShell and PowerShell Core.  For information on Batch, please visit the following: https://learn.microsoft.com/azure/batch/",
     "psmodule": {
         "name": "Az.Batch"
@@ -21,7 +21,7 @@
         "identifier": "Refer to Webpage",
         "url": "https://aka.ms/azps-license"
     },
-    "url": "https://www.powershellgallery.com/api/v2/Package/Az.Batch/3.5.0#/mod.nupkg",
+    "url": "https://www.powershellgallery.com/api/v2/Package/Az.Batch/3.6.1#/mod.nupkg",
     "depends": "Az.Accounts",
-    "version": "3.5.0"
+    "version": "3.6.1"
 }

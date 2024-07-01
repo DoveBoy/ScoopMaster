@@ -1,16 +1,16 @@
 {
-    "version": "4.3.2",
+    "version": "4.6.4",
     "description": "Catsxp is a fast browser for more privacy protection and security",
     "homepage": "https://www.catsxp.com",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://catsxp.oss-cn-hongkong.aliyuncs.com/x64/portable_x64_release_122_4_3_2.zip",
-            "hash": "3782701d151ad02ea998481100c47561e227437843464cf1a1341f3ea573623e"
+            "url": "https://catsxp.oss-cn-hongkong.aliyuncs.com/x64/portable_x64_release_126_4_6_4.zip",
+            "hash": "75c0bfb2deea7b1ee0e5a601b231d69ba6a6e52528ea24c004eb588f91fa3ca7"
         },
         "32bit": {
-            "url": "https://catsxp.oss-cn-hongkong.aliyuncs.com/x86/portable_x86_release_122_4_3_2.zip",
-            "hash": "433da880a8da0ddfcdb6d4c057de19506a96987587f5aeb5becdf04e25893743"
+            "url": "https://catsxp.oss-cn-hongkong.aliyuncs.com/x86/portable_x86_release_126_4_6_4.zip",
+            "hash": "c63bc46c62ef58bdd5293ef5eb742a561ffaba29bf6694c5d6c7cd874999fb86"
         }
     },
     "shortcuts": [

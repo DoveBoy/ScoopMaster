@@ -1,12 +1,12 @@
 {
-    "version": "8286607936",
+    "version": "9635331076",
     "description": "Chat client for https://twitch.tv",
     "homepage": "https://github.com/Chatterino/chatterino2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Chatterino/chatterino2/releases/download/nightly-build/chatterino-windows-x86-64-Qt-6.5.0.zip",
-            "hash": "964c6f511e44837767c9cbc8d0a5aeb04aff1875be4cf225b24be3582f3823bc",
+            "url": "https://github.com/Chatterino/chatterino2/releases/download/nightly-build/chatterino-windows-x86-64-Qt-6.7.1.zip",
+            "hash": "31f515f26f0a638f48a73c4e11f39083d477dd6ebf853f6b4529208070db5c97",
             "extract_dir": "Chatterino2"
         }
     },
@@ -18,13 +18,16 @@
     ],
     "bin": "chatterino.exe",
     "checkver": {
-        "url": "https://api.github.com/repositories/77624593/actions/workflows/build.yml/runs?branch=master&status=success",
-        "jsonpath": "$.workflow_runs[0].id"
+        "script": [
+            "(Invoke-RestMethod 'https://api.github.com/repositories/77624593/actions/workflows/build.yml/runs?branch=master&status=success').workflow_runs[0].id,",
+            "(Invoke-RestMethod https://raw.githubusercontent.com/Chatterino/chatterino2/master/.github/workflows/build.yml | Select-String 'os: windows-latest\\s+qt-version: ([\\d.]+)').Matches.Groups[1].Value -join ' '"
+        ],
+        "regex": "(\\d+) (?<qt>[\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Chatterino/chatterino2/releases/download/nightly-build/chatterino-windows-x86-64-Qt-6.5.0.zip"
+                "url": "https://github.com/Chatterino/chatterino2/releases/download/nightly-build/chatterino-windows-x86-64-Qt-$matchQt.zip"
             }
         }
     }

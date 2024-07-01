@@ -2,9 +2,9 @@
     "homepage": "https://www.ascomp.de/en/products/show/product/backupmaker",
     "description": "Create fully automated data backups with ease.",
     "license": "Proprietary",
-    "version": "8.305",
+    "version": "8.307",
     "url": "https://www.ascomp.de/en/download/bkmaker.exe",
-    "hash": "8125e27bf92a671d93902307cbff9b2e1ced79fb4a4e0e90969424a68fbb0cff",
+    "hash": "b7a33dd93732d7fa27d75c48b10127788808521ac8473190d6576e4c08e9864d",
     "innosetup": true,
     "shortcuts": [
         [

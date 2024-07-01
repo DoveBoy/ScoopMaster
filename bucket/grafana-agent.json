@@ -1,12 +1,12 @@
 {
-    "version": "0.40.3",
+    "version": "0.41.1",
     "description": "A vendor-neutral, batteries-included telemetry collector which is compatible with multiple ecosystems such as Prometheus and OpenTelemetry.",
     "homepage": "https://grafana.com/docs/agent/",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/grafana/agent/releases/download/v0.40.3/grafana-agent-windows-amd64.exe.zip",
-            "hash": "57cb17fa7f288c4a55a08cd933f9308d728b9c662c95c79f3c86293b10f6112a"
+            "url": "https://github.com/grafana/agent/releases/download/v0.41.1/grafana-agent-windows-amd64.exe.zip",
+            "hash": "67af782e06fbf70fbb92cf973f0a9f12293d1cbda66a2e25500484d166308d3e"
         }
     },
     "bin": "grafana-agent.exe",

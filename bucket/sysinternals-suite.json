@@ -1,5 +1,5 @@
 {
-    "version": "2024.02.06",
+    "version": "2024.06.20",
     "description": "A set of utilities to manage, diagnose, troubleshoot, and monitor a Windows environment.",
     "homepage": "https://learn.microsoft.com/sysinternals",
     "license": {
@@ -9,7 +9,7 @@
     "architecture": {
         "64bit": {
             "url": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
-            "hash": "fa5548efe12a2ea78c726971b6ac24ec9c2c1686a557efd3ff9476398ecccbae",
+            "hash": "2f9ea97b146023af9a77c2d7e1b1700c5c278a44511a3d2177270050aebca054",
             "bin": [
                 [
                     "accesschk64.exe",
@@ -429,7 +429,7 @@
         },
         "32bit": {
             "url": "https://download.sysinternals.com/files/SysinternalsSuite.zip",
-            "hash": "fa5548efe12a2ea78c726971b6ac24ec9c2c1686a557efd3ff9476398ecccbae",
+            "hash": "2f9ea97b146023af9a77c2d7e1b1700c5c278a44511a3d2177270050aebca054",
             "bin": [
                 "accesschk.exe",
                 "AccessEnum.exe",
@@ -642,7 +642,7 @@
         },
         "arm64": {
             "url": "https://download.sysinternals.com/files/SysinternalsSuite-ARM64.zip",
-            "hash": "31182df44fc4d22b60e12776d9f3ff54650acc30082892149366fa97045613ec",
+            "hash": "54a1b468bb0dc51bbbb02833ea5ec5872b7292c680535a569fbb1280974b846e",
             "bin": [
                 [
                     "accesschk64a.exe",
@@ -953,9 +953,9 @@
         }
     },
     "checkver": {
-        "url": "https://learn.microsoft.com/en-us/sysinternals/",
-        "regex": "<meta name=\"updated_at\" content=\"(\\d{4})-(\\d{2})-(\\d{2})",
-        "replace": "${1}.${2}.${3}"
+        "url": "https://raw.githubusercontent.com/MicrosoftDocs/sysinternals/live/sysinternals/downloads/sysinternals-suite.md",
+        "regex": "ms.date: (\\d{2})/(\\d{2})/(\\d{4})",
+        "replace": "${3}.${1}.${2}"
     },
     "autoupdate": {
         "architecture": {

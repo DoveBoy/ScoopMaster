@@ -2,17 +2,17 @@
     "architecture": {
         "32bit": {
             "url": "https://getquicker.net/download/item/fast_x86#/dl.msi",
-            "hash": "6f5bd9f8260b11ea839f6176ece82a808fedc4307ec30ca13b79a9113ff3fff5"
+            "hash": "77b6dbdb05e76de7a670f35c0961565a1fe9e8724253826c5117bc6a4f8cf677"
         },
         "64bit": {
             "url": "https://getquicker.net/download/item/fast_x64#/dl.msi",
-            "hash": "23e443fb191dc99256d5a8dca08126f3c1bd017bbecfca74968082e535df7003"
+            "hash": "da62af17234246fd5f205b2ee536879fcde6d1767cd166d05f2ff7a1f324afe9"
         }
     },
     "url": "https://getquicker.net/download/item/fast_x64",
     "homepage": "https://getquicker.net",
     "license": "Unlicense",
-    "version": "v1.42.15",
+    "version": "v1.43.6",
     "extract_dir": "Quicker",
     "checkver": {
         "url": "https://getquicker.net/Download",

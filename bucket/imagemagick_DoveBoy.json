@@ -1,20 +1,20 @@
 {
-    "version": "7.1.1-29",
+    "version": "7.1.1-34",
     "description": "Create, edit, compose, and convert 200+ bitmap image formats.",
     "homepage": "https://imagemagick.org/",
     "license": "ImageMagick",
     "architecture": {
         "64bit": {
-            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-HDRI-x64-dll.exe",
-            "hash": "0c760dc5e36c4a50915575b71a903f804a58528af063adeab0122b1dacebe762"
+            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-34-Q16-HDRI-x64-dll.exe",
+            "hash": "f3a7791ed35525b395bdab4a73c356c28ff70c17f979acdd16bfef81c9388774"
         },
         "32bit": {
-            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-HDRI-x86-dll.exe",
-            "hash": "1dd8d25d0b1999ae7ac9fa7e66076234332e12759ed8d4b5a2b185120635a266"
+            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-34-Q16-HDRI-x86-dll.exe",
+            "hash": "5b0c3fc7500aa90f0850089a4d442ea9a2ef546f6cc7e744b211580ed4d109cb"
         },
         "arm64": {
-            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-29-Q16-HDRI-arm64-dll.exe",
-            "hash": "c29c0049abb9ada642e5a79adb66fc4bf104faa935c1d0b202bb43fa5eb1a23a"
+            "url": "https://imagemagick.org/archive/binaries/ImageMagick-7.1.1-34-Q16-HDRI-arm64-dll.exe",
+            "hash": "989b0e26548fa4241fa4d44bfb2c2f0a2558d82605b8bd5ca7268496da6aaf4d"
         }
     },
     "innosetup": true,

@@ -1,12 +1,12 @@
 {
-    "version": "0.2024.03.15",
+    "version": "0.2024.06.18",
     "description": "ProperTree. Cross platform GUI plist editor written in python.",
     "homepage": "https://github.com/corpnewt/ProperTree",
     "license": "BSD-3-Clause",
     "depends": "python",
-    "url": "https://github.com/corpnewt/ProperTree/archive/c9053fbc75f8bfe8ad6c1c1191d9e91d424160c3.zip",
-    "hash": "d844bc765175fc58e714c5783e6872e7b63d2ce00f9a75ace2ff698b680205c1",
-    "extract_dir": "ProperTree-c9053fbc75f8bfe8ad6c1c1191d9e91d424160c3",
+    "url": "https://github.com/corpnewt/ProperTree/archive/4807f2580bed1a6db207c9b3e75e8cdc817b50ad.zip",
+    "hash": "c1b5fa0b0ed3c8189c58aa14fd22d7bee0fab4c131171ef19834961c3612675c",
+    "extract_dir": "ProperTree-4807f2580bed1a6db207c9b3e75e8cdc817b50ad",
     "bin": "ProperTree.bat",
     "checkver": {
         "url": "https://github.com/corpnewt/ProperTree/commits/master.atom",

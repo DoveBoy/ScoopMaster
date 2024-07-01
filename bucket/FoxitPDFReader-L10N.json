@@ -1,5 +1,5 @@
 {
-    "version": "2024.1.0.23997",
+    "version": "2024.2.2.25170",
     "description": "Fast and feature rich PDF reader that offers a delightful reading experience.multi-language version, including Simplified Chinese version.",
     "homepage": "https://www.foxit.com/pdf-reader/",
     "license": {
@@ -7,7 +7,7 @@
         "url": "https://www.foxit.com/pdf-editor/eula.html"
     },
     "url": "https://www.foxit.com/downloads/latest.html?product=Foxit-Reader&platform=Windows&version=&package_type=&language=zh-CN&distID=#/latest-setup.exe",
-    "hash": "1bcd7649fc9c22f5ee96314204c46a936a461e22d209a30f3191941bcfcb119a",
+    "hash": "ef374052b892f3334c10050701025f6c0378dee5b487d41f6bc0f86680e32bf4",
     "innosetup": true,
     "bin": "FoxitPDFReader.exe",
     "shortcuts": [

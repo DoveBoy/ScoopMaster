@@ -1,0 +1,19 @@
+{
+    "version": "5.3.201",
+    "description": "MIDI editor for all your hardware.",
+    "homepage": "https://ctrlr.org/",
+    "url": "http://ctrlr.org/nightly/Ctrlr-5.3.201.exe#dl.7z",
+    "license": "GPL-2.0",
+    "hash": "a35e83bc65e07547d11881c0c04f76449c58ea7cd5bdde8cd3ebe568107514db",
+    "notes": "Panels are available at: https://ctrlr.org/panels_by_Name/",
+    "shortcuts": [
+        [
+            "Ctrlr-x64.exe",
+            "Ctrlr"
+        ]
+    ],
+    "checkver": "<a href=\"http://ctrlr.org/nightly/Ctrlr-([\\d.]+)\\.exe\" role=\"button\">",
+    "autoupdate": {
+        "url": "http://ctrlr.org/nightly/Ctrlr-$version.exe#dl.7z"
+    }
+}

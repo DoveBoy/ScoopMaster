@@ -1,13 +1,13 @@
 {
-    "version": "3.1.1",
+    "version": "4.3.0",
     "description": "World of Warcraft addon updater.",
     "homepage": "https://raider.io/addon",
     "license": {
         "identifier": "Freeware",
         "url": "https://raider.io/terms-of-use"
     },
-    "url": "https://github.com/RaiderIO/raiderio-client-builds/releases/download/v3.1.1/RaiderIO_Client_Setup.exe#/dl.7z",
-    "hash": "efb8f281ed66b96759d1447e5a992ab8fe3a424b19ff55d0ca1aacc942ecb704",
+    "url": "https://github.com/RaiderIO/raiderio-client-builds/releases/download/v4.3.0/RaiderIO_Client_Setup.exe#/dl.7z",
+    "hash": "735eea41933882082e7cefc41aafe51b7b5e9228c44b12c4cda08410e15ce432",
     "extract_dir": "$PLUGINSDIR",
     "installer": {
         "script": [

@@ -1,5 +1,5 @@
 {
-    "version": "3.3.2",
+    "version": "3.3.6",
     "description": "跨平台桌面端视频资源播放器,免费高颜值.",
     "homepage": "https://github.com/Hiram-Wong/ZyPlayer",
     "license": {
@@ -8,24 +8,24 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.2/zyplayer-win-3.3.2-x64.exe#/dl.7z",
-            "hash": "9d841e8119634ef76aab9431a0ac7af76261a0e133d0b69e406ae39485740d7a",
+            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.6/zyplayer-win-3.3.6-x64.exe#/dl.7z",
+            "hash": "f51f0f57303a24489f74c167f249f9d0068440cc10410833919b063d7ed87398",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.2/zyplayer-win-3.3.2-ia32.exe#/dl.7z",
-            "hash": "acb8e236ec248ef640352aa12fb39610b631024816b65ed60a4436ba067f2cb8",
+            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.6/zyplayer-win-3.3.6-ia32.exe#/dl.7z",
+            "hash": "17c487e0972571edb21ff462c5630cdddb00a191a26ef9d916d8a38eb1411571",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.2/zyplayer-win-3.3.2-arm64.exe#/dl.7z",
-            "hash": "ebac4c0c7c7def1d5d3d069ba73ed9c1ccd26987b7dac26bdda093b11667179a",
+            "url": "https://github.com/Hiram-Wong/ZyPlayer/releases/download/v3.3.6/zyplayer-win-3.3.6-arm64.exe#/dl.7z",
+            "hash": "431e66fbfe842b10c0423051fb21a0aae37cfd66f72aa678187cf21f3dbb0c22",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"

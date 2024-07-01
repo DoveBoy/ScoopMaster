@@ -1,12 +1,12 @@
 {
-    "version": "1.276",
+    "version": "1.279",
     "description": "Real-time game translator with OCR.",
     "homepage": "https://github.com/killkimno/MORT",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/killkimno/MORT/releases/download/1.276/MORT.1.276v.-.20240228.zip",
-            "hash": "83d83565be212a503ce60f3097ff7348b769e4ffd6d6168e666c4ad662cf6923"
+            "url": "https://github.com/killkimno/MORT/releases/download/1.279/MORT.1.279v.-.20240512.zip",
+            "hash": "b697f1c83275f143c7ec13e7409ff50c22cfe63728fae614889039424cfbd66f"
         }
     },
     "shortcuts": [

@@ -1,5 +1,5 @@
 {
-    "version": "110.0.5104.0",
+    "version": "113.0.5210.0",
     "description": "Opera Developer. Fast, secure, easy-to-use browser.",
     "homepage": "https://www.opera.com/browsers/opera/beta",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://download1.operacdn.com/pub/opera-developer/110.0.5104.0/win/Opera_Developer_110.0.5104.0_Setup_x64.exe#/dl.7z",
-            "hash": "5a7079fcd9355899517df6375236cd647a207781ccbbd460e9bd2207066e952d"
+            "url": "https://download1.operacdn.com/pub/opera-developer/113.0.5210.0/win/Opera_Developer_113.0.5210.0_Setup_x64.exe#/dl.7z",
+            "hash": "c6731f54aea6787ff43ea2de3a0e8f1a59faa4196cf513af21d7c15193d85fd5"
         },
         "32bit": {
-            "url": "https://download1.operacdn.com/pub/opera-developer/110.0.5104.0/win/Opera_Developer_110.0.5104.0_Setup.exe#/dl.7z",
-            "hash": "64ec4ad2e0535b93a2bc9833d0658fedcc35b82b3e50222ade36538ff699c2ba"
+            "url": "https://download1.operacdn.com/pub/opera-developer/113.0.5210.0/win/Opera_Developer_113.0.5210.0_Setup.exe#/dl.7z",
+            "hash": "161efbd3324830fbec2d2d2b7f9ecf833974f3d80773e47d7c3423c68873f6f6"
         }
     },
     "installer": {

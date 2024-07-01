@@ -1,5 +1,5 @@
 {
-    "version": "3.1.3",
+    "version": "3.1.5",
     "description": "Multifunctional integrated, cross platform, highly compatible assistant for your keyboard.",
     "homepage": "https://github.com/lnelab/link-plus",
     "license": "Unknown",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/lnelab/link-plus/releases/download/3.1.3/link-plus-win-3.1.3.exe#/dl.7z",
-            "hash": "sha512:ea525e4005889fc35c9574e3fc05b68abe3fb72b0ef9b253e519d36e2aa112f5d4a015be607da1e7b9616d4a29a094e886ac78ef0113877a0bff736f185ad7b8",
+            "url": "https://github.com/lnelab/link-plus/releases/download/3.1.5/link-plus-win-3.1.5.exe#/dl.7z",
+            "hash": "sha512:5d796a9e0cf2ab4585ad6e408989e730165823f819d4083119d842d7b41771f360e896c76d42ab7c4b6196dccf2ff1fd3d18f5c7f7d9680fc4bc2f00b02c9a8a",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"

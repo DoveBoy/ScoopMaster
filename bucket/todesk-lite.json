@@ -1,10 +1,10 @@
 {
-    "version": "4.7.2.1",
+    "version": "4.7.4.0",
     "description": "ToDesk 精简被控端",
     "homepage": "https://www.todesk.com/",
     "license": "Proprietary",
     "url": "https://newdl.todesk.com/windows/ToDesk_Lite.exe",
-    "hash": "3d6896cff774733c068de60cb07c083ac39695595868065b3f77cf9c57879988",
+    "hash": "0add156c1bf4c1e37a71d9615f1c1f4661bb87af93651f8c32bdd46461e5f7b6",
     "shortcuts": [
         [
             "ToDesk_Lite.exe",

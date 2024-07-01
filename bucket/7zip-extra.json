@@ -1,13 +1,13 @@
 {
-    "version": "2401",
+    "version": "2407",
     "homepage": "https://www.7-zip.org/",
     "description": "Standalone console version of 7-Zip (7za.exe & DLLs)",
     "license": {
         "identifier": "Freeware,LGPL-2.0-only,BSD-3-Clause",
         "url": "https://www.7-zip.org/license.txt"
     },
-    "url": "https://www.7-zip.org/a/7z2401-extra.7z",
-    "hash": "0fc950a55963d2a4ac8ce4354dc981e7d0c948c339e6565b7ae7f4395883367e",
+    "url": "https://www.7-zip.org/a/7z2407-extra.7z",
+    "hash": "7f198466d802b08452acf7e2af1768a85360bfdfc7c8420530a3204d35a03ac3",
     "architecture": {
         "64bit": {
             "extract_dir": "x64"

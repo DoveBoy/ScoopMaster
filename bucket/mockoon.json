@@ -1,12 +1,12 @@
 {
-    "version": "7.0.0",
+    "version": "8.2.0",
     "description": "Easiest and quickest way to run mock APIs locally.",
     "homepage": "https://mockoon.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mockoon/mockoon/releases/download/v7.0.0/mockoon.setup.7.0.0.exe#/dl.7z",
-            "hash": "a192e5d78f59b77ebd68bb90cbd74bc2540d9ccf765952bf132218633b051962",
+            "url": "https://github.com/mockoon/mockoon/releases/download/v8.2.0/mockoon.setup.8.2.0.exe#/dl.7z",
+            "hash": "2cf1f5efad01cdbe9c64952c2f308adf44be11590dfcd5d96f5aa9c4ec8cbfcb",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Recurse"

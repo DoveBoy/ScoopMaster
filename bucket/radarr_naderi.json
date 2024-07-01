@@ -1,9 +1,9 @@
 {
     "homepage": "https://github.com/Radarr/Radarr",
-    "version": "5.3.6.8612",
+    "version": "5.7.0.8882",
     "license": "MIT",
-    "url": "https://github.com/Radarr/Radarr/releases/download/v5.3.6.8612/Radarr.master.5.3.6.8612.windows-core-x64.zip",
-    "hash": "1aef3f5b5af9021743702fc2c8f8adee1980750fe8c7c3a782c4d4c58527d74c",
+    "url": "https://github.com/Radarr/Radarr/releases/download/v5.7.0.8882/Radarr.master.5.7.0.8882.windows-core-x64.zip",
+    "hash": "f15c913731ff1c8fb25eb91bea6ded282dece64cb2aaa9cc2fcaab8b3b88f551",
     "extract_dir": "Radarr",
     "shortcuts": [
         [

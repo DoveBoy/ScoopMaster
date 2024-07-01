@@ -1,16 +1,16 @@
 {
-    "version": "4.0.6",
+    "version": "4.3.0",
     "description": "USB Device Tree Viewer is a lightweight utility that provides detailed technical information regarding all the USB devices you connected.",
     "homepage": "https://www.uwe-sieber.de/usbtreeview_e.html",
     "license": "Freeware",
     "architecture": {
         "64bit": {
             "url": "https://www.uwe-sieber.de/files/UsbTreeView_x64.zip",
-            "hash": "319e860b9dd22fc77e3060a420e76defc8320b15713b4b9f12baeb8b5e9f0e1d"
+            "hash": "0669356095429ae5a86196e5bf2a49b0077d1e40feb3d3b40cb3db9d4a3ad498"
         },
         "32bit": {
             "url": "https://www.uwe-sieber.de/files/UsbTreeView_Win32.zip",
-            "hash": "e00211faa0f460e43a3d4cacc3929a1763d5cde9457ffc942e26ddb945ad89ba"
+            "hash": "7b17970758f88d7331df4095d9c15c49d3768bfa47660616094be2f80c1296d0"
         }
     },
     "bin": "UsbTreeView.exe",

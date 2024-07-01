@@ -1,10 +1,10 @@
 {
     "homepage": "https://www.ccleaner.com/ccleaner",
-    "version": "6.21.10918",
+    "version": "6.25.11093",
     "license": "Freeware",
     "description": "Number-one tool for cleaning your PC.",
-    "url": "https://download.ccleaner.com/portable/ccsetup621.zip",
-    "hash": "580a3a0334b1b85332b8f954da945978b64d25563c628cabfb8f0f84425e791a",
+    "url": "https://download.ccleaner.com/portable/ccsetup625.zip",
+    "hash": "0b880368f9865468090a5b8316f9a4aaa00ba9309cb0d2d6703dae2cacc887b5",
     "architecture": {
         "64bit": {
             "installer": {

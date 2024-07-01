@@ -1,11 +1,11 @@
 {
-    "version": "122.0.6261.132",
+    "version": "124.0.6367.218",
     "description": "Thorium AVX2. The fastest browser on Earth",
     "homepage": "https://thorium.rocks/",
     "license": "BSD-3-Clause",
     "changelog": "https://github.com/Alex313031/Thorium-Win/releases",
-    "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M122.0.6261.132/Thorium_AVX2_122.0.6261.132.zip",
-    "hash": "35c4b64a9a67861ee4da8db459c0ce27473bcdd51b5b15c2603c4f97a0e5c472",
+    "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M124.0.6367.218/Thorium_AVX2_124.0.6367.218.zip",
+    "hash": "549994a367b0aeb59903dc8613dbe05cf81868af4ceb6ddb3e41fde4855553be",
     "persist": "USER_DATA",
     "bin": "bin\\thorium.exe",
     "shortcuts": [

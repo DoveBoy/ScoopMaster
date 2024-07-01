@@ -1,0 +1,34 @@
+{
+    "version": "2.7.0-beta",
+    "description": "DRipGrepper is a UI to search files with ripgrep.",
+    "homepage": "https://github.com/mattia72/DRipGrepper",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/mattia72/DripGrepper/releases/download/v2.7.0-beta/DRipGrepper.v2.7.0-beta.zip",
+            "hash": "772bc2160118bb8094ff53c22c376c1ac89f0c86dbb20ae8db86aa03b56525a1"
+        }
+    },
+    "autoupdate": {
+        "url": "https://github.com/mattia72/DripGrepper/releases/download/v$version/DRipGrepper.v$version.zip"
+    },
+    "bin": [
+        [
+            "dripgrepper.exe",
+            "DRipGrepper"
+        ]
+    ],
+    "pre_install": "New-Item $dir\\DripGrepper.ini -Verbose",
+    "persist": "DRipGrepper.ini",
+    "shortcuts": [
+        [
+            "dripgrepper.exe",
+            "DRipGrepper"
+        ]
+    ],
+    "depends": "ripgrep",
+    "checkver": {
+        "github": "https://github.com/mattia72/DRipGrepper",
+        "regex": "([\\d.]+(?:-alpha|-beta))"
+    }
+}

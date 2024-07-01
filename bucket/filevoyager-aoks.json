@@ -1,0 +1,24 @@
+{
+    "version": "24.5.17",
+    "description": "Swiss army knife of file management",
+    "homepage": "https://www.filevoyager.com/",
+    "license": "Freeware",
+    "url": "https://www.filevoyager.com/wp-content/uploads/FileVoyager_Portable_24.5.17.0_Full.7z",
+    "hash": "248a8ee3b2979c05eeca33b9796e9a887e3ca76b3430d5b3725d24f74cb91db7",
+    "extract_dir": "FileVoyager_Portable",
+    "bin": "FileVoyager.exe",
+    "shortcuts": [
+        [
+            "FileVoyager.exe",
+            "FileVoyager"
+        ]
+    ],
+    "persist": "Data",
+    "checkver": {
+        "url": "https://www.filevoyager.com/blog/",
+        "re": "Permalink to FileVoyager ([\\w\\.]+) released!"
+    },
+    "autoupdate": {
+        "url": "https://www.filevoyager.com/wp-content/uploads/FileVoyager_Portable_$version.0_Full.7z"
+    }
+}

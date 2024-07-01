@@ -1,12 +1,12 @@
 {
-    "version": "1.5.25",
+    "version": "1.5.52",
     "description": "pre-release version for quarto",
     "homepage": "https://quarto.org/",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.25/quarto-1.5.25-win.zip",
-            "hash": "1394ccd791e90563f26cd5205c18b40454516ecaa1e8c7e5c8bcd33e84942558"
+            "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.5.52/quarto-1.5.52-win.zip",
+            "hash": "878fbe19fd28d96c15100aa3afcce9ee18582b653882b94fd6a546f55a3e7b8d"
         }
     },
     "bin": "bin\\quarto.exe",

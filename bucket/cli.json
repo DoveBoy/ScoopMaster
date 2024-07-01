@@ -1,12 +1,14 @@
 {
-    "version": "1.10.1",
+    "version": "2.6.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/platformplane/cli/releases/download/v1.10.1/cli_1.10.1_windows_amd64.tar.gz",
+            "url": "https://github.com/pipekit/cli/releases/download/v2.6.0/cli_2.6.0_windows_amd64.zip",
             "bin": [
-                "console.exe"
+                "pipekit.exe"
             ],
-            "hash": "a2f67d550d4659d14416e6d21f5530c1574667e3ab322aeca3028fb11cf6d7d8"
+            "hash": "403fa8dd440aa4fce7fae53d54d8b7d47a6fafcf84f3514191b67f0b650d3c5e"
         }
-    }
+    },
+    "homepage": "https://pipekit.io/",
+    "description": "Pipekit CLI"
 }

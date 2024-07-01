@@ -1,5 +1,5 @@
 {
-    "version": "0.25.0",
+    "version": "0.32.0",
     "description": "A multi-column Bluesky client",
     "homepage": "https://github.com/ioriayane/Hagoromo",
     "license": "MIT",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ioriayane/Hagoromo/releases/download/v0.25.0/hagoromo_0.25.0_windows.zip",
-            "hash": "7dd03ff502223e57019deeb9bcd53461df9a64e63e2dddb621f94640ef8e0e48",
+            "url": "https://github.com/ioriayane/Hagoromo/releases/download/v0.32.0/hagoromo_0.32.0_windows.zip",
+            "hash": "cbf7c0b4cd1c3b313667b07ffe29bd994f0d9713281970b9e954693c54790ad0",
             "extract_dir": "hagoromo",
             "pre_install": "Remove-Item \"$dir/vc_redist.x64.exe\""
         }

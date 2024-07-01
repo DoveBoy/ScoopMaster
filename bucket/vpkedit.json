@@ -1,0 +1,28 @@
+{
+    "version": "4.2.2",
+    "description": "VPKEdit is a A library and CLI/GUI tool to create, read, and write several pack file formats ",
+    "homepage": "https://github.com/craftablescience/VPKEdit",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/craftablescience/VPKEdit/releases/download/v4.2.2/VPKEdit-Windows-Standalone-GUI-msvc-Release.zip",
+            "hash": "07c8f45085497e11dbb259d166d09202c53cd4616f9e36e267379a6efae18f6f"
+        }
+    },
+    "shortcuts": [
+        [
+            "vpkedit.exe",
+            "VPKEdit"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/craftablescience/VPKEdit/"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/craftablescience/VPKEdit/releases/download/v$version/VPKEdit-Windows-Standalone-GUI-msvc-Release.zip"
+            }
+        }
+    }
+}

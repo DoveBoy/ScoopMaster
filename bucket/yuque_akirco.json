@@ -1,5 +1,5 @@
 {
-    "version": "3.4.0.1204",
+    "version": "3.4.3.1210",
     "description": "Professional note and document repositories",
     "homepage": "https://www.yuque.com/",
     "license": {
@@ -9,8 +9,8 @@
     "notes": "Your Yuque data are not persisted by Scoop and still storaged in '%APPDATA%\\yuque-desktop'.",
     "architecture": {
         "64bit": {
-            "url": "https://app.nlark.com/yuque-desktop/3.4.0.1204/BJ8f0d81d8b17a4d1f83208b417e1113e1/Yuque-3.4.0.1204.exe#/dl.7z",
-            "hash": "a69cb433b40b8f69c65fea3082201a204231b7923ee5738dcc39c8d849243979",
+            "url": "https://app.nlark.com/yuque-desktop/3.4.3.1210/BJ1ca406c642bc4670b6779a2e868c9d55/Yuque-3.4.3.1210.exe#/dl.7z",
+            "hash": "164f0387cf67d0fbfac14ac40c72e90f305ce8d141ad0e30cdb1c41ac13863a2",
             "installer": {
                 "script": [
                     "Expand-7zipArchive \"$dir\\`$PLUGINSDIR/app-64.7z\" \"$dir\" -Removal",

@@ -1,13 +1,13 @@
 {
-    "version": "0.55.1",
+    "version": "0.58.1",
     "description": "frp 客户端.",
     "homepage": "https://github.com/fatedier/frp",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/fatedier/frp/releases/download/v0.55.1/frp_0.55.1_windows_amd64.zip",
-            "hash": "eeb4247038f58d6b89bd5608782489eeaa7bcfb83d61b5475284ab612978b328",
-            "extract_dir": "frp_0.55.1_windows_amd64"
+            "url": "https://github.com/fatedier/frp/releases/download/v0.58.1/frp_0.58.1_windows_amd64.zip",
+            "hash": "7aa26c8c082c2fc7960b422811c1bbcbfae219b2a108d6604a645e8dc7476337",
+            "extract_dir": "frp_0.58.1_windows_amd64"
         }
     },
     "bin": "frpc.exe",

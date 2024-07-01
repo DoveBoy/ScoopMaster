@@ -1,16 +1,16 @@
 {
-    "version": "0.3.5",
+    "version": "0.4.2",
     "description": "Build Caddy with plugins",
     "homepage": "https://github.com/caddyserver/xcaddy",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.5/xcaddy_0.3.5_windows_amd64.zip",
-            "hash": "2531d4bba0ee51d7d78be29371d36bac56412e39144b92e781e253f265a3883c"
+            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.4.2/xcaddy_0.4.2_windows_amd64.zip",
+            "hash": "9e713cf3d965512f1440473b99c177a0d19789e20601628462747a2d6bc71d27"
         },
         "arm64": {
-            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.3.5/xcaddy_0.3.5_windows_arm64.zip",
-            "hash": "3e68b0f65ccaef1c552597dd614f481ead06070bfce3be8019cf20e9f22c4cd4"
+            "url": "https://github.com/caddyserver/xcaddy/releases/download/v0.4.2/xcaddy_0.4.2_windows_arm64.zip",
+            "hash": "4fc3c0d6f4d23fe3905f8d08da2f11cb4bfc8c5925e041bd122aea7dbf75b902"
         }
     },
     "bin": "xcaddy.exe",

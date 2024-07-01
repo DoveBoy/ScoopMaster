@@ -1,5 +1,5 @@
 {
-    "version": "0.23.1",
+    "version": "0.25.0",
     "description": "Least recently used (LRU) eviction of Docker images.",
     "homepage": "https://github.com/stepchowfun/docuum",
     "license": {
@@ -8,12 +8,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stepchowfun/docuum/releases/download/v0.23.1/docuum-x86_64-pc-windows-msvc.exe",
-            "hash": "3b47474ccc3cdeb476780c750a030e1c7acbe2495a03fbc498109188d97afb0b"
+            "url": "https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-x86_64-pc-windows-msvc.exe",
+            "hash": "8c5eb33d540a2f19ea340330273d8b0027d66964287e43bce26f7f133c3fe901"
         },
         "arm64": {
-            "url": "https://github.com/stepchowfun/docuum/releases/download/v0.23.1/docuum-aarch64-pc-windows-msvc.exe",
-            "hash": "0fbb59037ea642854553c33e03e3319fc95655ec82712afe3de4a0fe7479f340"
+            "url": "https://github.com/stepchowfun/docuum/releases/download/v0.25.0/docuum-aarch64-pc-windows-msvc.exe",
+            "hash": "cdded7675f5398ab41fcb9f3ee45bebd149ccbaf49ec9c96c74b9f02684c4ba3"
         }
     },
     "bin": "docuum.exe",

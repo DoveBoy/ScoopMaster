@@ -1,19 +1,19 @@
 {
     "$schema": "https://github.com/ScoopInstaller/Scoop/raw/master/schema.json",
-    "version": "18.1.1-20240308",
+    "version": "18.1.8-20240619",
     "description": "An LLVM/Clang/LLD based mingw-w64 toolchain",
     "homepage": "https://github.com/mstorsjo/llvm-mingw",
     "license": "ISC",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240308/llvm-mingw-20240308-ucrt-x86_64.zip",
-            "hash": "17f6ba23c75c4f0ec0d6f495fde22c8ea4d6e77baefbb5df0e377bc21f9d1ffa",
-            "extract_dir": "llvm-mingw-20240308-ucrt-x86_64"
+            "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240619/llvm-mingw-20240619-ucrt-x86_64.zip",
+            "hash": "810703594a7e3eea03385b5329c7ea3bd65f5e496b44cf1b68c17ff436d265e7",
+            "extract_dir": "llvm-mingw-20240619-ucrt-x86_64"
         },
         "32bit": {
-            "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240308/llvm-mingw-20240308-ucrt-i686.zip",
-            "hash": "5afcf74aa43f3d9a3e58b0749648a93f2867a88f1ae4f84e6f48dcddd929785e",
-            "extract_dir": "llvm-mingw-20240308-ucrt-i686"
+            "url": "https://github.com/mstorsjo/llvm-mingw/releases/download/20240619/llvm-mingw-20240619-ucrt-i686.zip",
+            "hash": "ffd95d054335963123a170f939afa8391f092f11ad2fcb8205bf7d452832ff64",
+            "extract_dir": "llvm-mingw-20240619-ucrt-i686"
         }
     },
     "env_add_path": [

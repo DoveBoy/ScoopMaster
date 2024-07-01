@@ -1,5 +1,5 @@
 {
-    "version": "3.0.8",
+    "version": "3.0.10",
     "homepage": "https://www.seafile.com",
     "description": "Exposes Seafile servers as Windows network drives.",
     "shortcuts": [
@@ -12,8 +12,8 @@
         "url": "https://www.seafile.com/en/download/",
         "regex": "(?<url>https:\\/\\/[^\"]*seadrive-(?<version>\\d+\\.\\d+\\.\\d+)-en\\.msi)"
     },
-    "url": "https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seadrive-3.0.8-en.msi",
-    "hash": "89ed11c3dd70918240c5c317f46b68e1ed3dead652a0e7d50075784860f83209",
+    "url": "https://s3.eu-central-1.amazonaws.com/download.seadrive.org/seadrive-3.0.10-en.msi",
+    "hash": "abeafe131142cc5a76938679e30a26d0664bbbf47298af7ac9a531aeca01260f",
     "autoupdate": {
         "url": "$matchUrl"
     },

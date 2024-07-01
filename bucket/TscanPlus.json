@@ -1,0 +1,29 @@
+{
+    "version": "2.1",
+    "description": "综合性网络安全检测和运维工具,快速进行资产发现、识别、检测,发现存在的薄弱点和攻击面.(Scoop bucket for Cybersecurity by s0nd9r)",
+    "homepage": "https://github.com/TideSec/TscanPlus",
+    "license": "Unknown",
+    "notes": "Scoop bucket for Cybersecurity by s0nd9r(https://github.com/s0nd9r/scoop-security).",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.1/TscanPlus_Win_Amd64_v2.1.zip",
+            "hash": "d74d075bdfa67b372f7d8f8cde6429f5ec8ead54706d668f6500cf57a5b4c8db"
+        },
+        "arm64": {
+            "url": "https://github.com/TideSec/TscanPlus/releases/download/v2.1/TscanPlus_Win_Arm64_v2.1.zip",
+            "hash": "be782d7f9838ef7f3b969910cd39e4408d20dde50ce14e07d8e6975b498d3ec1"
+        }
+    },
+    "bin": "TscanPlus.exe",
+    "checkver": "github",
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/TideSec/TscanPlus/releases/download/v$version/TscanPlus_Win_Amd64_v$version.zip"
+            },
+            "arm64": {
+                "url": "https://github.com/TideSec/TscanPlus/releases/download/v$version/TscanPlus_Win_Arm64_v$version.zip"
+            }
+        }
+    }
+}

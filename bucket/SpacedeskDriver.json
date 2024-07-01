@@ -1,15 +1,15 @@
 {
     "homepage": "https://spacedesk.net/",
     "description": "Multi Monitor App",
-    "version": "2115",
+    "version": "2120",
     "architecture": {
         "64bit": {
-            "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_64_v2115.msi#/setup.msi_",
-            "hash": "7aa81b2da9ece4732cb395b38930e158c4206e4cfb0500f44ac13593ab576147"
+            "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_64_v2120.msi#/setup.msi_",
+            "hash": "cc31223512c2c1ac0277b1b752ebc438d9ac978cf03007dd327a46784d59a6bd"
         },
         "32bit": {
-            "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_32_v2115.msi#/setup.msi_",
-            "hash": "f8f5cbb537c95127a71ebbd23da53aaf3327d0e296d85c2ef6c0a7cd8e8c9863"
+            "url": "https://spacedesk.net/downloads/spacedesk_driver_Win_10_32_v2120.msi#/setup.msi_",
+            "hash": "98a8cbad7d9521fc0a475242294ded4533c61b272b80232a1922e357b79dec4e"
         }
     },
     "checkver": {

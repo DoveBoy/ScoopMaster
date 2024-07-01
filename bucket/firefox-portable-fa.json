@@ -1,16 +1,16 @@
 {
-    "version": "123.0.1",
+    "version": "127.0.2",
     "description": "Popular open source web browser.",
     "homepage": "https://www.mozilla.org/firefox/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/123.0.1/win64/fa-IR/Firefox%20Setup%20123.0.1.exe#/dl.7z",
-            "hash": "sha512:fdfc7685d6a37dcaef97ec8090aa4b63d6025aec951fc60846c344b4495b35ce47c9191870f3bcb4ba56fee5eadcb234752db4aae19d130a87f49ac913f78684"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/127.0.2/win64/fa-IR/Firefox%20Setup%20127.0.2.exe#/dl.7z",
+            "hash": "sha512:67eaba8cc2e2bc2c363848f74dad66b4404b1310604c8680ccb3f16a158e6a98cc41a28b7946d737160858a4636d00a6890192456f88b69bd8aebffee9afe1b7"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/123.0.1/win32/fa-IR/Firefox%20Setup%20123.0.1.exe#/dl.7z",
-            "hash": "sha512:c99130be2edb97a31360f23404e8f6608b3635aa74ade71975de6808633963e3da8025cfdd4a9911c0413abe24f12e49d569d1f4203736dd12939e217b5c7915"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/127.0.2/win32/fa-IR/Firefox%20Setup%20127.0.2.exe#/dl.7z",
+            "hash": "sha512:2e2da06114d810767da997c65f8bb84e924fbdde2e4eefd0c1b37e926db7b1c4ce9f31946ad39572aa0e021481e7f99b7e8646fdd6c7d91f8d72216ee905db35"
         }
     },
     "extract_dir": "core",

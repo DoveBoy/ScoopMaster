@@ -1,16 +1,16 @@
 {
-    "version": "115.8.0",
+    "version": "115.12.0",
     "description": "Extended Support Release of Firefox: the popular open source web browser.",
     "homepage": "https://www.mozilla.org/en-US/firefox/organizations/",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/win64/en-US/Firefox%20Setup%20115.8.0esr.exe#/dl.7z",
-            "hash": "sha512:eaa49449da1fdf61d8d3c4e7571c6bb4d710ad30f921390ff8fbaf96eb8811d42fa894262ba561c0c169b03cdca04b7ef58a182ee8f1f39594e9f31b06394b87"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/115.12.0esr/win64/en-US/Firefox%20Setup%20115.12.0esr.exe#/dl.7z",
+            "hash": "sha512:118c780c4aaab7ad478920a788e69b79aa8df7f7216e9b990ebf81893f30178d96eb92eaf3e30d5bb921fa3e8ef6ed345aa64deebecf8b2dd9aa9e1b98b37317"
         },
         "32bit": {
-            "url": "https://archive.mozilla.org/pub/firefox/releases/115.8.0esr/win32/en-US/Firefox%20Setup%20115.8.0esr.exe#/dl.7z",
-            "hash": "sha512:42f4c064cb11d24e5b00a5f10c950f12b6559cfc30d8c64e93d206b40da199a873c6e2aad71011d9c6df0e5a33abffd98dc12bb6293bcd5c7639b1946da31ccb"
+            "url": "https://archive.mozilla.org/pub/firefox/releases/115.12.0esr/win32/en-US/Firefox%20Setup%20115.12.0esr.exe#/dl.7z",
+            "hash": "sha512:6e323e22546daf137207abaf1b1c4ed0fce017ce364d2ba73b2b122db912c9cfc6f5009ed25badac8896697453f428db49cd4afb484d9f209e29e4104b87c1ba"
         }
     },
     "extract_dir": "core",

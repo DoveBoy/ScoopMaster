@@ -1,12 +1,12 @@
 {
-    "version": "7.72-5355",
+    "version": "8.04-5470",
     "description": "HWiNFO. Comprehensive Hardware Analysis, Monitoring and Reporting for Windows and DOS.",
     "homepage": "https://www.hwinfo.com/",
     "license": "Unknown",
     "changelog": "https://www.hwinfo.com/version-history/",
     "architecture": {
         "64bit": {
-            "url": "https://www.sac.sk/download/utildiag/hwi_772.zip",
+            "url": "https://www.sac.sk/download/utildiag/hwi_804.zip",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "bin": [
                 [
@@ -22,7 +22,7 @@
             ]
         },
         "32bit": {
-            "url": "https://www.sac.sk/download/utildiag/hwi_772.zip",
+            "url": "https://www.sac.sk/download/utildiag/hwi_804.zip",
             "hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
             "bin": [
                 [

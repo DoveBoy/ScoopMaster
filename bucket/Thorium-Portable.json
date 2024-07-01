@@ -1,11 +1,11 @@
 {
-    "version": "122.0.6261.132",
+    "version": "124.0.6367.218",
     "description": "Thorium. The fastest browser on Earth",
     "homepage": "https://thorium.rocks/",
     "license": "BSD-3-Clause",
     "changelog": "https://github.com/Alex313031/Thorium-Win/releases",
-    "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M122.0.6261.132/Thorium_AVX_122.0.6261.132.zip",
-    "hash": "8188d464dedd7288a813b19878e47e7943d9cb7689b61cf7bfcca4d8faa9f211",
+    "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M124.0.6367.218/Thorium_AVX_124.0.6367.218.zip",
+    "hash": "dd368bbb4d5106856788eeb1eb0a790624413b62d2939211053340c2917e225d",
     "persist": "USER_DATA",
     "bin": "bin\\thorium.exe",
     "shortcuts": [

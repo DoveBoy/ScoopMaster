@@ -1,26 +1,26 @@
 {
-    "version": "0.0.7",
+    "version": "0.0.9",
     "architecture": {
         "32bit": {
-            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.7/webtoon-dl_0.0.7_Windows_i386.zip",
+            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.9/webtoon-dl_0.0.9_Windows_i386.zip",
             "bin": [
                 "webtoon-dl.exe"
             ],
-            "hash": "0a2115df207bc6ba7681f766207f2010d9bc8e10250ab6ee9a42dba88002bcdf"
+            "hash": "afda502c4b73c51dabc8ff4169ade6fb31ba07347ab5b94c8e9f211575a19a9e"
         },
         "64bit": {
-            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.7/webtoon-dl_0.0.7_Windows_x86_64.zip",
+            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.9/webtoon-dl_0.0.9_Windows_x86_64.zip",
             "bin": [
                 "webtoon-dl.exe"
             ],
-            "hash": "fcbda9b253995bb6417e5c83c21cbca0c7af190b118767d40b636efde8292f93"
+            "hash": "815f45de55468d58bda9fb216701f46e8742f7de89959ee60328f574adb1bf74"
         },
         "arm64": {
-            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.7/webtoon-dl_0.0.7_Windows_arm64.zip",
+            "url": "https://github.com/robinovitch61/webtoon-dl/releases/download/v0.0.9/webtoon-dl_0.0.9_Windows_arm64.zip",
             "bin": [
                 "webtoon-dl.exe"
             ],
-            "hash": "62b51dccade398eb64ca5ce0bcddd3970aae3574a33eadac9262c31c2826772b"
+            "hash": "7671cf61726af800981b73b7c9ca6a79316a1b4fb9867803c50120866394a2ee"
         }
     },
     "homepage": "https://github.com/robinovitch61/webtoon-dl",

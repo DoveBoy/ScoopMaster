@@ -1,25 +1,28 @@
 {
-    "version": "1.1",
-    "description": "一个用于分析Jar包的GUI工具，可以用多种方式搜索你想要的信息，自动构建方法调用关系，支持分析Spring框架（A Java GUI Tool for Analyzing Jar）",
-    "homepage": "https://github.com/4ra1n/jar-analyzer",
-    "license": "Freeware",
-    "notes": "https://github.com/ViCrack/scoop-bucket/blob/master/bucket/jar-analyzer.json",
-    "url": "https://github.com/4ra1n/jar-analyzer/releases/download/1.1/jar-analyzer-1.1-system-jre.exe",
-    "hash": "fa86461b0d46e6b1cd0694c3251f05f7d9bdd65794ed567b71cf17ca119d7e1c",
+    "version": "2.18",
+    "description": "图形化 JAR 包分析工具",
+    "homepage": "https://github.com/jar-analyzer/jar-analyzer",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jar-analyzer/jar-analyzer/releases/download/2.18/jar-analyzer-2.18-windows-full.zip",
+            "extract_dir": "jar-analyzer-2.18-windows-full",
+            "hash": "93dcf7a07df6b8b93beea4d2d8fc721cb5c81b0be7ec18c3023de5d88fcc68e7"
+        }
+    },
     "shortcuts": [
         [
-            "jar-analyzer-1.1-system-jre.exe",
-            "Jar-analyzer-system-jre"
+            "start.exe",
+            "Jar Analyzer"
         ]
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/4ra1n/jar-analyzer/releases/download/$version/jar-analyzer-$version-system-jre.exe",
-        "shortcuts": [
-            [
-                "jar-analyzer-$version-system-jre.exe",
-                "Jar-analyzer-system-jre"
-            ]
-        ]
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jar-analyzer/jar-analyzer/releases/download/$version/jar-analyzer-$version-windows-full.zip",
+                "extract_dir": "jar-analyzer-$version-windows-full"
+            }
+        }
     }
 }

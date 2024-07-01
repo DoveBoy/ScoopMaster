@@ -1,5 +1,5 @@
 {
-    "version": "1.18.1",
+    "version": "1.18.5",
     "description": "A simple Python Pydantic model for Honkai: Star Rail parsed data from the Mihomo API.",
     "homepage": "https://wiki.metacubex.one/",
     "license": {
@@ -8,20 +8,20 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.1/mihomo-windows-amd64-v1.18.1.zip",
-            "hash": "757b0c0b516e895d64f309b41ce8a5cfe88e784831a1d933f0bf88eadab3caef"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.5/mihomo-windows-amd64-v1.18.5.zip",
+            "hash": "115576b75ee9ad509d3689deb0bc2f272c95c3621f55889dcf71c653232bb40a"
         },
         "32bit": {
-            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.1/mihomo-windows-386-v1.18.1.zip",
-            "hash": "664cb12a826dad6710e4b6c13c56d809888ec1d41e2e2ef208ac1e26574300e0"
-        },
-        "arm32": {
-            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.1/mihomo-windows-arm32v7-v1.18.1.zip",
-            "hash": "3639c15252f4cee32a2b4509089cc25cbca74f631c8c2687e6e5e9f6dc21702c"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.5/mihomo-windows-386-v1.18.5.zip",
+            "hash": "91b429fbd50e18b2fad48fed91ccdbac0a81eec3eaf52878cd2ab1ba40a9f211"
         },
         "arm64": {
-            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.1/mihomo-windows-arm64-v1.18.1.zip",
-            "hash": "386c979c6aacee0cf10c645c25d08c941fd7fbcfcc641d3e261e91952fa38c8a"
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.5/mihomo-windows-arm64-v1.18.5.zip",
+            "hash": "783c915b7c7dc29f52e43cd3fb344f38d96acbb1517c0c52653e8ac1d3bc5cc2"
+        },
+        "arm32": {
+            "url": "https://github.com/MetaCubeX/mihomo/releases/download/v1.18.5/mihomo-windows-armv7-v1.18.5.zip",
+            "hash": "82290079d7cd73d933000ac60edebab7436eabb466f6b0788769029ce5569cfa"
         }
     },
     "pre_install": "Get-ChildItem \"$dir\\mihomo*.exe\" | Rename-Item -NewName 'mihomo.exe'",
@@ -44,11 +44,11 @@
             "32bit": {
                 "url": "https://github.com/MetaCubeX/mihomo/releases/download/v$version/mihomo-windows-386-v$version.zip"
             },
-            "arm32": {
-                "url": "https://github.com/MetaCubeX/mihomo/releases/download/v$version/mihomo-windows-arm32v7-v$version.zip"
-            },
             "arm64": {
                 "url": "https://github.com/MetaCubeX/mihomo/releases/download/v$version/mihomo-windows-arm64-v$version.zip"
+            },
+            "arm32": {
+                "url": "https://github.com/MetaCubeX/mihomo/releases/download/v$version/mihomo-windows-armv7-v$version.zip"
             }
         }
     }

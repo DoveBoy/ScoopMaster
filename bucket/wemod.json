@@ -1,15 +1,15 @@
 {
-    "version": "8.15.1",
+    "version": "9.5.0",
     "description": "Thousands of free mods and trainers for your favorite single-player PC games — all in one place",
+    "homepage": "https://www.wemod.com",
     "license": {
         "identifier": "Freeware",
         "url": "https://www.wemod.com/terms"
     },
-    "homepage": "https://www.wemod.com",
     "architecture": {
         "64bit": {
-            "url": "https://storage-cdn.wemod.com/app/releases/stable/WeMod-8.15.1-full.nupkg",
-            "hash": "690ebc82b17e7db031c467b2354e072f1b5c3724c90052b38db26846330fd23a",
+            "url": "https://storage-cdn.wemod.com/app/releases/stable/WeMod-9.5.0-full.nupkg",
+            "hash": "707152ac2ed9c4acd31a1e25c6e89ab27b23bbb338330410bca2d6faac283947",
             "shortcuts": [
                 [
                     "WeMod.exe",
@@ -25,14 +25,14 @@
         "Remove-Item -Path \"$original_dir\\lib\" -Recurse -Force"
     ],
     "checkver": {
+        "regex": "(?<version>[\\d\\.]+)",
         "script": [
             "$resp = Invoke-WebRequest -Uri 'https://api.wemod.com/client/channels/stable/RELEASES'",
             "$body = $resp.Content -replace '^\\xEF\\xBB\\xBF', ''",
             "$download_url = $body -split '\\s' -match '^http(s?)://'",
             "$version = $download_url -split '-' -match '\\d(\\.\\d+)+'",
             "Write-Output $version"
-        ],
-        "regex": "(?<version>[\\d\\.]+)"
+        ]
     },
     "autoupdate": {
         "architecture": {

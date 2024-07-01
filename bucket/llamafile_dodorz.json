@@ -1,0 +1,42 @@
+{
+    "homepage": "https://llamafile.ai/",
+    "description": "Distribute and run LLMs with a single file.",
+    "license": "Apache-2.0",
+    "version": "0.8.7",
+    "url": "https://github.com/Mozilla-Ocho/llamafile/releases/download/0.8.7/llamafile-0.8.7.zip",
+    "hash": "a74793c000b32768610a5f8de9b09cef78afadb732d1b5a0f7b7c910819de53e",
+    "extract_dir": "llamafile-0.8.7",
+    "bin": [
+        [
+            "bin\\llamafile",
+            "llamafile"
+        ],
+        [
+            "bin\\llamafile-imatrix",
+            "llamafile-imatrix"
+        ],
+        [
+            "bin\\llamafile-quantize",
+            "llamafile-quantize"
+        ],
+        [
+            "bin\\llava-quantize",
+            "llava-quantize"
+        ],
+        [
+            "bin\\llamafile-perplexity",
+            "llamafile-perplexity"
+        ],
+        [
+            "bin\\zipalign",
+            "zipalign"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Mozilla-Ocho/llamafile"
+    },
+    "autoupdate": {
+        "url": "https://github.com/Mozilla-Ocho/llamafile/releases/download/$version/llamafile-$version.zip",
+        "extract_dir": "llamafile-$version"
+    }
+}

@@ -1,6 +1,6 @@
 {
     "##": "http://get-chrome.herokuapp.com/",
-    "version": "122.0.6261.129",
+    "version": "126.0.6478.127",
     "description": "Google Chrome. Fast, secure, and free web browser, built for the modern web.",
     "homepage": "https://www.google.com/chrome/",
     "notes": "https://tools.shuax.com/chrome/",
@@ -11,12 +11,12 @@
     "changelog": "https://chromereleases.googleblog.com/",
     "architecture": {
         "64bit": {
-            "url": "https://dl.google.com/release2/chrome/adno2uyj7yhsdmrqsizskbq3um2q_122.0.6261.129/122.0.6261.129_chrome_installer.exe#/dl.7z",
-            "hash": "c08e6552cf9d8b3388119ef4fde3a3bcabe346db83559ce1222a06586d1ca0a2"
+            "url": "https://dl.google.com/release2/chrome/lje4dnl5yxiu3hacl3zvtatwey_126.0.6478.127/126.0.6478.127_chrome_installer.exe#/dl.7z",
+            "hash": "4351edf5286c316babb4f50015cf482194884dbeea51551a392643790f2b696b"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/adwvuhbnuhvxcmnnsnpviropmi2q_122.0.6261.129/122.0.6261.129_chrome_installer.exe#/dl.7z",
-            "hash": "c1e619faa9c83bfe6ac00cd42095ad8f7554cd59d9b11f902483b0218137d711"
+            "url": "https://dl.google.com/release2/chrome/hlannckzzfju63p3z34onymzai_126.0.6478.127/126.0.6478.127_chrome_installer.exe#/dl.7z",
+            "hash": "338a8a612e288e8babc594bddf3208f8411b21c99dfbeda2695212fdc2d41953"
         }
     },
     "installer": {

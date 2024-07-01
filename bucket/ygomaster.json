@@ -1,8 +1,8 @@
 {
-    "version": "1.43",
+    "version": "1.47",
     "extract_dir": "YgoMaster",
-    "url": "https://github.com/pixeltris/YgoMaster/releases/download/v1.43/YgoMaster-v1.43.zip",
-    "hash": "bce3f489637f2ed5110935fecd6c14fc40417e719408bbd21cc1839d04f3d669",
+    "url": "https://github.com/pixeltris/YgoMaster/releases/download/v1.47/YgoMaster-v1.47.zip",
+    "hash": "3d2288a0c13047a0d975b4083922a320693a151c68c73987e1f3ec8c1a805d2a",
     "bin": "",
     "homepage": "https://github.com/pixeltris/YgoMaster",
     "license": "MIT",
@@ -28,5 +28,10 @@
         "    Remove-Item -Path $ygomaster_path -Force",
         "}"
     ],
-    "persist": ["Data/Settings.json", "Data/CustomDuel.json", "Data/Players", "Data/ClientData"]
+    "persist": [
+        "Data/Settings.json",
+        "Data/CustomDuel.json",
+        "Data/Players",
+        "Data/ClientData"
+    ]
 }

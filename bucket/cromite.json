@@ -1,13 +1,13 @@
 {
-    "version": "122.0.6261.128-cd81f3a4c72999ce8c5b86a1c3478118d457e7bf",
+    "version": "126.0.6478.127-f40a60d6ca738965161b25e5c8201382d929318a",
     "description": "Cromite is a Chromium fork based on Bromite with built-in support for ad blocking and an eye for privacy.",
     "homepage": "https://www.cromite.org/",
     "license": "GPL-3.0-only",
     "notes": "the path of user data is same as chromium",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/uazo/cromite/releases/download/v122.0.6261.128-cd81f3a4c72999ce8c5b86a1c3478118d457e7bf/chrome-win.zip",
-            "hash": "14f1c4abdb588d2432219a33a80340a796baa8eaf48a66d632d52cbc77d6e39c"
+            "url": "https://github.com/uazo/cromite/releases/download/v126.0.6478.127-f40a60d6ca738965161b25e5c8201382d929318a/chrome-win.zip",
+            "hash": "2d543eb2551c7e68fafa5d925c7edc9806ae0459fd423c7007aad2ece1875dc6"
         }
     },
     "shortcuts": [

@@ -1,0 +1,41 @@
+{
+    "version": "4.24.0",
+    "description": " Datovka je multiplatformní desktopová aplikace pro přístup k datovým schránkám a k trvalému uchovávání datových zpráv v lokální databázi. ",
+    "license": "GPL-3",
+    "homepage": "https://www.datovka.cz/",
+    "architecture": {
+        "64bit": {
+            "url": "https://secure.nic.cz/files/datove_schranky/4.24.0/datovka-portable-4.24.0-windows-x64.zip",
+            "hash": "85f690ba50bdf2e3b37952eff2118642af224749f84a154fe697d4149adf6f17"
+        },
+        "32bit": {
+            "url": "https://secure.nic.cz/files/datove_schranky/4.24.0/datovka-portable-4.24.0-windows-x86.zip",
+            "hash": "e77ee5974660b7e49fdc5406a372b9312e2b83e1156c295aa38a6e1d5d74c26f"
+        }
+    },
+    "extract_dir": "datovka-4.24.0-portable",
+    "shortcuts": [
+        [
+            "datovka-portable.exe",
+            "Datovka"
+        ]
+    ],
+    "persist": ".dsgui",
+    "checkver": {
+        "url": "https://www.datovka.cz/cs/pages/instalace.html",
+        "regex": "Instalační balíčky verze\\s(\\d+\\.\\d+\\.\\d+)"
+    },
+    "autoupdate": {
+        "extract_dir": "datovka-$version-portable",
+        "architecture": {
+            "64bit": {
+                "url": "https://secure.nic.cz/files/datove_schranky/$version/datovka-portable-$version-windows-x64.zip"
+            },
+            "32bit": {
+                "url": "https://secure.nic.cz/files/datove_schranky/$version/datovka-portable-$version-windows-x86.zip"
+            }
+        }
+    },
+    "post_install": "echo 'Disabling in-app updates'; Set-ItemProperty -Path \"HKCU:\\Software\\CZ.NIC\\Datovka\" -Name \"DisableVersionNotification\" -Value 1",
+    "post_uninstall": "Remove-ItemProperty -Path \"HKCU:\\Software\\CZ.NIC\\Datovka\" -Name \"DisableVersionNotification\""
+}

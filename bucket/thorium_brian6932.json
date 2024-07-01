@@ -1,0 +1,53 @@
+{
+    "$schema": "https://raw.githubusercontent.com/brian6932/Scoop/64bit-v2-v3-v4/schema.json",
+    "version": "124.0.6367.218",
+    "description": "Chromium fork named after radioactive element No. 90. Windows",
+    "homepage": "https://thorium.rocks/",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit-v3": {
+            "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M124.0.6367.218/Thorium_AVX2_124.0.6367.218.zip",
+            "hash": "549994a367b0aeb59903dc8613dbe05cf81868af4ceb6ddb3e41fde4855553be"
+        },
+        "64bit-v2": {
+            "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M124.0.6367.218/Thorium_AVX_124.0.6367.218.zip",
+            "hash": "dd368bbb4d5106856788eeb1eb0a790624413b62d2939211053340c2917e225d"
+        },
+        "64bit": {
+            "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M124.0.6367.218/Thorium_SSE3_124.0.6367.218.zip",
+            "hash": "060dd6709fea559c67d0217820ee1a47799c7e46374f64f70f7509cdcbf60768"
+        }
+    },
+    "bin": [
+        [
+            "THORIUM.BAT",
+            "thorium"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "THORIUM.BAT",
+            "Thorium",
+            "",
+            "BIN\\thorium.exe"
+        ]
+    ],
+    "checkver": {
+        "url": "https://api.github.com/repositories/424006400/releases/latest",
+        "jsonpath": "$.tag_name",
+        "regex": "\\AM([\\d.]+)\\Z"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit-v3": {
+                "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M$version/Thorium_AVX2_$version.zip"
+            },
+            "64bit-v2": {
+                "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M$version/Thorium_AVX_$version.zip"
+            },
+            "64bit": {
+                "url": "https://github.com/Alex313031/Thorium-Win/releases/download/M$version/Thorium_SSE3_$version.zip"
+            }
+        }
+    }
+}

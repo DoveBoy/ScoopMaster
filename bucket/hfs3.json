@@ -2,9 +2,9 @@
     "homepage": "https://github.com/rejetto/hfs",
     "description": "HFS is a free, one single executable file Http File Server software.",
     "license": "GPL-3.0",
-    "version": "0.51.3",
-    "url": "https://github.com/rejetto/hfs/releases/download/v0.51.3/hfs-windows.zip",
-    "hash": "db013e675e3e8302e58683c7efa8bdc79a94b2fa5fd2c279036592e2c9054721",
+    "version": "0.52.9",
+    "url": "https://github.com/rejetto/hfs/releases/download/v0.52.9/hfs-windows.zip",
+    "hash": "1c37fc1a896648b4dae91da397d0191b33056fbcfc06295c7bc10ed02cf57061",
     "pre_install": "if (!(Test-Path \"$persist_dir\\config.yaml\")) { New-Item \"$dir\\config.yaml\" | Out-Null }",
     "bin": [
         [

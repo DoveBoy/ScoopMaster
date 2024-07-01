@@ -1,10 +1,10 @@
 {
-    "version": "w2024.0315.1920",
+    "version": "w2024.0625.1901",
     "description": "Pathos is a dungeon adventure game with the soul of Nethack.",
     "homepage": "https://pathos.azurewebsites.net",
     "license": "CC-BY-NC-4.0",
     "url": "https://onedrive.live.com/download?cid=6A90ACBBC72A730C&resid=6A90ACBBC72A730C%2153593&authkey=ADWIzs7sC8oQw1g",
-    "hash": "92b0647908b14e1a76872fb9224228548e4b80a13b185ad4bfd5f1c0112930bd",
+    "hash": "ee871793264045e1b8b6a87959508d978ba6f5b263b0b4a71248186b30cffe1e",
     "innosetup": true,
     "shortcuts": [
         [

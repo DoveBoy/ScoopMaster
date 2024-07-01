@@ -1,21 +1,17 @@
 {
-    "version": "3.1.1",
+    "version": "3.4.1",
     "description": "A HTTP inspection tool with support for HTTP/2 and HTTP/3.",
     "homepage": "https://pororoca.io",
     "license": "Freeware",
-    "notes": [
-        "HTTP/3 (QUIC) support requires Windows Server 2022, Windows 11 or later.",
-        "But you can make a workaround to use HTTP/3 on Windows 10 by manually copying OpenSSL build of msquic.dll.",
-        "You can download it on https://github.com/microsoft/msquic/releases"
-    ],
+    "notes": "HTTP/3 (QUIC) support requires Windows Server 2022, Windows 11 or later.",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/alexandrehtrb/Pororoca/releases/download/3.1.1/Pororoca_3.1.1_win-x64_portable.zip",
-            "hash": "d3af0479b2b2aff6c49758370c0b89bf6f90231035e8b1adbf9ab8a0ad800538"
+            "url": "https://github.com/alexandrehtrb/Pororoca/releases/download/3.4.1/Pororoca_3.4.1_win-x64_portable.zip",
+            "hash": "ec6e44b125a8d72fcad5b83cee045c2fc1e4272312a013ffcc4bc3757f2128a5"
         },
         "32bit": {
-            "url": "https://github.com/alexandrehtrb/Pororoca/releases/download/3.1.1/Pororoca_3.1.1_win-x86_portable.zip",
-            "hash": "f5dfe81178a08fccf95f3bc784bdfa2707872a439f1826d5afe267bff2c4fe07"
+            "url": "https://github.com/alexandrehtrb/Pororoca/releases/download/3.4.1/Pororoca_3.4.1_win-x86_portable.zip",
+            "hash": "31d1cb7e9d9d3819cf6bfc8e7705393564f941b1b94379de8e98ba3e348c43ee"
         }
     },
     "bin": "Pororoca.exe",

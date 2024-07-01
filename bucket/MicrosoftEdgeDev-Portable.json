@@ -1,5 +1,5 @@
 {
-    "version": "124.0.2450.2",
+    "version": "128.0.2661.0",
     "description": "Microsoft Edge Dev. The chromium based Microsoft Edge browser (Dev Channel)",
     "homepage": "https://www.microsoftedgeinsider.com/en-us/welcome?channel=dev",
     "license": "Freeware",
@@ -7,21 +7,21 @@
     "architecture": {
         "64bit": {
             "url": [
-                "https://dorado-api.deno.dev/edge?arch=64&channel=dev&version=124.0.2450.2&dl#/dl.7z",
-                "https://raw.githubusercontent.com/ACooper81/SharedFiles/master/icons/msedgedev.ico"
+                "https://dorado-api.deno.dev/edge?arch=64&channel=dev&version=128.0.2661.0&dl#/dl.7z",
+                "https://github.com/ACooper81/SharedFiles/raw/master/Icons/msedgedev.ico"
             ],
             "hash": [
-                "1fb56329cdeaf222d1a264e3b6841cc604ebcf00e5edf57b5267af80acc5ef6d",
+                "b548a093d9cd58b8efef351ca7f8774e3dc18b36f12c09f70f0c0df2339a7f49",
                 "221ae96d9f961f615fcdd941000a83b55bb3d93435d13b3b51c1d2574f78c1f5"
             ]
         },
         "32bit": {
             "url": [
-                "https://dorado-api.deno.dev/edge?arch=86&channel=dev&version=124.0.2450.2&dl#/dl.7z",
-                "https://raw.githubusercontent.com/ACooper81/SharedFiles/master/icons/msedgedev.ico"
+                "https://dorado-api.deno.dev/edge?arch=86&channel=dev&version=128.0.2661.0&dl#/dl.7z",
+                "https://github.com/ACooper81/SharedFiles/raw/master/Icons/msedgedev.ico"
             ],
             "hash": [
-                "a5382c97d5ef932e3582de3e45384741e268d2266f1179b1208048b08e1baafd",
+                "bb996dfe3a8243eef049532573f12d9c6e5c1f7de70eb5618fc5ba2a087460c5",
                 "221ae96d9f961f615fcdd941000a83b55bb3d93435d13b3b51c1d2574f78c1f5"
             ]
         }

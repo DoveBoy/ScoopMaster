@@ -1,11 +1,11 @@
 {
-    "version": "0.27.6",
+    "version": "0.27.7",
     "description": "Revive unavailable songs for Netease Cloud Music (Refactored & Enhanced version) ",
     "homepage": "https://github.com/UnblockNeteaseMusic/server",
     "license": "LGPL-3.0-only",
-    "url": "https://github.com/UnblockNeteaseMusic/server/archive/refs/tags/v0.27.6.zip",
-    "hash": "a811cc88b40dc9d2ecb3cfee68c3d9ee05719d83759d4139df110ad9aec2742e",
-    "extract_dir": "server-0.27.6",
+    "url": "https://github.com/UnblockNeteaseMusic/server/archive/refs/tags/v0.27.7.zip",
+    "hash": "118237eac9b3d26a775aa4c371f7b487beeacb74f3e0e50750c8f42f0aab7db6",
+    "extract_dir": "server-0.27.7",
     "notes": "you need a JavaScript runtime to run it",
     "suggest": {
         "NodeJS": "nodejs-lts"

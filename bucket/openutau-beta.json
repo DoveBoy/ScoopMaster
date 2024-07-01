@@ -1,16 +1,16 @@
 {
-    "version": "0.1.397",
+    "version": "0.1.501",
     "description": "Open source singing synthesis platform",
     "homepage": "https://github.com/stakira/OpenUtau/",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/stakira/OpenUtau/releases/download/build%2F0.1.397/OpenUtau-win-x64.zip",
-            "hash": "f5464e4294a4a7183d917c7aa77829fa8a79ead5d273c0ad1c571d40dff9e69c"
+            "url": "https://github.com/stakira/OpenUtau/releases/download/build%2F0.1.501/OpenUtau-win-x64.zip",
+            "hash": "a261a416d54dcfa621e341d1e1a0b897d7b49adb3c284d35b81ce9e6a686e95c"
         },
         "32bit": {
-            "url": "https://github.com/stakira/OpenUtau/releases/download/build%2F0.1.397/OpenUtau-win-x86.zip",
-            "hash": "1f9c42e621f54add1d38d76f80dbf50a0a5446fb8c25eababb4ffdb278c928db"
+            "url": "https://github.com/stakira/OpenUtau/releases/download/build%2F0.1.501/OpenUtau-win-x86.zip",
+            "hash": "2c2a35dc8c8779595e40d3502e7eb88cf127ae2414af36e6ab2325425e0747cb"
         }
     },
     "bin": "OpenUtau.exe",

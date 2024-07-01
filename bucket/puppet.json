@@ -1,16 +1,16 @@
 {
-    "version": "7.29.1",
+    "version": "7.31.0",
     "description": "An open-core software configuration management tool.",
     "homepage": "https://puppetlabs.com",
     "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-7.29.1-x64.msi",
-            "hash": "55c06c52be819952c773e8b96e5d994f09632e64b6d915d88772ea55acb347a3"
+            "url": "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-7.31.0-x64.msi",
+            "hash": "f3b93079a828748f383554ca1169c9741510812ffc6c2f7c129bf1710271b7f9"
         },
         "32bit": {
-            "url": "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-7.29.1-x86.msi",
-            "hash": "e2c808eaa205cee9506d91dd4106cef7769efc901263287b0614bc67af2cefc2"
+            "url": "https://downloads.puppetlabs.com/windows/puppet/puppet-agent-7.31.0-x86.msi",
+            "hash": "f703be0d27c62431a5207a3ab7b6da1936207b38589b4cbc846cb6b9b098c07f"
         }
     },
     "bin": [

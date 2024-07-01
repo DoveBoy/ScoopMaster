@@ -1,13 +1,13 @@
 {
-    "version": "0.7.3.2210",
+    "version": "0.8.3.2255",
     "description": "MPC Video Renderer is a free and open-source video renderer for DirectShow. ",
     "homepage": "https://github.com/Aleksoid1978/VideoRenderer",
     "license": "GPL-3.0-or-later",
     "suggest": {
         "Media Player Classic - Home Cinema fork": "extras/mpc-hc-fork"
     },
-    "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/0.7.3/MpcVideoRenderer-0.7.3.2210.zip",
-    "hash": "8c337db66dd60af09644aea87a91627c8383db4e3fae607c67cb8f591a45ba16",
+    "url": "https://github.com/Aleksoid1978/VideoRenderer/releases/download/0.8.3/MpcVideoRenderer-0.8.3.2255.zip",
+    "hash": "a178dc4079fa93550f39992d18e24d1e725d3efaebee0432ed02fc9e5c86da9e",
     "architecture": {
         "64bit": {
             "installer": {

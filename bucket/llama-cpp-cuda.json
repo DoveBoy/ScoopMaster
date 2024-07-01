@@ -1,0 +1,40 @@
+{
+    "version": "3267",
+    "description": "LLM inference in C/C++",
+    "homepage": "https://github.com/ggerganov/llama.cpp",
+    "license": "MIT",
+    "suggest": {
+        "cuda": "main/cuda"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ggerganov/llama.cpp/releases/download/b3267/llama-b3267-bin-win-cuda-cu12.2.0-x64.zip",
+            "hash": "e27f16443f05e9a4abbdab9b90f8f7066f086a39c4bc592241c4d5c7bead07aa"
+        }
+    },
+    "bin": [
+        [
+            "llama-cli.exe",
+            "llama"
+        ],
+        [
+            "llama-server.exe",
+            "llama-server"
+        ]
+    ],
+    "installer": {
+        "script": "New-Item -Force -ItemType Directory -Path \"$dir\\models\" | Out-Null"
+    },
+    "persist": "models",
+    "checkver": {
+        "github": "https://github.com/ggerganov/llama.cpp",
+        "re": "/tag/b([\\d]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ggerganov/llama.cpp/releases/download/b$version/llama-b$version-bin-win-cuda-cu12.2.0-x64.zip"
+            }
+        }
+    }
+}

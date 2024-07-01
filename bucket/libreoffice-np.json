@@ -1,5 +1,5 @@
 {
-    "version": "24.2.2.1",
+    "version": "24.2.4.2",
     "description": "Powerful and free office suite, a successor to OpenOffice(.org).",
     "homepage": "https://libreoffice.org/",
     "license": "MPL-2.0",
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.2.1/win/x86_64/LibreOffice_24.2.2.1_Win_x86-64.msi#/setup.msi_",
-            "hash": "0d0867603a05715484bfddc4e742deb97a1abf68e624cc54fab71c4acc5975d9",
+            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.4.2/win/x86_64/LibreOffice_24.2.4.2_Win_x86-64.msi#/setup.msi_",
+            "hash": "23dde11f10fc4ec4fac592d50a2448331fa9bedc68ae4ee39ed63201032d0d6d",
             "pre_install": [
                 "foreach ($z in @('soffice', 'unopkg')) {",
                 "    [System.IO.File]::WriteAllLines(\"$dir\\$z.cmd\", \"@`\"%ProgramFiles%\\LibreOffice\\program\\$z.com`\"  %*\", [System.text.UTF8Encoding]($false))",
@@ -17,8 +17,8 @@
             ]
         },
         "32bit": {
-            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.2.1/win/x86/LibreOffice_24.2.2.1_Win_x86.msi#/setup.msi_",
-            "hash": "8654e27b86b08e0b13a9e783fe3be22f9643e5eea87f81227a6e8de2d715a79b",
+            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.4.2/win/x86/LibreOffice_24.2.4.2_Win_x86.msi#/setup.msi_",
+            "hash": "fbcb2b4b4cd12a357a9d47f7ae9f52ba2e738405c727d5bcfdc5fe6dbe515c55",
             "pre_install": [
                 "foreach ($z in @('soffice', 'unopkg')) {",
                 "    [System.IO.File]::WriteAllLines(\"$dir\\$z.cmd\", \"@`\"%ProgramFiles(x86)%\\LibreOffice\\program\\$z.com`\"  %*\", [System.text.UTF8Encoding]($false))",
@@ -26,8 +26,8 @@
             ]
         },
         "arm64": {
-            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.2.1/win/aarch64/LibreOffice_24.2.2.1_Win_aarch64.msi#/setup.msi_",
-            "hash": "3f9cb3e8ac67b51d7218d54b19ef381d325f7b3ceed4883873ca1e33d47c3dcf",
+            "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/24.2.4.2/win/aarch64/LibreOffice_24.2.4.2_Win_aarch64.msi#/setup.msi_",
+            "hash": "017f85678ea8731020a3c2189b712c9c9d375fe032564ab744d5c650015c3ece",
             "pre_install": [
                 "foreach ($z in @('soffice', 'unopkg')) {",
                 "    [System.IO.File]::WriteAllLines(\"$dir\\$z.cmd\", \"@`\"%ProgramFiles%\\LibreOffice\\program\\$z.com`\"  %*\", [System.text.UTF8Encoding]($false))",

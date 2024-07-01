@@ -1,15 +1,18 @@
 {
-    "version": "dd2e4fb337ba00be2ddeaeb60db42754cf652fe2",
-    "bin": "winutil.ps1",
+    "version": "2024.06.05",
     "license": "MIT license",
-    "homepage": "https://github.com/ChrisTitusTech/winutil/blob/main/winutil.ps1",
-    "url": "https://github.com/ChrisTitusTech/winutil/raw/main/winutil.ps1",
-    "hash": "709834b0e003b6bb546cf16e9f498a23e90a128b9e471c030ee725d0edaaf870",
-    "checkver": {
-        "url": "https://api.github.com/repos/ChrisTitusTech/winutil/commits/main",
-        "regex": "\"sha\"\\s*:\\s*\"([^\"]+)\""
-    },
+    "homepage": "https://github.com/ChrisTitusTech/winutil/",
+    "url": "https://github.com/ChrisTitusTech/winutil/releases/download/v2024.06.05/winutil.ps1",
+    "hash": "13b545e8eb5a9e9b9de8bc4ed26b0d13ec05a5d922ae465c420c972d3f874267",
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ChrisTitusTech/winutil/raw/main/winutil.ps1"
-    }
+        "url": "https://github.com/ChrisTitusTech/winutil/releases/download/v$version/winutil.ps1"
+    },
+    "bin": "winutil.ps1",
+    "shortcuts": [
+        [
+            "winutil.ps1",
+            "winutil"
+        ]
+    ]
 }

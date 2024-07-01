@@ -1,5 +1,5 @@
 {
-    "version": "9.0.100-preview.1.24101.2",
+    "version": "9.0.100-preview.5.24307.3",
     "description": ".NET is a free, cross-platform, open source developer platform for building many different types of applications.",
     "homepage": "https://www.microsoft.com/net/",
     "license": "MIT",
@@ -8,22 +8,22 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.1.24101.2/dotnet-sdk-9.0.100-preview.1.24101.2-win-x64.zip",
-            "hash": "sha512:a993f0a23dee43f43e51509094f385379183ae916ee04f891927bc2398fd3645bfd866d0960c9d0ccf11f7878856dd7317298a6e5ec6a17dd7f32fb3890855a9"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.5.24307.3/dotnet-sdk-9.0.100-preview.5.24307.3-win-x64.zip",
+            "hash": "sha512:297797f709933f435021be0068bdf9e7051e493d60212c29a9746cb5e6672ee8f2f6a2b2c214f1d4753e87e449faf712f60edc7c4eb32d34e555dee07c8a04a2"
         },
         "arm64": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.1.24101.2/dotnet-sdk-9.0.100-preview.1.24101.2-win-arm64.zip",
-            "hash": "sha512:38bc46731201d5796d7a7ee30446fc35f2c225a75c978b896e7b6b09c7d537b22f991acbd413f6352df39cb8e69d94634b085968256377d83843527e55268d0d"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.5.24307.3/dotnet-sdk-9.0.100-preview.5.24307.3-win-arm64.zip",
+            "hash": "sha512:137ae59e968091bca5316452d4345830b5743578a65167d493d3b12242f54d6cf40181471236060803a3e29e51bed254b86dc436582bece8915666dd0193cc0a"
         },
         "32bit": {
-            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.1.24101.2/dotnet-sdk-9.0.100-preview.1.24101.2-win-x86.zip",
-            "hash": "sha512:1ea49121eebc8ad47dae4148bdda7ee9ca17f65f49af9a0ce39d42dfa3916ac4d8430d7d0c0c7f466f15fc0fdd844b891635e743ca4782571cdde76828f7d236"
+            "url": "https://dotnetcli.blob.core.windows.net/dotnet/Sdk/9.0.100-preview.5.24307.3/dotnet-sdk-9.0.100-preview.5.24307.3-win-x86.zip",
+            "hash": "sha512:8d167c0926d6d3aaa7739c7417039b9be27aefa4b7f52fef3c6503173d3580dbda6e688bd68716e07441aa072d9bc94faaa34651c2ff0b57a06fec65a8a81260"
         }
     },
     "bin": "dotnet.exe",
     "env_add_path": [
         ".",
-        "\\sdk\\9.0.100-preview.1.24101.2"
+        "\\sdk\\9.0.100-preview.5.24307.3"
     ],
     "env_set": {
         "DOTNET_ROOT": "$dir",
@@ -34,7 +34,8 @@
     },
     "checkver": {
         "url": "https://dotnetcli.blob.core.windows.net/dotnet/release-metadata/releases-index.json",
-        "jsonpath": "$.releases-index[?(@.release-type == 'sts' && @.support-phase != 'eol')].latest-sdk"
+        "jsonpath": "$.releases-index[?(@.release-type == 'sts' && @.support-phase != 'eol')].latest-sdk",
+        "regex": "^([\\d\\.]+(-preview[\\d\\.]+))?\\\\?n?.*"
     },
     "autoupdate": {
         "architecture": {

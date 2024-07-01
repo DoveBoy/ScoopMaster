@@ -1,22 +1,23 @@
 {
-    "homepage": "https://go.tacodewolff.nl/minify",
+    "version": "2.20.34",
     "description": "Go minifiers for web formats",
+    "homepage": "https://github.com/tdewolff/minify",
     "license": "MIT",
-    "version": "2.20.19",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/tdewolff/minify/releases/download/v2.20.19/minify_windows_amd64.zip",
-            "hash": "8f09f613d8159b015f9ed43c7248f1d99ff148f48630d13b7944e9d90f955712"
+            "url": "https://github.com/tdewolff/minify/releases/download/v2.20.34/minify_windows_amd64.zip",
+            "hash": "53b4c61af1d4f9e5952f19013015fb497f0bc3520b0d6d5b61d10672e89f1f89"
         }
     },
     "bin": "minify.exe",
-    "checkver": {
-        "github": "https://github.com/tdewolff/minify"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/tdewolff/minify/releases/download/v$version/minify_windows_amd64.zip"
+                "url": "https://github.com/tdewolff/minify/releases/download/v$version/minify_windows_amd64.zip",
+                "hash": {
+                    "url": "$baseurl/checksums.txt"
+                }
             }
         }
     }

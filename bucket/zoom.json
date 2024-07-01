@@ -1,25 +1,26 @@
 {
-    "version": "5.17.11.34827",
+    "version": "6.1.1.41705",
     "description": "Video and audio conferencing, chat, and webinars",
     "homepage": "https://zoom.us",
     "license": {
         "identifier": "Proprietary",
         "url": "https://zoom.us/terms"
     },
+    "depends": "vcredist2019",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.zoom.us/prod/5.17.11.34827/x64/ZoomInstallerFull.exe#/dl.7z",
-            "hash": "3e1581382dabb71e2dd221e353f68bc0d4e8b5fbb2ae81bee120a0222832272d",
+            "url": "https://cdn.zoom.us/prod/6.1.1.41705/x64/ZoomInstallerFull.exe#/dl.7z",
+            "hash": "9e6d48f672296a1e41a777d4c2a8fa222ac22c43c26d289478ad9bf24a3dafbc",
             "pre_install": "Expand-7zipArchive \"$dir\\ZoomFull_Sip.cab\" -Removal"
         },
         "32bit": {
-            "url": "https://cdn.zoom.us/prod/5.17.11.34827/ZoomInstaller.exe#/dl.7z",
-            "hash": "6d4521e9924be7f4581fee70a9c4bb65f8e193ff2d7a44e71b55c0873c3c98c0",
+            "url": "https://cdn.zoom.us/prod/6.1.1.41705/ZoomInstaller.exe#/dl.7z",
+            "hash": "8783c75749481b0cbe4a9e23426c0c9410d2ad4f7e43302b04e496ee47bcc2b9",
             "pre_install": "Expand-7zipArchive \"$dir\\Zoom.msi\" -Removal"
         },
         "arm64": {
-            "url": "https://cdn.zoom.us/prod/5.17.11.34827/arm64/ZoomInstallerFull.exe#/dl.7z",
-            "hash": "2c8074f1dd06e0eaa76354ecd80c4d99405f4b8327a23e7d959987bfcc13fe25",
+            "url": "https://cdn.zoom.us/prod/6.1.1.41705/arm64/ZoomInstallerFull.exe#/dl.7z",
+            "hash": "7d9d1cbaa70abeb71f1f43065f25a959d1308f1391f5e602a403d72fbd05317b",
             "pre_install": "Expand-7zipArchive \"$dir\\ZoomFull_Sip.cab\" -Removal"
         }
     },

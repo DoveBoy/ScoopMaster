@@ -1,12 +1,12 @@
 {
-    "version": "9.0.67.1",
+    "version": "9.0.71.3",
     "description": "LDPlayer. An Android emulator optimized for mobile gaming with lower resource consumption",
     "homepage": "https://www.ldplayer.net",
     "license": "Unknown",
     "changelog": "https://www.ldplayer.net/other/version-history-and-release-notes.html",
     "notes": "Administrator privileges are required to run repairer",
-    "url": "https://encdn.ldmnq.com/download/package/LDPlayer_9.0.67.1.exe#/dl.7z",
-    "hash": "654005858bea08d57f4b7117d1fa42c68c993ea965e2709020c7f29867f9f600",
+    "url": "https://encdn.ldmnq.com/download/package/LDPlayer_9.0.71.3.exe#/dl.7z",
+    "hash": "3fb177475b91bb00b2399e441844b1e461ce18b055cf47cc503dc2493e51808a",
     "shortcuts": [
         [
             "dnplayer.exe",

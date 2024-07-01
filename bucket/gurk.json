@@ -1,0 +1,17 @@
+{
+    "version": "0.5.0",
+    "description": "Signal Messenger client for terminal",
+    "homepage": "https://github.com/boxdot/gurk-rs",
+    "license": "AGPL-3.0 license",
+    "url": "https://github.com/boxdot/gurk-rs/archive/refs/tags/v0.5.0.zip",
+    "hash": "ad07e1b66fd6fe5769e84e22a2e2e53fc73916ef2f98942a6a57d6232ec25807",
+    "extract_dir": "gurk-rs-0.5.0",
+    "depends": "main/rustup",
+    "post_install": "cargo install --path $HOME\\scoop\\apps\\gurk\\current\\.",
+    "pre_uninstall": "cargo uninstall gurk",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/boxdot/gurk-rs/archive/refs/tags/v$version.zip",
+        "extract_dir": "gurk-rs-$version"
+    }
+}

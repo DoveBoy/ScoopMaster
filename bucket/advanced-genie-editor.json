@@ -1,5 +1,5 @@
 {
-    "version": "2023.5.21",
+    "version": "2024.5.9",
     "description": "A program for editing data of genie (DAT and DLL) files of Age of Empires II",
     "homepage": "https://aok.heavengames.com/blacksmith/showfile.php?fileid=11002",
     "license": "Freeware",
@@ -13,12 +13,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Tapsa/AGE/releases/download/2023.5.21/AdvancedGenieEditor20230521x64.zip",
-            "hash": "971887d7007e0db7e7be2ab84f9b3fab50b3aab594403bbf526bbfb83174fbb7"
+            "url": "https://github.com/Tapsa/AGE/releases/download/2024.5.9/AdvancedGenieEditor20240509x64.zip",
+            "hash": "ab99a6204e95f41ee586895872e977639f281644b54a0463841a499b58b76e5d"
         },
         "32bit": {
-            "url": "https://github.com/Tapsa/AGE/releases/download/2023.5.21/AdvancedGenieEditor20230521x86.zip",
-            "hash": "09071133fed317bb7f032f6ff7143e513dc242fb43c79b8aa2789794898549c3"
+            "url": "https://github.com/Tapsa/AGE/releases/download/2024.5.9/AdvancedGenieEditor20240509x86.zip",
+            "hash": "92d5d38a776160e441a591d6be0ff629b267096ff0910c5a1bc20b9d7a82759d"
         }
     },
     "extract_dir": "",
@@ -41,7 +41,7 @@
     "checkver": {
         "script": [
             "$regex = '/Tapsa/Age/releases/tag/(?<dotVersion>.[\\d.]+)'",
-            "$url = 'https://github.com/Tapsa/Age/releases/latest'",
+            "$url = 'https://github.com/Tapsa/Age/tags'",
             "$response = Invoke-WebRequest -Uri $url",
             "$response.Links | Where-Object href -Match $regex | Select-Object -First 1 -ExpandProperty href",
             "$dotVersion = $Matches['dotVersion']",

@@ -1,10 +1,10 @@
 {
-    "version": "1.2.2",
+    "version": "1.2.4",
     "description": "Unofficial CLI for speed.cloudflare.com",
     "homepage": "https://github.com/code-inflation/cfspeedtest",
     "license": "MIT",
-    "url": "https://github.com/code-inflation/cfspeedtest/releases/download/v1.2.2/cfspeedtest-x86_64-pc-windows-msvc.zip",
-    "hash": "5b69f33f46c33c5576c63ad9364ef9d001b8dc453aeaa09cc162d525cafa787f",
+    "url": "https://github.com/code-inflation/cfspeedtest/releases/download/v1.2.4/cfspeedtest-x86_64-pc-windows-msvc.zip",
+    "hash": "13863598596c2b243ce8fcc9f3e37a6090ebd459ccb6c682821b9a679adb8aa8",
     "bin": "cfspeedtest.exe",
     "checkver": "github",
     "autoupdate": {

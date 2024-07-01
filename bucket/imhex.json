@@ -1,12 +1,12 @@
 {
-    "version": "1.33.1",
+    "version": "1.35.3",
     "description": "Hex editor",
     "homepage": "https://github.com/WerWolv/ImHex",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/WerWolv/ImHex/releases/download/v1.33.1/imhex-1.33.1-Windows-Portable-x86_64.zip",
-            "hash": "13cd96d16e077e3e0259569f286bbcaaef454434e0c3f98f505e2c92a6c31ca9"
+            "url": "https://github.com/WerWolv/ImHex/releases/download/v1.35.3/imhex-1.35.3-Windows-Portable-x86_64.zip",
+            "hash": "6eda340b6367723f8c3955839f939b7a16960423eb440524e9f4307c3210bbe1"
         }
     },
     "shortcuts": [

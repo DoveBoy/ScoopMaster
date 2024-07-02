@@ -1,6 +1,6 @@
 {
     "version": "1.7.0",
-    "description": "Continuation of Clash Verge - A Clash Meta GUI based on Tauri",
+    "description": "Continuation of Clash Verge - A Clash Meta GUI based on Tauri.",
     "homepage": "https://github.com/clash-verge-rev/clash-verge-rev",
     "license": "GPL-3.0-only",
     "architecture": {
@@ -13,11 +13,6 @@
             "hash": "b425c6b5547cdc5366ae0e68427c28ab0f5003225da260d5202370141e3977bd"
         }
     },
-    "post_install": [
-        "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",
-        "  New-Item \"$persist_dir\\.config\\PORTABLE\" -ItemType File | Out-Null",
-        "}"
-    ],
     "shortcuts": [
         [
             "Clash Verge.exe",
@@ -25,6 +20,15 @@
         ]
     ],
     "persist": ".config",
+    "post_install": [
+        "if (!(Test-Path \"$persist_dir\\.config\\PORTABLE\")) {",
+        "    New-Item -Path \"$persist_dir\\.config\\PORTABLE\" -ItemType file | Out-Null",
+        "}"
+    ],
+    "pre_uninstall": [
+        "if (!(is_admin)) { error \"$app requires admin rights to $cmd\"; break }",
+        "Start-Process \"$dir\\resources\\uninstall-service.exe\" -Wait -Verb 'RunAs' -WindowStyle 'Hidden'; Start-Sleep -Seconds 3"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {

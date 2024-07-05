@@ -1,26 +1,31 @@
 {
-    "license": "Apache-2.0",
+    "version": "0.1.19",
+    "description": "A custom protocol, rule based network proxy software.",
     "homepage": "https://github.com/Watfaq/clash-rs",
-    "description": "custom protocol network proxy",
-    "version": "0.1.18",
+    "license": "Apache-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Watfaq/clash-rs/releases/download/v0.1.18/clash-x86_64-pc-windows-msvc-static-crt.exe",
-            "hash": "6c420b77c0ed0ebb7566dbe966f6b3a7eb3e71a5609c813ed3e0ff1dd9a060dc",
-            "bin": [
-                [
-                    "clash-rs.exe",
-                    "clashrs"
-                ]
-            ]
+            "url": "https://github.com/Watfaq/clash-rs/releases/download/v0.1.19/clash-x86_64-pc-windows-msvc.exe#/clash.exe",
+            "hash": "03e2902af014a8f446192f50ab75c53518f834f76c6bd5295851ce50f1797b2a"
+        },
+        "32bit": {
+            "url": "https://github.com/Watfaq/clash-rs/releases/download/v0.1.19/clash-i686-pc-windows-msvc.exe#/clash.exe",
+            "hash": "0c95b1e3fff9186ad480e16c3431de56ae891be867208baf24a5c95fced0ef8a"
         }
     },
-    "pre_install": "Get-ChildItem \"$dir\\clash*.exe\" | Rename-Item -NewName 'clash-rs.exe'",
+    "bin": "clash.exe",
+    "suggest": {
+        "wintun-libs": "lemon/wintun-libs"
+    },
+    "post_install": "if (installed 'wintun-libs' $global) {Copy-Item \"$(appdir wintun-libs $global)\\current\\wintun.dll\" \"$dir\\\" }",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Watfaq/clash-rs/releases/download/v$version/clash-x86_64-pc-windows-msvc-static-crt.exe"
+                "url": "https://github.com/Watfaq/clash-rs/releases/download/v$version/clash-x86_64-pc-windows-msvc.exe#/clash.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/Watfaq/clash-rs/releases/download/v$version/clash-i686-pc-windows-msvc.exe#/clash.exe"
             }
         }
     }

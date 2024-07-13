@@ -1,28 +1,28 @@
 {
+    "homepage": "https://github.com/ollama/ollama",
+    "description": "Get up and running with Llama 2, Mistral, Gemma, and other large language models.",
+    "license": "MIT License",
     "version": "0.2.2",
-    "description": "在本地启动和运行大型语言模型（带模型安装位置环境变量，需自行调整）",
-    "homepage": "https://ollama.com/",
-    "license": "MIT",
-    "url": "https://github.com/ollama/ollama/releases/download/v0.2.2/OllamaSetup.exe",
-    "hash": "7d5c1feb009c977fc11a183229d19e0aa5024383ad2736be8bdfa1366ed40136",
-    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ollama/ollama/releases/download/v0.2.2/OllamaSetup.exe#/dl.exe",
+            "hash": "7d5c1feb009c977fc11a183229d19e0aa5024383ad2736be8bdfa1366ed40136"
+        }
+    },
     "bin": "ollama.exe",
     "shortcuts": [
         [
             "ollama app.exe",
-            "Ollama",
-            "",
-            "app.ico"
+            "ollama app"
         ]
     ],
-    "env_set": {
-        "OLLAMA_MODELS": "D:\\$env:UserName\\Play\\AI\\ollama\\models"
-    },
-    "checkver": {
-        "github": "https://github.com/ollama/ollama"
-    },
+    "innosetup": true,
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ollama/ollama/releases/download/v$version/OllamaSetup.exe"
-    },
-    "notes": "您应该至少有 8 GB 可用 RAM 来运行 7B 型号，16 GB 来运行 13B 型号，32 GB 来运行 33B 型号"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ollama/ollama/releases/download/v$version/OllamaSetup.exe#/dl.exe"
+            }
+        }
+    }
 }

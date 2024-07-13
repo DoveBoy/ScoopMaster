@@ -1,6 +1,6 @@
 {
-    "version": "20240713-g2cfa535",
-    "description": "A fast PlayStation 1 emulator for PC and Android",
+    "version": "20240713-g5da6c92",
+    "description": "Sony PlayStation emulator",
     "homepage": "https://github.com/stenzek/duckstation/",
     "license": {
         "identifier": "GPL-3.0-only",
@@ -12,7 +12,7 @@
         "Learn more at: https://www.duckstation.org/wiki/BIOS"
     ],
     "url": "https://github.com/stenzek/duckstation/releases/download/latest/duckstation-windows-x64-release.zip",
-    "hash": "069e59595e2eb81e2c6c39bb64ef23b199cc4ab52a57e15ca4518fcddba092c6",
+    "hash": "746ee6f4b6cee87ee7ea34553dd3a5f6da5681992a44fb3d1c8302ba89ab24aa",
     "installer": {
         "script": [
             "New-item \"$dir\\portable.txt\" -ItemType File | Out-Null",
@@ -21,13 +21,10 @@
             "}"
         ]
     },
-    "uninstaller": {
-        "script": "Copy-Item \"$dir\\settings.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
-    },
     "shortcuts": [
         [
             "duckstation-qt-x64-ReleaseLTCG.exe",
-            "Duckstation"
+            "Sony PlayStation [ps1][duckstation]"
         ]
     ],
     "persist": [
@@ -45,6 +42,9 @@
         "textures",
         "settings.ini"
     ],
+    "uninstaller": {
+        "script": "Copy-Item \"$dir\\settings.ini\" \"$persist_dir\" -ErrorAction SilentlyContinue -Force"
+    },
     "checkver": {
         "url": "https://github.com/stenzek/duckstation/releases/tag/latest",
         "regex": " datetime=\"(?<year>[0-9]{4})-(?<month>[0-9]{2})-(?<day>[0-9]{2})[\\s\\S]*?.*duckstation/commit/(?<commit>[0-9a-f]{7})",

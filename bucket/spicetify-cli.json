@@ -17,9 +17,6 @@
             "hash": "704034153dda3817af448c0e77ba95c7e2206e9f79a2d4b8fb8eea79aaa56bcf"
         }
     },
-    "env_set": {
-        "SPICETIFY_CONFIG": "$persist_dir"
-    },
     "bin": "spicetify.exe",
     "checkver": {
         "github": "https://github.com/khanhas/spicetify-cli"

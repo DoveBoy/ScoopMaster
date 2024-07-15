@@ -5,7 +5,7 @@
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://gh.ddlc.top/https://github.com/localsend/localsend/releases/download/v1.15.0/LocalSend-1.15.0-windows-x86-64.zip",
+            "url": "https://github.com/localsend/localsend/releases/download/v1.15.0/LocalSend-1.15.0-windows-x86-64.zip",
             "hash": "eb83d500ae9639814301362cc1d3905e3b18fe3f9a6a3b258a94bf6914e3a327"
         }
     },
@@ -21,7 +21,7 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://gh.ddlc.top/https://github.com/localsend/localsend/releases/download/v$version/LocalSend-$version-windows-x86-64.zip"
+                "url": "https://github.com/localsend/localsend/releases/download/v$version/LocalSend-$version-windows-x86-64.zip"
             }
         }
     }

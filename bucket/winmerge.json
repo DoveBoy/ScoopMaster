@@ -1,22 +1,20 @@
 {
     "version": "2.16.42.1",
-    "description": "Differencing and merging tool, that compares both folders and files, presenting differences in a visual text format that is easy to understand and handle.",
+    "description": "Differencing and merging tool",
     "homepage": "https://winmerge.org",
     "license": "GPL-2.0-only",
-    "suggest": {
-        "vcredist2008": "extras/vcredist2008"
-    },
     "architecture": {
         "64bit": {
-            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.42.1/winmerge-2.16.42.1-x64-exe.zip",
-            "hash": "sha1:5a44b896089fc3750e2a8c844f0c6840ed1fb1e4"
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/winmerge-2.16.42.1-x64-exe.zip",
+            "hash": "4051c4ba9c87cba7b82a4f708e242dc608a9ec1889782f015e7b39b42758100b"
         },
-        "32bit": {
-            "url": "https://downloads.sourceforge.net/project/winmerge/stable/2.16.42.1/winmerge-2.16.42.1-exe.zip",
-            "hash": "sha1:7b773c9029d94d7b862c885edd220d386f9bad21"
+        "arm64": {
+            "url": "https://github.com/WinMerge/winmerge/releases/download/v2.16.42.1/winmerge-2.16.42.1-ARM64-exe.zip",
+            "hash": "3414464d2cbbb0a458d54076d2d36c1abedee531b60139e293645fc7b5dab3f6"
         }
     },
     "extract_dir": "WinMerge",
+    "pre_install": "'Languages', 'COPYING', 'ReadMe.txt' | ForEach-Object { Remove-Item $dir\\$_ -Recurse }",
     "bin": "WinMergeU.exe",
     "shortcuts": [
         [
@@ -28,11 +26,15 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://downloads.sourceforge.net/project/winmerge/stable/$version/winmerge-$version-x64-exe.zip"
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-x64-exe.zip"
             },
-            "32bit": {
-                "url": "https://downloads.sourceforge.net/project/winmerge/stable/$version/winmerge-$version-exe.zip"
+            "arm64": {
+                "url": "https://github.com/WinMerge/winmerge/releases/download/v$version/winmerge-$version-ARM64-exe.zip"
             }
+        },
+        "hash": {
+            "url": "https://winmerge.org/downloads",
+            "regex": "(?sm)<dt>$basename</dt>.*?<dd><code>$sha256</code></dd>"
         }
     }
 }

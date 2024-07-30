@@ -1,27 +1,23 @@
 {
     "version": "4.31.0",
-    "description": "A useful command line interface for connecting various MQTT clients supporting MQTT 5.0 and 3.1.1.",
-    "homepage": "https://github.com/hivemq/mqtt-cli",
+    "description": "MQTT CLI is a useful command line interface for connecting various MQTT clients supporting MQTT 5.0 and 3.1.1 ",
+    "homepage": "https://hivemq.github.io/mqtt-cli/",
     "license": "Apache-2.0",
-    "url": "https://github.com/hivemq/mqtt-cli/releases/download/v4.31.0/mqtt-cli-4.31.0.jar#/mqtt-cli.jar",
-    "hash": "0aa01c1f50c8ffb9f9e830d8281960f360640d3da5d547094b1c09f2c4cb0e35",
-    "bin": [
-        "mqtt-cli.jar",
-        [
-            "mqtt-cli.jar",
-            "mqtt"
-        ]
-    ],
-    "suggest": {
-        "JDK": [
-            "java/oraclejdk",
-            "java/openjdk",
-            "java/adoptopenjdk-hotspot",
-            "java/zulu"
-        ]
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/hivemq/mqtt-cli/releases/download/v4.31.0/mqtt-cli-4.31.0-win.zip",
+            "hash": "4845aa9fe34e2595c48f98cf4a727c6d99ace6fb80e3496039189c2739d3a8dc"
+        }
     },
-    "checkver": "github",
+    "bin": "mqtt-cli.exe",
+    "checkver": {
+        "github": "https://github.com/hivemq/mqtt-cli"
+    },
     "autoupdate": {
-        "url": "https://github.com/hivemq/mqtt-cli/releases/download/v$version/mqtt-cli-$version.jar#/mqtt-cli.jar"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/hivemq/mqtt-cli/releases/download/v$version/mqtt-cli-$version-win.zip"
+            }
+        }
     }
 }

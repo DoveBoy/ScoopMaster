@@ -1,40 +1,52 @@
 {
-    "version": "5.16.6",
-    "description": "Galgame翻译工具, 支持剪贴板, OCR, HOOK, 支持30余种翻译工具, 支持TTS",
+    "version": "5.18.0-202407310130",
+    "description": "LunaTranslator is a Visual Novel translate tool, support clipboard / OCR/ HOOK, support 40+ translate engines.",
     "homepage": "https://github.com/HIllya51/LunaTranslator",
     "license": "GPL-3.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v5.16.6/LunaTranslator.zip",
-            "hash": "9e59df630a3748a843d8a9e0d70202f69ffd2b38d58a76037274fe49a1cc79ec",
-            "extract_dir": "LunaTranslator"
+            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v5.18.0/LunaTranslator.zip",
+            "extract_dir": "LunaTranslator",
+            "hash": "0d158c420b06ea742d125eb2d83014740c674e42e9fe1bd1e22c05f1f8b0b025"
         },
         "32bit": {
-            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v5.16.6/LunaTranslator_x86.zip",
-            "hash": "37ae6ac9980a037e267c6975adddfbcb903ff834e5b368d5ad878b6c79319420",
-            "extract_dir": "LunaTranslator_x86"
+            "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v5.18.0/LunaTranslator_x86.zip",
+            "extract_dir": "LunaTranslator_x86",
+            "hash": "6897137d4f88d470e677848b4bc94adeac9f0587b9a2cec19f3f0817075f0f48"
         }
     },
     "shortcuts": [
         [
             "LunaTranslator.exe",
             "LunaTranslator"
+        ],
+        [
+            "LunaTranslator_admin.exe",
+            "LunaTranslator (Admin)"
         ]
     ],
     "persist": [
         "userconfig",
-        "resources"
+        "translation_record",
+        "cache"
     ],
-    "checkver": "github",
+    "checkver": {
+        "script": [
+            "try { $detail = Invoke-WebRequest 'https://github.com/HIllya51/LunaTranslator/releases.atom' -MaximumRedirection 0 -ErrorAction Ignore } catch { $_.Exception.Response }",
+            "$atom = [xml]$detail.Content",
+            "$latest = $atom.feed.entry | Select-Object -First 1",
+            "$result =  $latest.id + '-' + ([DateTime]$latest.updated).ToUniversalTime().AddHours(8).ToString('yyyyMMddHHmm')",
+            "return $result"
+        ],
+        "regex": "v((?<main>[\\d.]+)-\\d+)"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/LunaTranslator.zip",
-                "extract_dir": "LunaTranslator"
+                "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$matchMain/LunaTranslator.zip"
             },
             "32bit": {
-                "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$version/LunaTranslator_x86.zip",
-                "extract_dir": "LunaTranslator_x86"
+                "url": "https://github.com/HIllya51/LunaTranslator/releases/download/v$matchMain/LunaTranslator_x86.zip"
             }
         }
     }

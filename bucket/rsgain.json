@@ -12,9 +12,7 @@
     },
     "bin": "rsgain.exe",
     "persist": "presets",
-    "checkver": {
-        "github": "https://github.com/complexlogic/rsgain"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

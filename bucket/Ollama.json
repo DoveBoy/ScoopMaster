@@ -1,28 +1,28 @@
 {
+    "homepage": "https://github.com/ollama/ollama",
+    "description": "Get up and running with Llama 2, Mistral, Gemma, and other large language models.",
+    "license": "MIT License",
     "version": "0.3.5",
-    "description": "Get up and running with large language models locally.",
-    "homepage": "https://ollama.com/",
-    "license": "MIT",
-    "url": "https://github.com/ollama/ollama/releases/download/v0.3.5/OllamaSetup.exe",
-    "hash": "7d60209df28761fadc38d48c05c71e508269eac775d76592dcbb25d7fbe8a216",
-    "innosetup": true,
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/ollama/ollama/releases/download/v0.3.5/OllamaSetup.exe#/dl.exe",
+            "hash": "7d60209df28761fadc38d48c05c71e508269eac775d76592dcbb25d7fbe8a216"
+        }
+    },
     "bin": "ollama.exe",
     "shortcuts": [
         [
             "ollama app.exe",
-            "Ollama",
-            "",
-            "app.ico"
+            "ollama app"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/ollama/ollama"
-    },
+    "innosetup": true,
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/ollama/ollama/releases/download/v$version/OllamaSetup.exe",
-        "hash": {
-            "url": "$baseurl/sha256sum.txt"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/ollama/ollama/releases/download/v$version/OllamaSetup.exe#/dl.exe"
+            }
         }
-    },
-    "notes": "You should have at least 8 GB of RAM available to run the 7B models, 16 GB to run the 13B models, and 32 GB to run the 33B models."
+    }
 }

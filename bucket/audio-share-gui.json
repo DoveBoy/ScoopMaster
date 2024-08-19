@@ -13,10 +13,8 @@
         }
     },
     "shortcuts": [
-        [
-            "AudioShareServer.exe",
-            "AudioShareServer"
-        ]
+        "AudioShareServer.exe",
+        "AudioShareServer"
     ],
     "checkver": {
         "url": "https://api.github.com/repos/mkckr0/audio-share/releases",

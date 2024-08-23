@@ -1,11 +1,11 @@
 {
-    "version": "13.9.7",
+    "version": "13.9.8",
     "description": "(Beta version) A complete replacement for Explorer, with far more functionality than any other file manager available today.",
     "notes": "If the resource manager replacement function is enabled, it must be disabled before uninstalling to avoid system problems after uninstalling.",
     "homepage": "https://www.gpsoft.com.au/",
     "license": "Shareware",
-    "url": "https://cdn.gpsoft.com.au/files/Opus13/Beta/DOpusInstall-13.9.7.Beta.exe",
-    "hash": "ea30676a0a6e150f0d5db6e26bd3a95d9f88ca19b0c1db7cd19e0f50d37ec39e",
+    "url": "https://cdn.gpsoft.com.au/files/Opus13/Beta/DOpusInstall-13.9.8.Beta.exe",
+    "hash": "14151d3b0be37880321c80194946a1abe72b0acad6168502603f1ec37061d54d",
     "innosetup": true,
     "bin": "dopusrt.exe",
     "shortcuts": [
@@ -16,15 +16,16 @@
     ],
     "pre_install": [
         "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name air) scripts/AirUtils.psm1)",
-        "RedirectDir \"$env:PROGRAMDATA\\GPSoftware\" \"$persist_dir\\ProgramData\\GPSoftware\"",
-        "RedirectDir \"$env:APPDATA\\GPSoftware\" \"$persist_dir\\AppData\\GPSoftware\"",
-        "RedirectDir \"$env:LOCALAPPDATA\\GPSoftware\" \"$persist_dir\\LocalAppData\\GPSoftware\"",
+        "RedirectDir \"$env:PROGRAMDATA\\GPSoftware\" \"$persist_dir\\PROGRAMDATA\\GPSoftware\"",
+        "RedirectDir \"$env:APPDATA\\GPSoftware\" \"$persist_dir\\APPDATA\\GPSoftware\"",
+        "RedirectDir \"$env:LOCALAPPDATA\\GPSoftware\" \"$persist_dir\\LOCALAPPDATA\\GPSoftware\"",
         "Remove-Module -Name AirUtils"
     ],
-    "post_install": [
+    "pre_uninstall": [
         "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name air) scripts/AirUtils.psm1)",
-        "RemoveDesktopShortcut 'Eagle'",
-        "RemoveStartMenuItem 'GPSoftware'",
+        "RemoveJunction \"$env:PROGRAMDATA\\GPSoftware\"",
+        "RemoveJunction \"$env:APPDATA\\GPSoftware\"",
+        "RemoveJunction \"$env:LOCALAPPDATA\\GPSoftware\"",
         "Remove-Module -Name AirUtils"
     ],
     "checkver": {

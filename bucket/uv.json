@@ -13,7 +13,10 @@
             "hash": "01ab40fb314e2a581023ecd727eccc153776cf97afbee5b921bd41110319642a"
         }
     },
-    "bin": "uv.exe",
+    "bin": [
+        "uv.exe",
+        "uvx.exe"
+    ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {

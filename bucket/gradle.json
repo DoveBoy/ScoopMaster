@@ -6,18 +6,53 @@
     "suggest": {
         "JDK": "java/openjdk"
     },
-    "url": "https://mirrors.cloud.tencent.com/gradle/gradle-8.10-all.zip",
+    "url": "https://services.gradle.org/distributions/gradle-8.10-all.zip",
     "hash": "682b4df7fe5accdca84a4d1ef6a3a6ab096b3efd5edf7de2bd8c758d95a93703",
     "extract_dir": "gradle-8.10",
     "post_install": [
-        "$current_env = env GRADLE_USER_HOME $global",
-        "If ($null -eq $current_env) {",
-        "    $path = \"$dir\\.gradle\"",
-        "    env GRADLE_USER_HOME $global $path",
-        "    $Env:GRADLE_USER_HOME = $path",
-        "    Write-Host \"Environment variable 'GRADLE_USER_HOME' set to '$path'\"",
+        "$gradle_init_content = @'",
+        "val customRepositoryUrls = arrayOf(",
+        "    \"https://repo.huaweicloud.com/repository/maven/\",",
+        "    \"https://maven.aliyun.com/repository/google/\",",
+        "    \"https://maven.aliyun.com/repository/public/\",",
+        "    \"https://maven.aliyun.com/repository/gradle-plugin/\"",
+        ")",
+        "",
+        "settingsEvaluated {",
+        "    pluginManagement {",
+        "        repositories {",
+        "            mavenLocal()",
+        "            customRepositoryUrls.forEach {",
+        "                maven {",
+        "                    url = uri(it)",
+        "                }",
+        "            }",
+        "            gradlePluginPortal()",
+        "            google()",
+        "            mavenCentral()",
+        "        }",
+        "    }",
+        "    dependencyResolutionManagement {",
+        "        repositories {",
+        "            mavenLocal()",
+        "            customRepositoryUrls.forEach {",
+        "                maven {",
+        "                    url = uri(it)",
+        "                }",
+        "            }",
+        "            google()",
+        "            mavenCentral()",
+        "        }",
+        "    }",
+        "}",
+        "'@ -replace \"`r?`n\", \"`r`n\"",
+        "if (-not (Test-Path \"$persist_dir\\.gradle\\init.gradle.kts\")) {",
+        "    Set-Content -Value $gradle_init_content -Path \"$persist_dir\\.gradle\\init.gradle.kts\"",
         "}"
     ],
+    "env_set": {
+        "GRADLE_USER_HOME": "$persist_dir\\.gradle"
+    },
     "persist": ".gradle",
     "bin": "bin\\gradle.bat",
     "checkver": {
@@ -25,9 +60,9 @@
         "regex": "The current Gradle release is version ([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://mirrors.cloud.tencent.com/gradle/gradle-$version-all.zip",
+        "url": "https://services.gradle.org/distributions/gradle-$version-all.zip",
         "hash": {
-            "url": "https://services.gradle.org/distributions/gradle-$version-all.zip.sha256"
+            "url": "$url.sha256"
         },
         "extract_dir": "gradle-$version"
     }

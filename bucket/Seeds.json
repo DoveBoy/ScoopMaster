@@ -21,7 +21,7 @@
     ],
     "checkver": {
         "url": "https://seedsnote.com/download/",
-        "regex": "Windows[\\w\\W]*?Seeds ([\\d.]+)"
+        "regex": "Version ([\\d.]+) \\d+"
     },
     "autoupdate": {
         "url": "https://static.seedsnote.com/client/Seeds+Setup+$version.exe"

@@ -13,6 +13,7 @@
             "hash": "84abc0c5d419f5c58629e7d9e7a4bad4bc338e859426baf19c752395091ed804"
         }
     },
+    "post_install": "git config --global credential.helper manager-core",
     "bin": [
         "cmd\\git.exe",
         "cmd\\gitk.exe",

@@ -1,5 +1,5 @@
 {
-    "version": "1.2.22",
+    "version": "1.2.23",
     "description": "Another Mihomo GUI.",
     "homepage": "https://mihomo.party/",
     "license": {
@@ -8,24 +8,24 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.22/mihomo-party-windows-1.2.22-x64-setup.exe#/dl.7z",
-            "hash": "7ce9b8d5028d96c125226c16a5c360010431e7ab86e69ee05ff7e7a1b4d639c4",
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.23/mihomo-party-windows-1.2.23-x64-setup.exe#/dl.7z",
+            "hash": "ee9221c95da34e74a42b598bcfcb349b9ccc9b2e6abbdc9b64ceaf425adb3046",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "32bit": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.22/mihomo-party-windows-1.2.22-ia32-setup.exe#/dl.7z",
-            "hash": "ff07eb31c8f69fff170fd1bb6cbcf66a5851585f491d45053bc5da81c2d40c99",
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.23/mihomo-party-windows-1.2.23-ia32-setup.exe#/dl.7z",
+            "hash": "c72cb4215c3bd066a77f017655674743a1a75f3319bc6b82f6511786044fe269",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"
             ]
         },
         "arm64": {
-            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.22/mihomo-party-windows-1.2.22-arm64-setup.exe#/dl.7z",
-            "hash": "cfaef75f3975f8b96b82efa2895833125c2946b19c67f8e54942ff7924a3d57c",
+            "url": "https://github.com/pompurin404/mihomo-party/releases/download/v1.2.23/mihomo-party-windows-1.2.23-arm64-setup.exe#/dl.7z",
+            "hash": "f5d25c0bac48507c19f872a6a5fc43c918bb4084e6025dac4d21caa6b69bcc50",
             "pre_install": [
                 "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
                 "Remove-Item \"$dir\\`$*\" -Force -Recurse"

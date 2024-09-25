@@ -1,38 +1,25 @@
 {
-    "architecture": {
-        "64bit": {
-            "hash": "cc49239647f854560273acd1a12281b51a70b649d7ad3050ccc360a52553fcd8",
-            "url": "https://github.com/dbgate/dbgate/releases/download/v5.5.1/dbgate-5.5.1-win_x64.zip"
-        }
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/dbgate/dbgate/releases/download/v$version/dbgate-$version-win_x64.zip"
-            }
-        }
-    },
-    "bin": [
+    "version": "5.5.1",
+    "homepage": "https://dbgate.org/",
+    "description": "Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others.",
+    "license": "GPL-3.0-or-later",
+    "url": "https://github.com/dbgate/dbgate/releases/download/v5.5.1/dbgate-5.5.1-win.exe#/dl.7z",
+    "hash": "203910a6d6ef5564e38c95a77a5440364b1b9a856cd3c891425758282265defd",
+    "pre_install": [
+        "if ($architecture -eq '64bit') { Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" $dir }",
+        "elseif ($architecture -eq 'arm64') { Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" $dir }",
+        "Remove-Item \"$dir\\`$*\" -Recurse"
+    ],
+    "shortcuts": [
         [
-            "dbgate.exe",
-            "dbgate",
-            "--user-data-dir=\"$dir\\User Data\""
+            "DbGate.exe",
+            "DbGate"
         ]
     ],
     "checkver": {
         "github": "https://github.com/dbgate/dbgate"
     },
-    "description": "A database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others.",
-    "homepage": "https://dbgate.org/",
-    "license": "MIT",
-    "persist": "User Data",
-    "pre_install": "Remove-Item \"$dir\\resources\\app-update.yml\" -Force -Recurse",
-    "shortcuts": [
-        [
-            "dbgate.exe",
-            "DbGate",
-            "--user-data-dir=\"$dir\\User Data\""
-        ]
-    ],
-    "version": "5.5.1"
+    "autoupdate": {
+        "url": "https://github.com/dbgate/dbgate/releases/download/v$version/dbgate-$version-win.exe#/dl.7z"
+    }
 }

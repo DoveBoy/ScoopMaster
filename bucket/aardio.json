@@ -14,7 +14,7 @@
     ],
     "persist": "config\\USR.CFG",
     "checkver": {
-        "url": "http://ide.update.aardio.com/check",
+        "url": "http://ide.update.aardio.com/check/",
         "regex": "\"version\":\"([\\d.]+)\""
     },
     "autoupdate": {

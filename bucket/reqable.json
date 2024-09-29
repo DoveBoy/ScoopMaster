@@ -1,35 +1,16 @@
 {
-    "version": "2.24.0",
-    "description": "Advanced API Debugging Proxy",
-    "homepage": "https://reqable.com/",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://reqable.com/en-US/docs/license/"
-    },
-    "notes": [
-        "Free community version: almost all features are free, but the number of usage is limited.",
-        "For commercial use, you need to purchase a license."
-    ],
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/reqable/reqable-app/releases/download/2.24.0/reqable-app-windows-x86_64.zip",
-            "hash": "ca9c28c5d5850ab70bf7f0047e82cc4c0855f520a9bb67a992236db95e2fe47c"
-        }
+    "version": "2.25.0",
+    "homepage": "https://github.com/reqable/reqable-app",
+    "checkver": "github",
+    "url": "https://github.com/reqable/reqable-app/releases/download/2.25.0/reqable-app-windows-x86_64.zip",
+    "hash": "e9e9e2b310c6b094296af7d5e8b7d44d960db320787fd8d1beff2ce08f2f35ec",
+    "autoupdate": {
+        "url": "https://github.com/reqable/reqable-app/releases/download/$version/reqable-app-windows-x86_64.zip"
     },
     "shortcuts": [
         [
             "Reqable.exe",
             "Reqable"
         ]
-    ],
-    "checkver": {
-        "github": "https://github.com/reqable/reqable-app"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/reqable/reqable-app/releases/download/$version/reqable-app-windows-x86_64.zip"
-            }
-        }
-    }
+    ]
 }

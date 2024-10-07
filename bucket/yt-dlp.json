@@ -1,36 +1,39 @@
 {
-    "version": "2024.09.27",
-    "description": "A youtube-dl fork with additional features and fixes.",
-    "homepage": "https://github.com/yt-dlp/yt-dlp",
+    "version": "2024.10.01.232843",
+    "description": "Daily builds of yt-dlp",
+    "homepage": "https://github.com/yt-dlp/yt-dlp-nightly-builds",
     "license": "Unlicense",
     "suggest": {
-        "ffmpeg": "ffmpeg"
+        "ffmpeg": [
+            "scoop-alts/ffmpeg-shared-nightly",
+            "ffmpeg-yt-dlp",
+            "ffmpeg"
+        ]
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2024.09.27/yt-dlp.exe",
-            "hash": "sha512:c1f5653c9b81479b061e218369029ddf8311f06fa05debc7d94aa376d08ef6c9c85769663b194ff1739e652d63ced214d171b051b4ace67b1a1378ee3e7e42f8"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.01.232843/yt-dlp.exe",
+            "hash": "sha512:a69deff9e67f64ff9d1d3ebd2e5e9b634eea5c2253a527dda63621d05be49f47adabbab6b8689a759a666e3f7d150d4c0b929684493d7ef324e617e92b60a7b4"
         },
         "32bit": {
-            "url": "https://github.com/yt-dlp/yt-dlp/releases/download/2024.09.27/yt-dlp_x86.exe#/yt-dlp.exe",
-            "hash": "sha512:0390882dd62fb8245982d66b23f1bda2eb6ef296e55faae8e34f76e24988ad9157d40680bcc00ef8ef8ab4330de97f1a6bf4b5dffd421dc5607582f234607d0b"
+            "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/2024.10.01.232843/yt-dlp_x86.exe#/yt-dlp.exe",
+            "hash": "sha512:51291ac7e3265caee7a862104b4b21780c4f02437ac73644f68b457e8e94dc7e985f192e5577cef485b27836cf13b6e1d5b38825ad8cbd446a360b7b89dc0958"
         }
     },
     "bin": "yt-dlp.exe",
     "pre_install": "if (-not (Test-Path \"$persist_dir\\yt-dlp.conf\")) { New-Item \"$dir\\yt-dlp.conf\" -ItemType file | Out-Null }",
     "persist": [
         "yt-dlp.conf",
-        "ytdlp_plugins",
-        "yt-dlp-plugins"
+        "ytdlp_plugins"
     ],
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp.exe"
+                "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/$version/yt-dlp.exe"
             },
             "32bit": {
-                "url": "https://github.com/yt-dlp/yt-dlp/releases/download/$version/yt-dlp_x86.exe#/yt-dlp.exe"
+                "url": "https://github.com/yt-dlp/yt-dlp-nightly-builds/releases/download/$version/yt-dlp_x86.exe#/yt-dlp.exe"
             }
         },
         "hash": {

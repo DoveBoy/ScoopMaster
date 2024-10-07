@@ -2,20 +2,21 @@
     "version": "5.6.1",
     "description": "A messaging app with a focus on speed and security",
     "homepage": "https://telegram.org",
-    "license": "GPL-3.0-only",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/telegramdesktop/tdesktop/blob/dev/LICENSE"
+    },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.1/tportable-x64.5.6.1.zip",
+            "url": "https://updates.tdesktop.com/tx64/tportable-x64.5.6.1.zip",
             "hash": "d3c4d9714c2ad00cbfe4453cf30d8069874de38b5a00a07ca4d130444adddda4"
         },
         "32bit": {
-            "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v5.6.1/tportable.5.6.1.zip",
+            "url": "https://updates.tdesktop.com/tsetup/tportable.5.6.1.zip",
             "hash": "6d7386a5d772642320b4867915c6b6786dea5731aac9231fc6df873eb341f309"
         }
     },
     "extract_dir": "Telegram",
-    "pre_install": "Set-Content \"$dir\\telegram.cmd\" '@start \"Telegram\" /D \"%~dp0\" \"%~dp0Telegram.exe\" %*' -Encoding Ascii",
-    "bin": "telegram.cmd",
     "shortcuts": [
         [
             "Telegram.exe",
@@ -24,16 +25,15 @@
     ],
     "persist": "tdata",
     "checkver": {
-        "url": "https://api.github.com/repos/telegramdesktop/tdesktop/releases",
-        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/tportable-x64.([\\d.]+)\\.zip.*?tportable.([\\d.]+)\\.zip"
+        "github": "https://github.com/telegramdesktop/tdesktop"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable-x64.$version.zip"
+                "url": "https://updates.tdesktop.com/tx64/tportable-x64.$version.zip"
             },
             "32bit": {
-                "url": "https://github.com/telegramdesktop/tdesktop/releases/download/v$version/tportable.$version.zip"
+                "url": "https://updates.tdesktop.com/tsetup/tportable.$version.zip"
             }
         }
     }

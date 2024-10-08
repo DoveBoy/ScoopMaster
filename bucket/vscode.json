@@ -27,10 +27,6 @@
         [
             "code.exe",
             "Visual Studio Code"
-        ],
-        [
-            "code.exe",
-            "vscode"
         ]
     ],
     "post_install": [
@@ -55,8 +51,6 @@
         "    info '[Portable Mode] Copying user data...'",
         "    Copy-Item \"$env:AppData\\Code\" \"$dir\\data\\user-data\" -Recurse",
         "}",
-        "reg import \"$dir\\install-context.reg\"",
-        "reg import \"$dir\\install-associations.reg\"",
         "$extensions_file = \"$dir\\data\\extensions\\extensions.json\"",
         "if ((Test-Path \"$extensions_file\")) {",
         "    info 'Adjusting path in extensions file...'",
@@ -64,12 +58,7 @@
         "}"
     ],
     "uninstaller": {
-        "script": [
-            "if ($cmd -eq 'uninstall') {",
-            "    reg import \"$dir\\uninstall-context.reg\"",
-            "    reg import \"$dir\\uninstall-associations.reg\"",
-            "}"
-        ]
+        "script": "if ($cmd -eq 'uninstall') { reg import \"$dir\\uninstall-context.reg\" }"
     },
     "persist": "data",
     "checkver": {

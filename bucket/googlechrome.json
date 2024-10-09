@@ -22,22 +22,18 @@
     "bin": [
         [
             "chrome.exe",
-            "chrome",
-            "--user-data-dir=\"$dir\\User Data\""
+            "chrome"
         ]
     ],
     "shortcuts": [
         [
             "chrome.exe",
-            "Google Chrome",
-            "--user-data-dir=\"$dir\\User Data\""
+            "Google Chrome"
         ]
     ],
     "post_install": [
-        "if (!(Test-Path \"$dir\\User Data\\*\") -and (Test-Path \"$env:LocalAppData\\Google\\Chrome\\User Data\")) {",
-        "    info '[Portable Mode]: Copying user data...'",
-        "    Copy-Item \"$env:LocalAppData\\Google\\Chrome\\User Data\\*\" \"$dir\\User Data\" -Recurse",
-        "}"
+        ". $bucketsdir\\$bucket\\bin\\util.ps1",
+        "move_link -origin \"$env:LocalAppData\\Google\\Chrome\\User Data\" -target \"$persist_dir\\User Data\""
     ],
     "env_set": {
         "CHROME_EXECUTABLE": "$dir\\chrome.exe"

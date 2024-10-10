@@ -16,7 +16,7 @@
             "hash": "5964a01bc737936daf742347e6a18e67eedd4751ba9c4098e2c742770b51b69f"
         }
     },
-    "extract_dir": "PFiles64\\CompressO",
+    "extract_dir": "PFiles\\CompressO",
     "installer": {
         "script": [
             "# handle runtime cache",

@@ -10,8 +10,9 @@
         }
     },
     "extract_dir": "zen.win-specific/zen",
+    "bin": "zen.exe",
     "post_install": [
-        "zen.exe -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "zen -CreateProfile \"Scoop $persist_dir\\profile\"",
         "$Addition = \"$persist_dir\\addition\"",
         "if (Test-Path $Addition) {",
         "  info 'Copying additional items...'",

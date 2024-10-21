@@ -1,45 +1,45 @@
 {
-  "version": "130.0.6723.40-4",
-  "description": "A proxy using Chrome's network stack to camouflage traffic with strong censorship resistence and low detectablility.",
-  "homepage": "https://github.com/klzgrad/naiveproxy",
-  "license": "BSD-3-Clause",
-  "architecture": {
-    "64bit": {
-      "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-x64.zip",
-      "hash": "b15afdf408f0b324603aa024001926f6d2cc05419fc0349bc7ab86967139b30b",
-      "extract_dir": "naiveproxy-v130.0.6723.40-4-win-x64"
-    },
-    "32bit": {
-      "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-x86.zip",
-      "hash": "8a205d39c4e18df99d6ef0efdfa46eb8ed6072dc9cb8b594c524620eb9064bee",
-      "extract_dir": "naiveproxy-v130.0.6723.40-4-win-x86"
-    },
-    "arm64": {
-      "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-arm64.zip",
-      "hash": "ae4e6eb28df070f50bf408370c857bc2f171816ed6087d53def90cf8e2af18dc",
-      "extract_dir": "naiveproxy-v130.0.6723.40-4-win-arm64"
-    }
-  },
-  "bin": "naive.exe",
-  "persist": "config.json",
-  "checkver": {
-    "github": "https://github.com/klzgrad/naiveproxy",
-    "regex": "tag/v([\\w.-]+)"
-  },
-  "autoupdate": {
+    "version": "130.0.6723.40-4",
+    "description": "A proxy using Chrome's network stack to camouflage traffic with strong censorship resistence and low detectablility.",
+    "homepage": "https://github.com/klzgrad/naiveproxy",
+    "license": "BSD-3-Clause",
     "architecture": {
-      "64bit": {
-        "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-x64.zip",
-        "extract_dir": "naiveproxy-v$version-win-x64"
-      },
-      "32bit": {
-        "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-x86.zip",
-        "extract_dir": "naiveproxy-v$version-win-x86"
-      },
-      "arm64": {
-        "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-arm64.zip",
-        "extract_dir": "naiveproxy-v$version-win-arm64"
-      }
+        "64bit": {
+            "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-x64.zip",
+            "hash": "b15afdf408f0b324603aa024001926f6d2cc05419fc0349bc7ab86967139b30b",
+            "extract_dir": "naiveproxy-v130.0.6723.40-4-win-x64"
+        },
+        "32bit": {
+            "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-x86.zip",
+            "hash": "8a205d39c4e18df99d6ef0efdfa46eb8ed6072dc9cb8b594c524620eb9064bee",
+            "extract_dir": "naiveproxy-v130.0.6723.40-4-win-x86"
+        },
+        "arm64": {
+            "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v130.0.6723.40-4/naiveproxy-v130.0.6723.40-4-win-arm64.zip",
+            "hash": "ae4e6eb28df070f50bf408370c857bc2f171816ed6087d53def90cf8e2af18dc",
+            "extract_dir": "naiveproxy-v130.0.6723.40-4-win-arm64"
+        }
+    },
+    "bin": "naive.exe",
+    "persist": "config.json",
+    "checkver": {
+        "github": "https://github.com/klzgrad/naiveproxy",
+        "regex": "tag/v([\\w.-]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-x64.zip",
+                "extract_dir": "naiveproxy-v$version-win-x64"
+            },
+            "32bit": {
+                "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-x86.zip",
+                "extract_dir": "naiveproxy-v$version-win-x86"
+            },
+            "arm64": {
+                "url": "https://download.fastgit.org/klzgrad/naiveproxy/releases/download/v$version/naiveproxy-v$version-win-arm64.zip",
+                "extract_dir": "naiveproxy-v$version-win-arm64"
+            }
+        }
     }
-  }
 }

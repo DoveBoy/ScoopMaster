@@ -8,17 +8,15 @@
     },
     "url": "https://github.com/nu774/qaac/releases/download/v2.83/qaac_2.83.zip",
     "hash": "c87ca1266a2776ac2c8bd95e4196f89f4030d0d0800513f144ef93b7a388174f",
-    "notes": "To fix 'ERROR: CoreAudioToolbox.dll: The specified module could not be found.', Please install `muggle/qaac-qtfiles`",
-    "suggest": {
-        "qaac-qtfiles": "muggle/qaac-qtfiles"
-    },
-    "pre_install": "Remove-Item \"$dir\\qaac_*\" -Force -Recurse",
+    "notes": [
+        "To fix 'ERROR: CoreAudioToolbox.dll: The specified module could not be found.',",
+        "See: https://hydrogenaud.io/index.php?topic=117089.0"
+    ],
+    "pre_install": "Remove-Item \"$dir\\qaac_*\"",
     "architecture": {
         "64bit": {
             "extract_dir": "qaac_2.83\\x64",
             "bin": [
-                "qaac64.exe",
-                "refalac64.exe",
                 [
                     "qaac64.exe",
                     "qaac"
@@ -37,6 +35,10 @@
             ]
         }
     },
+    "persist": [
+        "QTFiles64",
+        "QTFiles"
+    ],
     "checkver": {
         "github": "https://github.com/nu774/qaac"
     },

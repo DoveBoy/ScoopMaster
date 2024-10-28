@@ -1,52 +1,34 @@
 {
     "version": "1.25.1",
-    "description": "Graphical Scrcpy to display and control Android, devices powered by Electron.",
+    "description": "使用图形化的 Scrcpy 显示和控制您的 Android 设备",
     "homepage": "https://github.com/viarotel-org/escrcpy",
-    "license": "Apache-2.0 license",
+    "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.25.1/Escrcpy-1.25.1-win-setup-x64.exe#/dl.7z",
-            "hash": "d5773c236dfbaafd0b1eddc8ab849e4ec0a0341b1e128347620d81ac1dd91984",
-            "pre_install": [
-                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"
-            ]
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.25.1/Escrcpy-1.25.1-win-x64.zip",
+            "hash": "3a2076ffc8efe67b779224f591986b62e405e8b3ed6b814d4f59665f316a42cd"
         },
         "arm64": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.25.1/Escrcpy-1.25.1-win-setup-arm64.exe#/dl.7z",
-            "hash": "d739622479c32a9b590accefefcf141f446f3ef69b59fd2bdaa43884e92882c4",
-            "pre_install": [
-                "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-arm64.7z\" \"$dir\"",
-                "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\" -Force -Recurse"
-            ]
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.25.1/Escrcpy-1.25.1-win-arm64.zip",
+            "hash": "0ce7dbebd76abec4ec995b02a539d77983ebf6f2a0675225a38bf8ce9847522e"
         }
-    },
-    "installer": {
-        "script": [
-            "ensure \"$persist_dir\" | Out-Null",
-            "New-Item \"$env:APPDATA\\escrcpy\" -ItemType Junction -Target \"$persist_dir\" | Out-Null"
-        ]
-    },
-    "uninstaller": {
-        "script": "Remove-Item \"$env:APPDATA\\escrcpy\" -Recurse -Force -ErrorAction 'SilentlyContinue'"
     },
     "shortcuts": [
         [
             "Escrcpy.exe",
-            "Escrcpy"
+            "Escrcpy",
+            "--user-data-dir=\"$dir\\User Data\""
         ]
     ],
-    "checkver": {
-        "url": "https://api.github.com/repos/viarotel-org/escrcpy/releases",
-        "regex": "/releases/tag/v([\\d.]+)"
-    },
+    "persist": "User Data",
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-setup-x64.exe#/dl.7z"
+                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-setup-arm64.exe#/dl.7z"
+                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-arm64.zip"
             }
         }
     }

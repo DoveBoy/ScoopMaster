@@ -1,9 +1,9 @@
 {
     "version": "9.8.5",
     "homepage": "https://termius.com/",
-    "description": "Beta version for Termius",
-    "url": "https://autoupdate.termius.com/windows-beta/Termius%20Beta.exe#/dl.7z",
-    "hash": "202fdb6c756adf3e0012bbb36219dd4152c1c30c3da7816198207472c63d291e",
+    "description": "A cross-platform SSH client",
+    "url": "https://autoupdate.termius.com/windows/Termius.exe#/dl.7z",
+    "hash": "c3bb1134396531af173074dd5642decabfcb62fcd8974a5791ab5317bade8cce",
     "architecture": {
         "64bit": {
             "installer": {
@@ -24,15 +24,15 @@
     },
     "shortcuts": [
         [
-            "Termius Beta.exe",
-            "Termius Beta"
+            "Termius.exe",
+            "Termius"
         ]
     ],
     "checkver": {
-        "url": "https://autoupdate.termius.com/windows-beta/latest.yml",
+        "url": "https://autoupdate.termius.com/windows/latest.yml",
         "regex": "version:\\s*([\\d.]+)"
     },
     "autoupdate": {
-        "url": "https://autoupdate.termius.com/windows-beta/Termius%20Beta.exe#/dl.7z"
+        "url": "https://autoupdate.termius.com/windows/Termius.exe#/dl.7z"
     }
 }

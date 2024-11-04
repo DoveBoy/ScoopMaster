@@ -4,7 +4,7 @@
     "description": "Roboto Slab Typeface by Google. (hrbrthemes)",
     "license": "Apache-2.0",
     "url": "https://github.com/googlefonts/robotoslab/archive/refs/heads/main.zip",
-    "hash": "cab61bc7330c9b1be40eea082b5a11b573e19ea3509330bd3f2d9ffdadb9cd5b",
+    "hash": "B66BD20849D4FC6EE6254B769E5DFBF351E5DE6A4F27DD4B989E2D033210179B",
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/googlefonts/robotoslab/archive/refs/heads/main.zip"

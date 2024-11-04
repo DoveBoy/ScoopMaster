@@ -1,36 +1,36 @@
 {
-  "homepage": "https://a5m2.mmatsubara.com/",
-  "checkver": {
-    "url": "https://a5m2.mmatsubara.com/beta/",
-    "re": "urchinTracker\\('/beta/a5m2_(.*)_x86.zip'\\);"
-  },
-  "version": "2.20.0_beta38",
-  "bin": "A5M2.exe",
-  "persist": "Portable",
-  "shortcuts": [
-    [
-      "A5M2.exe",
-      "A5M2"
-    ]
-  ],
-  "architecture": {
-    "64bit": {
-      "url": "https://a5m2.mmatsubara.com/beta/a5m2_2.20.0_beta38_x64.zip",
-      "hash": "d36db2ec3d1612f6218f700c8702544ded3be03e40a61e98f491fe7b2291dcce"
+    "homepage": "https://a5m2.mmatsubara.com/",
+    "checkver": {
+        "url": "https://a5m2.mmatsubara.com/beta/",
+        "re": "urchinTracker\\('/beta/a5m2_(.*)_x86.zip'\\);"
     },
-    "32bit": {
-      "url": "https://a5m2.mmatsubara.com/beta/a5m2_2.20.0_beta38_x86.zip",
-      "hash": "341ed4b5ed238f8c26af417193ed29d7bf3faa8c310a11bda35407dc0f0dae9d"
-    }
-  },
-  "autoupdate": {
+    "version": "2.20.0_beta38",
+    "bin": "A5M2.exe",
+    "persist": "Portable",
+    "shortcuts": [
+        [
+            "A5M2.exe",
+            "A5M2"
+        ]
+    ],
     "architecture": {
-      "64bit": {
-        "url": "https://a5m2.mmatsubara.com/beta/a5m2_$version_x64.zip"
-      },
-      "32bit": {
-        "url": "https://a5m2.mmatsubara.com/beta/a5m2_$version_x86.zip"
-      }
+        "64bit": {
+            "url": "https://a5m2.mmatsubara.com/beta/a5m2_2.20.0_beta38_x64.zip",
+            "hash": "d36db2ec3d1612f6218f700c8702544ded3be03e40a61e98f491fe7b2291dcce"
+        },
+        "32bit": {
+            "url": "https://a5m2.mmatsubara.com/beta/a5m2_2.20.0_beta38_x86.zip",
+            "hash": "341ed4b5ed238f8c26af417193ed29d7bf3faa8c310a11bda35407dc0f0dae9d"
+        }
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://a5m2.mmatsubara.com/beta/a5m2_$version_x64.zip"
+            },
+            "32bit": {
+                "url": "https://a5m2.mmatsubara.com/beta/a5m2_$version_x86.zip"
+            }
+        }
     }
-  }
 }

@@ -18,9 +18,7 @@
         }
     },
     "bin": "tex-fmt.exe",
-    "checkver": {
-        "github": "https://github.com/WGUNDERWOOD/tex-fmt"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {

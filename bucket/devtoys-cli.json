@@ -1,36 +1,39 @@
 {
     "version": "2.0.6.0",
-    "description": "A Swiss Army CLI knife for developers.",
-    "homepage": "https://github.com/DevToys-app/DevToys",
+    "description": "A Swiss Army knife for developers (CLI; Preview)",
+    "homepage": "https://devtoys.app",
     "license": "MIT",
+    "suggest": {
+        ".NET Desktop Runtime": "extras/windowsdesktop-runtime"
+    },
     "architecture": {
-        "32bit": {
-            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.6.0/devtoys.cli_win_x86_portable.zip",
-            "hash": "a7123cc0da6d4ec17c225bb4da75460fafb4893ffa651a8d419b7efbd5d47523"
-        },
         "64bit": {
             "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.6.0/devtoys.cli_win_x64_portable.zip",
             "hash": "37d3e8160d93e2cd22bb1e2e64cca276c5e45ced1f433406330044b61a2df30b"
+        },
+        "32bit": {
+            "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.6.0/devtoys.cli_win_x86_portable.zip",
+            "hash": "a7123cc0da6d4ec17c225bb4da75460fafb4893ffa651a8d419b7efbd5d47523"
         },
         "arm64": {
             "url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.6.0/devtoys.cli_win_arm64_portable.zip",
             "hash": "11f33b0d6e90550c3cf911b10679a6dd3794a7f053da80948ecddf785f78556d"
         }
     },
-    "bin": "devtoys.cli.exe",
-    "env_add_path": ".",
+    "bin": "DevToys.CLI.exe",
+    "persist": "Plugins",
     "checkver": {
         "url": "https://api.github.com/repos/DevToys-app/DevToys/releases",
-        "jsonpath": "$[?(@.prerelease == true)].tag_name",
-        "regex": "v([\\d\\.]+)"
+        "jsonpath": "$[0].tag_name",
+        "regex": "v([\\d.]+)"
     },
     "autoupdate": {
         "architecture": {
-            "32bit": {
-                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys.cli_win_x86_portable.zip"
-            },
             "64bit": {
                 "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys.cli_win_x64_portable.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys.cli_win_x86_portable.zip"
             },
             "arm64": {
                 "url": "https://github.com/DevToys-app/DevToys/releases/download/v$version/devtoys.cli_win_arm64_portable.zip"

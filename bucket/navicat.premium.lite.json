@@ -1,0 +1,28 @@
+{
+    "version": "17.1.10",
+    "homepage": "https://www.navicat.com.cn",
+    "architecture": {
+        "64bit": {
+            "url": "https://dn.navicat.com/download/navicat17_premium_lite_cs_x64.exe",
+            "hash": "4cac45850815cde6b2b8f5b598536fb5964060597cd0b2fc4c0dc5cf2410f48c"
+        }
+    },
+    "checkver": {
+        "url": "https://www.navicat.com.cn/products/navicat-premium-release-note",
+        "re": "Navicat Premium \\(Windows\\) version ([\\d\\.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dn.navicat.com/download/navicat$majorVersion_premium_lite_cs_x64.exe"
+            }
+        }
+    },
+    "innosetup": true,
+    "shortcuts": [
+        [
+            "navicat.exe",
+            "Navicat Premium Lite"
+        ]
+    ]
+}

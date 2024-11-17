@@ -9,12 +9,13 @@
         "script": [
             "if (!(is_admin)) {",
             "    error \"Administrator rights are required to uninstall $app.\"",
+            "    scoop uninstall $app",
             "    exit 1",
             "}",
             ". \"$bucketsdir\\$bucket\\bin\\utils.ps1\"",
             "New-PersistDirectory \"$env:ProgramData\\kuwodata\" \"$persist_dir\\kuwodata\" -Migrate",
-            "if (-not (Test-Path \"$persist_dir\\kuwodata\\kwmusic2013\\user\\config.ini\")) {",
-            "Move-Item -Force \"$dir\\`$APPDATA\\kuwodata\\*\" \"$persist_dir\\kuwodata\\kwmusic2013\" -ErrorAction SilentlyContinue | Out-Null",
+            "if (-not (Test-Path \"$persist_dir\\kuwodata\\kwmusic2013\\Conf\\User\\config.ini\")) {",
+            "New-Item \"$persist_dir\\kuwodata\\kwmusic2013\\Conf\\User\\config.ini\" -Type File -Force -ErrorAction SilentlyContinue | Out-Null",
             "@\"",
             "[Setting]",
             "temppath=$persist_dir\\KwDownload\\Temp",
@@ -58,13 +59,18 @@
             "",
             "[UserPlayQuality]",
             "SongQuality=4",
-            "\"@ | Set-Content \"$persist_dir\\kuwodata\\kwmusic2013\\user\\config.ini\" -Encoding Ascii -Force",
+            "\"@ | Set-Content \"$persist_dir\\kuwodata\\kwmusic2013\\Conf\\User\\config.ini\" -Encoding Ascii -Force",
             "success \"[New install] The download folder have been set to $persist_dir\\KwDownload successfully!\"",
             "}",
             "Remove-Item -Recurse -Force \"$dir\\`$*\" -ErrorAction SilentlyContinue | Out-Null"
         ]
     },
-    "persist": "KwDownload",
+    "persist": [
+        "KwDownload\\Temp",
+        "KwDownload\\song",
+        "KwDownload\\My Lrcx",
+        "KwDownload\\Lyric"
+    ],
     "pre_uninstall": [
         "if (!(is_admin)) {",
         "    error \"Administrator rights are required to uninstall $app.\"",

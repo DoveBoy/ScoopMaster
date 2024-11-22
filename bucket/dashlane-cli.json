@@ -1,22 +1,30 @@
 {
-    "version": "6.2447.1",
-    "description": "Dashlane CLI - Access your secrets in your terminal, servers and CI/CD",
-    "homepage": "https://cli.dashlane.com/",
-    "license": "Apache-2.0",
+    "version": "v6.2432.0",
+    "description": "Dashlane CLI - A command-line interface for Dashlane",
+    "homepage": "https://github.com/Dashlane/dashlane-cli",
+    "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v6.2447.1/dcli-win-x64-signed.exe#/dcli.exe",
-            "hash": "6e7340cbad7f71023f3b9f3d10e7ef9d54cdf8b30eef72790fa826faad2bafae"
+            "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v6.2432.0/dcli-win-x64.exe",
+            "installer": {
+                "script": [
+                    "Rename-Item \"$dir\\dcli-win-x64.exe\" \"dcli.exe\""
+                ]
+            }
         }
     },
     "bin": "dcli.exe",
-    "checkver": {
-        "github": "https://github.com/Dashlane/dashlane-cli"
-    },
+    "shortcuts": [
+        [
+            "dcli.exe",
+            "dcli"
+        ]
+    ],
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Dashlane/dashlane-cli/releases/download/v$version/dcli-win-x64-signed.exe#/dcli.exe"
+                "url": "https://github.com/Dashlane/dashlane-cli/releases/download/$version/dcli-win-x64.exe"
             }
         }
     }

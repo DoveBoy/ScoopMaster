@@ -1,0 +1,15 @@
+{
+    "version": "0.21.1",
+    "description": "A speech synthesis.",
+    "homepage": "https://github.com/VOICEVOX/voicevox",
+    "url": "https://github.com/VOICEVOX/voicevox/releases/download/0.21.1/voicevox-windows-cpu-0.21.1.zip",
+    "hash": "sha512:9014156DC6C50A76D7DCC6BB71BF99E3BE5C695901544B7DA08F856F28F2E06CA73462E8EB75461C99FD84E860059ACF318F77074237558391F2F65EC023D319",
+    "extract_dir": "VOICEVOX",
+    "shortcuts": [
+        [
+            "VOICEVOX.exe",
+            "VOICEVOX"
+        ]
+    ],
+    "checkver": "github"
+}

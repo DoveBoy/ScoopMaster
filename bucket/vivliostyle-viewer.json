@@ -1,9 +1,10 @@
 {
-  "version": "2.25.4",
-  "description": "The power of CSS typesetting, right at your fingertips.",
-  "homepage": "https://github.com/vivliostyle/vivliostyle.js",
-  "license": "AGPL-3.0",
-  "notes": "If you want to write some books, see: https://docs.vivliostyle.org/ja/create-book.html",
-  "url": "https://ghproxy.com/https://github.com/vivliostyle/vivliostyle.js/releases/download/v2.25.4/vivliostyle-viewer-2.25.4.zip",
-  "hash": "7af350c744cc6f83e1bf4e14512883b69d0fc067e2e2229085e34b26a8384b18"
+    "version": "2.30.6",
+    "description": "The power of CSS typesetting, right at your fingertips.",
+    "homepage": "https://github.com/vivliostyle/vivliostyle.js/",
+    "license": "AGPL-3.0",
+    "notes": "If you want to write some books, see: https://docs.vivliostyle.org/#/ja/vivliostyle-cli",
+    "url": "https://github.com/vivliostyle/vivliostyle.js/releases/download/v2.30.6/vivliostyle-viewer-2.30.6.zip",
+    "hash": "sha512:01c78d051eeb56035e381866847f4a86cd3277b3c269f063dbf8cbd5ba79e9ef8a403e0cb1512e335d0260448cb58a125c17c4fcafcd137e28eeb4d4cc86051c",
+    "checkver": "github"
 }

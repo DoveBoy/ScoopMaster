@@ -1,18 +1,14 @@
 {
-    "version": "0.35",
-    "description": "A carfare calculator for JR.",
-    "homepage": "https://www.swa785.net/pub/mars/index.html",
-    "url": "https://www.swa785.net/pub/mars/marsw035.zip",
-    "hash": "sha512:e089a97b9b9fe490087517d9b1f7208a5e53df3cd5907534b69646bc1fc4335bbd4e772290845932f8a0ebc0bcb72c4aa695b8ad539c365e6d4110e1c51edca1",
-    "extract_dir": "MARSWin",
-    "shortcuts": [
-        [
-            "marswin.exe",
-            "MARS for Windows"
-        ]
-    ],
-    "checkver": {
-        "url": "https://www.swa785.net/pub/mars/index.html",
-        "regex": "MARS for Windows .+ v([\\d\\.]+)</A><BR>"
-    }
+  "version": "0.33",
+  "description": "A carfare calculator for JR.",
+  "homepage": "https://www.swa785.net/pub/mars/index.html",
+  "url": "https://www.swa785.net/pub/mars/marsw033.zip",
+  "hash": "8fe63c1de070e9f0ef66138f5f3e3e70febb6546a0f4d9041bf63b88a85908bc",
+  "extract_dir": "MARSWin",
+  "shortcuts": [
+    [
+      "marswin.exe",
+      "MARS for Windows"
+    ]
+  ]
 }

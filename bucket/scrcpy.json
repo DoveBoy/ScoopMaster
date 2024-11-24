@@ -15,7 +15,10 @@
             "extract_dir": "scrcpy-win32-v3.0"
         }
     },
-    "bin": "scrcpy.exe",
+    "bin": [
+        "scrcpy.exe",
+        "scrcpy-console.bat"
+    ],
     "shortcuts": [
         [
             "scrcpy-noconsole.vbs",

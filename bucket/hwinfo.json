@@ -5,13 +5,9 @@
     "license": "Freeware",
     "url": "https://www.fosshub.com/HWiNFO.html/hwi_816.zip",
     "hash": "6590721f5c24f2cbcd5bf4019821e2e97c170d4c081706be74bc44d934f4921c",
-    "pre_install": [
-        "foreach ($conf in 'HWiNFO64.INI', 'HWiNFO32.INI') {",
-        "    if (!(Test-Path \"$persist_dir\\$conf\")) { Set-Content \"$dir\\$conf\" '[Settings]', 'AutoUpdate=0' -Encoding ASCII }",
-        "}"
-    ],
     "architecture": {
         "64bit": {
+            "pre_install": "if (-not (Test-Path \"$persist_dir\\HWiNFO64.INI\")) { Set-Content \"$dir\\HWiNFO64.INI\" '[Settings]', 'AutoUpdate=0' -Encoding Ascii}",
             "bin": [
                 [
                     "HWiNFO64.exe",
@@ -26,6 +22,7 @@
             ]
         },
         "32bit": {
+            "pre_install": "if (-not (Test-Path \"$persist_dir\\HWiNFO32.INI\")) { Set-Content \"$dir\\HWiNFO32.INI\" '[Settings]', 'AutoUpdate=0' -Encoding Ascii}",
             "bin": [
                 [
                     "HWiNFO32.exe",

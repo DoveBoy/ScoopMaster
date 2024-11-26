@@ -1,22 +1,18 @@
 {
     "version": "1.27.1",
-    "description": "📱 使用图形化的 Scrcpy 显示和控制您的 Android 设备，由 Electron 驱动",
+    "description": "使用图形化的 Scrcpy 显示和控制您的 Android 设备",
     "homepage": "https://github.com/viarotel-org/escrcpy",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.27.1/Escrcpy-1.27.1-win-setup-x64.exe#/dl.7z",
-            "hash": "sha512:259794748993261f81620afcf96473d810881d979667f6e411ff1afc6db37ba49c11bd11aac715a638d3c6b6439c1a46320c264c422c63f817de5befa6827efc"
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.27.1/Escrcpy-1.27.1-win-x64.zip",
+            "hash": "29c17637f3057fa668f049e22badada8bb871389dd98ad5fea51389e6338b95b"
         },
         "arm64": {
-            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.27.1/Escrcpy-1.27.1-win-setup-arm64.exe#/dl.7z",
-            "hash": "sha512:39496ad64a2e971349c270dd59259cd5486c22720c4307395f6f90610c7daa02e7b64f1e23b36687bb8ddfad8217d487555fe9d00ec122d354924f94379f6b45"
+            "url": "https://github.com/viarotel-org/escrcpy/releases/download/v1.27.1/Escrcpy-1.27.1-win-arm64.zip",
+            "hash": "9bcc0afde1a11cf83b80aeb66266f331d8fe18461f8ec491ffc5f0ff6b69674e"
         }
     },
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app*.7z\" \"$dir\"",
-        "Remove-Item \"$dir\\`$R0\", \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
-    ],
     "shortcuts": [
         [
             "Escrcpy.exe",
@@ -29,15 +25,11 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-setup-x64.exe#/dl.7z"
+                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-x64.zip"
             },
             "arm64": {
-                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-setup-arm64.exe#/dl.7z"
+                "url": "https://github.com/viarotel-org/escrcpy/releases/download/v$version/Escrcpy-$version-win-arm64.zip"
             }
-        },
-        "hash": {
-            "url": "$baseurl/latest.yml",
-            "regex": "$basename\\s+sha512:\\s+$base64"
         }
     }
 }

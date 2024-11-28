@@ -3,9 +3,15 @@
     "description": "Get up and running with large language models locally.",
     "homepage": "https://ollama.com/",
     "license": "MIT",
+    "depends": "aki/innounpacker",
     "url": "https://github.com/ollama/ollama/releases/download/v0.4.6/OllamaSetup.exe",
     "hash": "d5f15004a8ddeb9f88087200b66810c88122700c5d3cc008a397de0684f36c26",
-    "innosetup": true,
+    "pre_install": [
+        "innounpack.exe -x -d\"$dir\" \"$dir\\OllamaSetup.exe\" | Out-Null",
+        "Move-Item -Force -Path \"$dir\\{app}\\*\" -Destination \"$dir\"",
+        "Remove-Item -Force -Path \"$dir\\{app}\"",
+        "Remove-Item -Force -Path \"$dir\\OllamaSetup.exe\""
+    ],
     "bin": "ollama.exe",
     "shortcuts": [
         [

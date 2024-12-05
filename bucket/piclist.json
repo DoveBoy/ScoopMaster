@@ -1,41 +1,44 @@
 {
-    "##": "PicList",
     "version": "2.9.6",
-    "description": "PicList是一款高效的云存储和图床平台管理工具，在PicGo的基础上经过深度的二次开发，不仅完整保留了PicGo的所有功能，还增添了许多新的feature",
-    "homepage": "https://github.com/Kuingsmile/PicList",
-    "license": {
-        "identifier": "MIT",
-        "url": "https://github.com/Kuingsmile/PicList?tab=MIT-1-ov-file#readme"
-    },
+    "description": "An image upload and manage tool, base on PicGo.",
+    "homepage": "https://piclist.cn/",
+    "license": "MIT",
     "architecture": {
         "64bit": {
             "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.6/PicList-Setup-2.9.6-x64.exe#/dl.7z",
-            "hash": "0ec0076ecdbca67713c9f25871e5ec5f3f8388d5895da87182849bfa5b634868"
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\"",
+            "hash": "sha512:385cc9d88654d48be62ac807da5984370365f4694b3f1006c456e985779a9f82a79662adc761a635f22ea25c2a650aeee7b0dabbbf796059438e3ba10f32d631"
         },
         "32bit": {
-            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.6/PicList-Setup-2.9.6.exe#/dl.7z",
-            "hash": "69189bd8d80fc0564ac52e15c2abc95e1766cb63db630532c3a799f51e289364"
+            "url": "https://github.com/Kuingsmile/PicList/releases/download/v2.9.6/PicList-Setup-2.9.6-ia32.exe#/dl.7z",
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\"",
+            "hash": "sha512:face434d4f0701e0889d3a22b76a2709dafa36d66186d4f3e02d6e66f5ac92e45d2e29d24afacd98e1d0432818f02eb07419d530c7319b33048e731bbcd30fdf"
         }
     },
-    "checkver": "github",
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\`$R0\", \"$dir\\resources\\app-update.yml\"  -Force -Recurse",
+    "bin": "PicList.exe",
+    "shortcuts": [
+        [
+            "PicList.exe",
+            "PicList"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/Kuingsmile/PicList"
+    },
+    "notes": "PicList is NOT portable.",
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/Kuingsmile/PicList/releases/download/v$version/PicList-Setup-$version-x64.exe#/dl.7z"
             },
             "32bit": {
-                "url": "https://github.com/Kuingsmile/PicList/releases/download/v$version/PicList-Setup-$version.exe#/dl.7z"
+                "url": "https://github.com/Kuingsmile/PicList/releases/download/v$version/PicList-Setup-$version-ia32.exe#/dl.7z"
             }
+        },
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "$basename\\s+sha512:\\s$base64"
         }
-    },
-    "pre_install": [
-        "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" $dir",
-        "Remove-Item \"$dir\\`$*\" -Force -Recurse"
-    ],
-    "shortcuts": [
-        [
-            "PicList.exe",
-            "PicList"
-        ]
-    ]
+    }
 }

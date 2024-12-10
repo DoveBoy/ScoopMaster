@@ -1,17 +1,18 @@
 {
-    "version": "2.0-95",
-    "description": "Nintendo Wii U emulator",
-    "homepage": "https://cemu.info",
-    "license": {
-        "identifier": "MPL-2.0",
-        "url": "https://github.com/cemu-project/Cemu/blob/main/LICENSE.txt"
-    },
+    "version": "2.4",
+    "description": "A Nintendo WiiU emulator capable of online play (development version)",
+    "homepage": "https://cemu.info/",
+    "license": "MPL-2.0",
     "suggest": {
         "Microsoft Visual C++ Runtime 2022": "extras/vcredist2022"
     },
-    "url": "https://github.com/cemu-project/Cemu/releases/download/v2.0-95/cemu-2.0-95-windows-x64.zip",
-    "hash": "f6b7ecaffaa54fadc218910e5dc1c7259466a40ce26114009fad2d0ce087f9e2",
-    "extract_dir": "Cemu_2.0-95",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/cemu-project/Cemu/releases/download/v2.4/cemu-2.4-windows-x64.zip",
+            "hash": "6b688e6896f83e0a95baa36c87b31cbaa0f2bb962929a0da86e9d50dfbac6c5d"
+        }
+    },
+    "extract_dir": "Cemu_2.4",
     "installer": {
         "script": [
             "if (!(Test-Path \"$persist_dir\\keys.txt\")) {",
@@ -30,14 +31,14 @@
     ],
     "bin": [
         [
-            "cemu.exe",
+            "Cemu.exe",
             "cemu-dev"
         ]
     ],
     "shortcuts": [
         [
-            "cemu.exe",
-            "Nintendo Wii U [wiiu][cemu] (dev)"
+            "Cemu.exe",
+            "Cemu (Development)"
         ]
     ],
     "persist": [
@@ -58,10 +59,15 @@
     },
     "checkver": {
         "url": "https://github.com/cemu-project/Cemu/releases",
-        "regex": "v(\\d\\.\\d-\\d+)"
+        "regex": "Cemu (?<ver>\\d+\\.\\d+)",
+        "replace": "${1}"
     },
     "autoupdate": {
-        "url": "https://github.com/cemu-project/Cemu/releases/download/v$version/cemu-$version-windows-x64.zip",
-        "extract_dir": "Cemu_$version"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/cemu-project/Cemu/releases/download/v$matchVer/cemu-$matchVer-windows-x64.zip"
+            }
+        },
+        "extract_dir": "Cemu_$matchVer"
     }
 }

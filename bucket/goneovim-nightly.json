@@ -1,36 +1,36 @@
 {
-    "version": "20241214",
-    "description": "Neovim GUI which uses a Golang Qt backend",
-    "homepage": "https://github.com/akiyosi/goneovim",
-    "license": "MIT",
-    "suggest": {
-        "neovim": "neovim"
-    },
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/akiyosi/goneovim/releases/download/nightly/goneovim-windows.zip",
-            "hash": "3c3a7efd91d11a06405ed8fca9d81fbdc2359439bf52cd7d86e8b57b4d4a7630"
-        }
-    },
-    "extract_dir": "goneovim-windows",
-    "bin": "goneovim.exe",
-    "shortcuts": [
-        [
-            "goneovim.exe",
-            "Goneovim-nightly"
-        ]
-    ],
-    "checkver": {
-        "url": "https://api.github.com/repositories/107124394/releases/tags/nightly",
-        "jsonpath": "$.assets[?(@.name=='goneovim-windows.zip')].updated_at",
-        "regex": ".*(?<year>\\d{4})\\D(?<month>\\d{2})\\D(?<day>\\d{2}).*",
-        "replace": "${year}${month}${day}"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/akiyosi/goneovim/releases/download/nightly/goneovim-windows.zip"
-            }
-        }
+  "version": "20241214",
+  "description": "Neovim GUI which uses a Golang Qt backend",
+  "homepage": "https://github.com/akiyosi/goneovim",
+  "license": "MIT",
+  "suggest": {
+    "neovim": "neovim"
+  },
+  "architecture": {
+    "64bit": {
+      "url": "https://mirror.ghproxy.com/https://github.com/akiyosi/goneovim/releases/download/nightly/goneovim-windows.zip",
+      "hash": "3c3a7efd91d11a06405ed8fca9d81fbdc2359439bf52cd7d86e8b57b4d4a7630"
     }
+  },
+  "extract_dir": "goneovim-windows",
+  "bin": "goneovim.exe",
+  "shortcuts": [
+    [
+      "goneovim.exe",
+      "Goneovim-nightly"
+    ]
+  ],
+  "checkver": {
+    "url": "https://api.github.com/repositories/107124394/releases/tags/nightly",
+    "jsonpath": "$.assets[?(@.name=='goneovim-windows.zip')].updated_at",
+    "regex": ".*(?<year>\\d{4})\\D(?<month>\\d{2})\\D(?<day>\\d{2}).*",
+    "replace": "${year}${month}${day}"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://mirror.ghproxy.com/https://github.com/akiyosi/goneovim/releases/download/nightly/goneovim-windows.zip"
+      }
+    }
+  }
 }

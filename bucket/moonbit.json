@@ -1,47 +1,61 @@
 {
-    "version": "20241216",
-    "description": "An end-to-end programming language toolchain for cloud and edge computing using WebAssembly.",
+    "version": "0.1.20241216+68e710374",
+    "description": "MoonBit is an end-to-end programming language toolchain for cloud and edge computing using WebAssembly.",
     "homepage": "https://www.moonbitlang.com/",
-    "license": "Proprietary",
+    "license": "Unknown",
     "architecture": {
         "64bit": {
             "url": [
-                "https://cli.moonbitlang.com/windows/moon.exe",
-                "https://cli.moonbitlang.com/windows/moonc.exe",
-                "https://cli.moonbitlang.com/windows/moonfmt.exe",
-                "https://cli.moonbitlang.com/windows/moonrun.exe"
+                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.1.20241216+68e710374/moonbit-core-v0.1.20241216+68e710374.zip",
+                "https://github.com/chawyehsu/moonbit-binaries/releases/download/v0.1.20241216+68e710374/moonbit-v0.1.20241216+68e710374-win-x64.zip"
             ],
             "hash": [
-                "1e29b1a3a08d443e1c990331dc479df67cbb4feb722080be5248d4add9114834",
-                "9363a433b8c83257ec6133ac18ff1891d96dd24d1d9b58feb8a9fe58868e0889",
-                "bd8f28f3ce07986b018d282618326e643527953b171d7f8922257439509d17b9",
-                "7cda780237fcee595ff3005876c2b846c38a7ebad98a42bfe6ff0be1ae38823b"
+                "df9594fc23d58dccc226b2b8fa9f41de41d8bc10add3fe3614603355574247cf",
+                "62479117b87cb76bafeac64f10e5c72948162b787573ffa9c5a15abe2ba2d664"
             ]
         }
     },
-    "bin": [
-        "moon.exe",
-        "moonc.exe",
-        "moonfmt.exe",
-        "moonrun.exe"
+    "pre_install": [
+        "New-Item -ItemType Directory -Force -Path \"$dir\\bin\" | Out-Null",
+        "New-Item -ItemType Directory -Force -Path \"$dir\\lib\" | Out-Null"
+    ],
+    "post_install": [
+        "function CreateFile([String] $file, [String] $content = $null) {",
+        "    if (!(Test-Path \"$persist_dir\\$file\")) {",
+        "        New-Item -Force -Path \"$persist_dir\\$file\" -ItemType file -Value $content | Out-Null",
+        "    }",
+        "}",
+        "CreateFile 'credentials.json'",
+        "Move-Item -Path \"$dir\\*.exe\" -Destination \"$dir\\bin\"",
+        "Move-Item -Path \"$dir\\core\" -Destination \"$dir\\lib\"",
+        "Push-Location \"$dir\\lib\\core\"",
+        "& moon bundle --all",
+        "Pop-Location"
+    ],
+    "env_add_path": "bin",
+    "env_set": {
+        "MOON_HOME": "$dir"
+    },
+    "persist": [
+        "registry",
+        "credentials.json"
     ],
     "checkver": {
-        "script": [
-            "try { $detail = Invoke-WebRequest -Method HEAD 'https://cli.moonbitlang.com/windows/moon.exe' -MaximumRedirection 0 -ErrorAction Ignore } catch { $_.Exception.Response }",
-            "if ($detail.StatusCode -eq 200) { return ([DateTime][String]$detail.Headers.'Last-Modified').ToUniversalTime().ToString(\"yyyyMMdd\") } else { return '' }"
-        ],
-        "regex": "(\\d{8})"
+        "github": "https://github.com/chawyehsu/moonbit-binaries",
+        "regex": "v([\\d.]+\\+[a-z0-9]+)"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": [
-                    "https://cli.moonbitlang.com/windows/moon.exe",
-                    "https://cli.moonbitlang.com/windows/moonc.exe",
-                    "https://cli.moonbitlang.com/windows/moonfmt.exe",
-                    "https://cli.moonbitlang.com/windows/moonrun.exe"
+                    "https://github.com/chawyehsu/moonbit-binaries/releases/download/v$version/moonbit-core-v$version.zip",
+                    "https://github.com/chawyehsu/moonbit-binaries/releases/download/v$version/moonbit-v$version-win-x64.zip"
                 ]
             }
+        },
+        "hash": {
+            "url": "$url.sha256",
+            "regex": "([a-f0-9]{64})"
         }
     }
 }

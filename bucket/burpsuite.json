@@ -1,28 +1,20 @@
 {
-    "description": "The leading toolkit for web security testing.",
+    "version": "2024.3",
+    "description": "The leading toolkit for web security testing.(Scoop bucket for Cybersecurity by whoopscs)",
     "homepage": "https://portswigger.net/",
     "license": "Proprietary",
-    "version": "2024.10.3",
-    "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=2024.10.3&type=Jar",
-    "hash": "md5:fdb328d4a57a1846e7969479fe551503",
-    "post_install": [
-        "Invoke-WebRequest -URI \"https://github.com/20142995/burpsuite_crack/archive/refs/heads/main.zip\" -OutFile \"$dir\\main.zip\"",
-        "7z x \"$dir\\main.zip\" -o\"$dir\\\"",
-        "Move-Item -Path \"$dir\\burpsuite_crack-main\\*\" -Destination \"$dir\\\"",
-        "Remove-Item \"$dir\\burpsuite_crack-main\" -Force -Recurse",
-        "Remove-Item \"$dir\\main.zip\" -Force -Recurse"
+    "notes": [
+        "Scoop bucket for Cybersecurity by whoopscs(https://github.com/whoopscs/scoop-security)."
     ],
-    "pre_install": "Rename-Item \"$dir\\download\" 'burpsuite_pro.jar'",
-    "checkver": {
-        "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-        "jp": "$.ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.title =~ /Professional.*/)].version"
+    "suggest": {
+        "JDK 21": "java/openjdk21"
     },
-    "autoupdate": {
-        "url": "https://portswigger-cdn.net/burp/releases/download?product=pro&version=$version&type=Jar",
-        "hash": {
-            "mode": "json",
-            "url": "https://portswigger.net/burp/releases/data?pageSize=4",
-            "jp": "$.ResultSet.Results.[?(@.releaseChannels[0] == 'Stable' && @.title =~ /Professional.*/)].builds.[?(@.ProductId == 'pro' && @.ProductPlatform == 'Jar')].Md5Checksum"
-        }
-    }
+    "url": "https://res.whoopscs.com/d/%E6%8A%93%E5%8C%85%E5%B7%A5%E5%85%B7/BurpSuite/BurpSuite_Pro_v2023.7z",
+    "hash": "55ED7CE2EAE0227161797DAAEF995B8B94AF3D46E562224BDC54460CFE9D032C",
+    "bin": [
+        [
+            "BurpSuiteStartUp.vbs",
+            "BurpSuite"
+        ]
+    ]
 }

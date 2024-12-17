@@ -1,39 +1,20 @@
 {
-    "version": "7.6.2",
-    "description": "A free multithreaded image processing tool.",
+    "version": "7.6.1",
+    "description": "ImBatch is a free multithreaded image processing tool for your Windows PC",
     "homepage": "https://www.highmotionsoftware.com/products/imbatch",
     "license": "Freeware",
-    "architecture": {
-        "64bit": {
-            "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest.exe",
-            "hash": "9182f09454566abdf5d4bf2f9c1a817d88555dcdfe4d5c1c20b3e4d4bdfa699b"
-        },
-        "32bit": {
-            "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest-x32.exe",
-            "hash": "fb128fb5731c85a480df19fdb74925d5200b1729cf7478a088ec31c0ba944fba"
-        }
-    },
+    "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest.exe",
     "innosetup": true,
-    "bin": "ImBatch.exe",
     "shortcuts": [
         [
             "ImBatch.exe",
             "ImBatch"
         ]
     ],
-    "persist": "Options",
-    "checkver": {
-        "url": "https://www.highmotionsoftware.com/download-center/imbatch",
-        "regex": "ImBatch v([\\d.]+)"
-    },
+    "persist": [
+        "Options"
+    ],
     "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest.exe"
-            },
-            "32bit": {
-                "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest-x32.exe"
-            }
-        }
+        "url": "https://www.highmotionsoftware.com/download/ImBatch/file/setup-imbatch-latest.exe"
     }
 }

@@ -1,26 +1,24 @@
 {
-    "version": "10.4.1.1",
-    "description": "Auto Dark Mode. Automatically switches between the dark and light theme of Windows 10 at scheduled times.",
-    "homepage": "https://github.com/Armin2208/Windows-Auto-Night-Mode",
-    "license": "GPL-3.0-only",
-    "changelog": "https://github.com/Armin2208/Windows-Auto-Night-Mode/releases",
-    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/10.4.1.1/AutoDarkModeX_10.4.1.1.zip",
-    "hash": "9f56b01643d2bfe9a18e13e1792662b7d50708ab1ac6fedcf87378bbc8fe43b0",
-    "bin": "AutoDarkModeApp.exe",
+    "version": "10.1.0.10",
+    "description": "Automatically switches between the dark and light theme of Windows 10 and Windows 11.",
+    "homepage": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode",
+    "license": {
+        "identifier": "GPL-3.0-only",
+        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/blob/master/LICENSE"
+    },
+    "notes": "We don't persist your data, they are still storaged in '$env:APPDATA\\AutoDarkMode'.",
+    "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/10.1.0.10/AutoDarkModeX_10.1.0.10.exe",
+    "hash": "bb45e187b4842bfc5d25f838d6267c04cad6fbbfbd70f61113598fc243d1db49",
+    "innosetup": true,
+    "bin": "AutoDarkModeShell.exe",
     "shortcuts": [
         [
             "AutoDarkModeApp.exe",
             "Auto Dark Mode"
         ]
     ],
-    "checkver": {
-        "github": "https://github.com/Armin2208/Windows-Auto-Night-Mode"
-    },
+    "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.zip",
-        "hash": {
-            "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.sha256",
-            "mode": "extract"
-        }
+        "url": "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode/releases/download/$version/AutoDarkModeX_$version.exe"
     }
 }

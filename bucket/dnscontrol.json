@@ -1,33 +1,25 @@
 {
-    "version": "4.15.1",
-    "description": "Synchronize your DNS to multiple providers from a simple DSL.",
-    "homepage": "https://stackexchange.github.io/dnscontrol/",
+    "version": "4.12.0",
+    "description": "Synchronize your DNS to multiple providers from a simple DSL",
+    "homepage": "https://github.com/StackExchange/dnscontrol",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/StackExchange/dnscontrol/releases/download/v4.15.1/dnscontrol_4.15.1_windows_amd64.zip",
-            "hash": "69e3d3de866b7dd261080c4966874b8e7c135e661a088559ed53c739387bcb39"
-        },
-        "arm64": {
-            "url": "https://github.com/StackExchange/dnscontrol/releases/download/v4.15.1/dnscontrol_4.15.1_windows_arm64.zip",
-            "hash": "73c8ab4ef5885f46aef721ba608f8286732148b303f212e38a58dc5e558dadcb"
+            "url": "https://github.com/StackExchange/dnscontrol/releases/download/v4.12.0/dnscontrol_4.12.0_windows_amd64.zip",
+            "hash": "f588f5dfe3d0e43f3bdc5dfaa71b3e730ad09a6b35b7e26728181e426542000e"
         }
     },
     "bin": "dnscontrol.exe",
-    "checkver": {
-        "github": "https://github.com/StackExchange/dnscontrol"
-    },
+    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/StackExchange/dnscontrol/releases/download/v$version/dnscontrol_$version_windows_amd64.zip"
-            },
-            "arm64": {
-                "url": "https://github.com/StackExchange/dnscontrol/releases/download/v$version/dnscontrol_$version_windows_arm64.zip"
             }
         },
         "hash": {
-            "url": "$baseurl/checksums.txt"
+            "url": "$baseurl/checksums.txt",
+            "find": "^$sha256 $basename$"
         }
     }
 }

@@ -1,45 +1,45 @@
 {
-    "version": "1.23.0-rc0",
-    "description": "Git with a cup of tea, painless self-hosted git service. (beta channel)",
-    "homepage": "https://gitea.io/",
-    "license": "MIT",
-    "notes": "Run 'gitea web -c \"$persist_dir\\custom\\conf\\app.ini\"' to start the webserver",
-    "architecture": {
-        "64bit": {
-            "url": "https://github.com/go-gitea/gitea/releases/download/v1.23.0-rc0/gitea-1.23.0-rc0-windows-4.0-amd64.exe#/gitea.exe",
-            "hash": "cdda2b39a9acb1c1831c21f2ae1fccf7f400f724771183209dc74aa6c94cd541"
-        },
-        "32bit": {
-            "url": "https://github.com/go-gitea/gitea/releases/download/v1.23.0-rc0/gitea-1.23.0-rc0-windows-4.0-386.exe#/gitea.exe",
-            "hash": "724eb20e67975d3991e51c386c50f70a29e2f14fb584caf699bc5a66d31682cc"
-        }
+  "version": "1.22.6",
+  "description": "Git with a cup of tea, painless self-hosted git service. (beta channel)",
+  "homepage": "https://gitea.io/",
+  "license": "MIT",
+  "notes": "Run 'gitea web -c \"$persist_dir\\custom\\conf\\app.ini\"' to start the webserver",
+  "architecture": {
+    "64bit": {
+      "url": "https://mirror.ghproxy.com/https://github.com/go-gitea/gitea/releases/download/v1.22.6/gitea-1.22.6-windows-4.0-amd64.exe#/gitea.exe",
+      "hash": "8ad9571723ffb703aba7310ce05ada26851b97234aad89d79b4ba8eec7f400ba"
     },
-    "post_install": [
-        "echo 'Creating $persist_dir\\custom\\conf.app.ini'",
-        "if(!(test-path \"$persist_dir\\custom\\conf\")) { mkdir \"$persist_dir\\custom\\conf\" > $null }",
-        "if(!(test-path \"$persist_dir\\custom\\conf\\app.ini\")) {",
-        "    $gitea = \"[database]`nPATH = $persist_dir/data/gitea.db\"",
-        "    $gitea += \"`n[repository]`nROOT = $persist_dir/repositories\"",
-        "    $gitea += \"`n[log]`nROOT_PATH = $persist_dir/log\"",
-        "    echo $gitea | % {$_.replace(\"\\\",\"/\") } | out-file -encoding oem \"$persist_dir\\custom\\conf\\app.ini\"",
-        "}"
-    ],
-    "bin": "gitea.exe",
-    "checkver": {
-        "url": "https://github.com/go-gitea/gitea/releases",
-        "regex": ">v([\\d.]+(-\\w+)?)<"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://github.com/go-gitea/gitea/releases/download/v$version/gitea-$version-windows-4.0-amd64.exe#/gitea.exe"
-            },
-            "32bit": {
-                "url": "https://github.com/go-gitea/gitea/releases/download/v$version/gitea-$version-windows-4.0-386.exe#/gitea.exe"
-            }
-        },
-        "hash": {
-            "url": "$url.sha256"
-        }
+    "32bit": {
+      "url": "https://mirror.ghproxy.com/https://github.com/go-gitea/gitea/releases/download/v1.22.6/gitea-1.22.6-windows-4.0-386.exe#/gitea.exe",
+      "hash": "d691e99b792c50157eaa094635d3e5fcc3bccfe50011fcd8ae50c2cc2c50df81"
     }
+  },
+  "post_install": [
+    "echo 'Creating $persist_dir\\custom\\conf.app.ini'",
+    "if(!(test-path \"$persist_dir\\custom\\conf\")) { mkdir \"$persist_dir\\custom\\conf\" > $null }",
+    "if(!(test-path \"$persist_dir\\custom\\conf\\app.ini\")) {",
+    "    $gitea = \"[database]`nPATH = $persist_dir/data/gitea.db\"",
+    "    $gitea += \"`n[repository]`nROOT = $persist_dir/repositories\"",
+    "    $gitea += \"`n[log]`nROOT_PATH = $persist_dir/log\"",
+    "    echo $gitea | % {$_.replace(\"\\\",\"/\") } | out-file -encoding oem \"$persist_dir\\custom\\conf\\app.ini\"",
+    "}"
+  ],
+  "bin": "gitea.exe",
+  "checkver": {
+    "url": "https://github.com/go-gitea/gitea/releases",
+    "regex": ">v([\\d.]+(-\\w+)?)<"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://mirror.ghproxy.com/https://github.com/go-gitea/gitea/releases/download/v$version/gitea-$version-windows-4.0-amd64.exe#/gitea.exe"
+      },
+      "32bit": {
+        "url": "https://mirror.ghproxy.com/https://github.com/go-gitea/gitea/releases/download/v$version/gitea-$version-windows-4.0-386.exe#/gitea.exe"
+      }
+    },
+    "hash": {
+      "url": "$url.sha256"
+    }
+  }
 }

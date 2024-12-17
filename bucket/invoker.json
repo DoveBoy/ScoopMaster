@@ -1,0 +1,25 @@
+{
+    "homepage": "https://invoker.dev",
+    "version": "2.14.0",
+    "license": "Proprietary",
+    "url": "https://invokerdev.fra1.digitaloceanspaces.com/invoker/Invoker%20Setup%202.14.0.exe#/dl.7z",
+    "hash": "6196bd4c61b0c9dd5afe0494228a81542a2ed84fdf4b1e62f6e7b4f4be298096",
+    "extract_dir": "$PLUGINSDIR",
+    "installer": {
+        "script": "Expand-7zipArchive \"$dir\\app-64.7z\" \"$dir\""
+    },
+    "shortcuts": [
+        [
+            "Invoker.exe",
+            "Invoker"
+        ]
+    ],
+    "checkver": {
+        "url": "https://invokerdev.fra1.digitaloceanspaces.com/invoker/latest.yml",
+        "regex": "path: Invoker Setup ([0-9.]+).exe"
+    },
+    "autoupdate": {
+        "url": "https://invokerdev.fra1.digitaloceanspaces.com/invoker/Invoker%20Setup%20$version.exe#/dl.7z"
+    },
+    "notes": "The built-in autoupdate process may cause duplicate installations."
+}

@@ -1,0 +1,36 @@
+{
+    "version": "2.11.23",
+    "description": "A visualization interface tool provided by Tencent Cloud COS, view, transfer, and manage COS resources easily",
+    "homepage": "https://github.com/tencentyun/cosbrowser",
+    "license": "Freeware",
+    "url": "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-2.11.23.exe#/dl.7z",
+    "hash": "sha512:e0089fc54f7155ee1f13cdabfd8deae88a340f6144613e4e58682cc2f0f5f9b59293e7a8b84b40b74c032e3f10cc98185d766157abfd00874161440a5265faaa",
+    "architecture": {
+        "64bit": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\""
+        },
+        "32bit": {
+            "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-32.7z\" \"$dir\""
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$*\" -Force -Recurse",
+    "shortcuts": [
+        [
+            "cosbrowser.exe",
+            "COSBrowser",
+            "--user-data-dir=\"$dir\\UserData\""
+        ]
+    ],
+    "persist": "UserData",
+    "checkver": {
+        "url": "https://cos5.cloud.tencent.com/cosbrowser/latest.yml",
+        "regex": "version: ([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://cos5.cloud.tencent.com/cosbrowser/cosbrowser-setup-$version.exe#/dl.7z",
+        "hash": {
+            "url": "$baseurl/latest.yml",
+            "regex": "sha512: $base64"
+        }
+    }
+}

@@ -1,23 +1,26 @@
 {
-    "version": "7.0.1",
-    "description": "A cargo subcommand for checking and applying updates to installed executables",
-    "license": "MIT",
-    "homepage": "https://github.com/nabijaczleweli/cargo-update",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/nabijaczleweli/cargo-update/releases/download/v7.0.1/cargo-update-v7.0.1.zip",
-            "hash": "e0f01d981e8a8129305bcef3b51278e862dc624d6813a59ce1d525b37c4888e8",
-            "extract_dir": "cargo-update-v7.0.1"
+            "extract_dir": "cargo-update-v16.0.0",
+            "hash": "59e7e46f30f0abbc388b7f6d80918fb0168fe70b5fa9bcd2f86ddf3ef2d8d1c3",
+            "url": "https://github.com/nabijaczleweli/cargo-update/releases/download/v16.0.0/cargo-update-v16.0.0.zip"
         }
     },
-    "bin": ["cargo-install-update.exe", "cargo-install-update-config.exe" ],
-    "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/nabijaczleweli/cargo-update/releases/download/v$version/cargo-update-v$version.zip",
-                "extract_dir": "cargo-update-v$version"
+                "extract_dir": "cargo-update-v$version",
+                "url": "https://github.com/nabijaczleweli/cargo-update/releases/download/v$version/cargo-update-v$version.zip"
             }
         }
-    }
+    },
+    "bin": [
+        "cargo-install-update.exe",
+        "cargo-install-update-config.exe"
+    ],
+    "checkver": "github",
+    "description": "A cargo subcommand for checking and applying updates to installed executables",
+    "homepage": "https://github.com/nabijaczleweli/cargo-update",
+    "license": "MIT",
+    "version": "16.0.0"
 }

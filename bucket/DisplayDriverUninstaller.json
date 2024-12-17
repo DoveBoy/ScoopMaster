@@ -1,0 +1,28 @@
+{
+    "version": "18.0.8.9",
+    "description": "Driver removal utility that can help you completely uninstall AMD/NVIDIA graphics card drivers and packages from your system, without leaving leftovers behind (including registry keys, folders and files, driver store)",
+    "homepage": "https://www.wagnardsoft.com/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://github.com/Wagnard/display-drivers-uninstaller/blob/WPF/LICENSE.md"
+    },
+    "url": "https://files2.majorgeeks.com/8a0fdf6ac1bdf075d9892d349c93b3bea8cef69e/drivers/DDU%20v18.0.8.9.exe#/dl.7z",
+    "hash": "391ef70d5045644ef4396ad483fdcf101fb2c5bf840f9d4843ecf8c41262ac52",
+    "pre_install": [
+        "Move-Item \"$dir\\DDU v*\\*\" \"$dir\\\" -Force | Out-Null",
+        "Remove-Item \"$dir\\DDU v*\" -Force | Out-Null"
+    ],
+    "shortcuts": [
+        [
+            "Display Driver Uninstaller.exe",
+            "DDU - Display Driver Uninstaller"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.majorgeeks.com/mg/getmirror/display_driver_uninstaller,2.html",
+        "re": "\\(DDU\\)\\s(?<Version>[\\d.]+).*?[\\s\\S]+\\.com/(?<Hash>[\\w]+)/drivers/DDU.*?\\.exe"
+    },
+    "autoupdate": {
+        "url": "https://files2.majorgeeks.com/$matchHash/drivers/DDU%20v$matchVersion.exe#/dl.7z"
+    }
+}

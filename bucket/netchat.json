@@ -1,0 +1,26 @@
+{
+    "version": "7.15",
+    "description": "Chat with other users in the same subnet.",
+    "homepage": "https://www.the-sz.com/products/netchat/",
+    "license": {
+        "identifier": "Freeware",
+        "url": "https://www.the-sz.com/products/license.php"
+    },
+    "url": "https://www.the-sz.com/products/netchat/NetChat.zip",
+    "hash": "462d4ea991a257fc6b8b448cac0aa45e1391337b21d3d19c0cb0577bc7ea5fd1",
+    "bin": "NetChat.exe",
+    "shortcuts": [
+        [
+            "NetChat.exe",
+            "NetChat"
+        ]
+    ],
+    "notes": "NetChat is NOT portable.",
+    "checkver": {
+        "url": "https://the-sz.com/common/pad/netchat.xml",
+        "regex": "<Program_Version>([\\d.]+)</Program_Version>"
+    },
+    "autoupdate": {
+        "url": "https://www.the-sz.com/products/netchat/NetChat.zip"
+    }
+}

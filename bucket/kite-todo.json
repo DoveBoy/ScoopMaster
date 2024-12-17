@@ -1,0 +1,30 @@
+{
+    "version": "0.0.18",
+    "description": "简洁轻量的待办应用",
+    "homepage": "https://kite.kitlib.cn",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://kite.kitlib.cn/app/v0.0.18/kite_0.0.18_x64-setup.exe#/dl.7z",
+            "hash": "fe9117b8ea8616b160d7732703e4be4545def48626680c20e6f619242dc7c674"
+        }
+    },
+    "shortcuts": [
+        [
+            "kite.exe",
+            "Kite"
+        ]
+    ],
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall*\"  -Force -Recurse",
+    "notes": "Kite Todo is NOT portable.",
+    "checkver": {
+        "regex": "kite_([\\d.]+)_x64-setup.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://kite.kitlib.cn/app/v$version/kite_$version_x64-setup.exe#/dl.7z"
+            }
+        }
+    }
+}

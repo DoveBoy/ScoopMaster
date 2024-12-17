@@ -1,0 +1,68 @@
+{
+    "version": "128.5.2esr",
+    "description": "A free email application that's easy to set up and customize.",
+    "homepage": "https://www.thunderbird.net",
+    "license": "MPL-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://archive.mozilla.org/pub/thunderbird/releases/128.5.2esr/win64/pl/Thunderbird%20Setup%20128.5.2esr.exe#/dl.7z",
+            "hash": "sha512:df70da5db86cb95b0614d0c7a819b4685a66a09948de186d365993f4b2d01f9b4fb0a8a26e3faedbda5970b9e512e88c0aeccc0e68d3dbedf2a6f591610a7fa4"
+        },
+        "32bit": {
+            "url": "https://archive.mozilla.org/pub/thunderbird/releases/128.5.2esr/win32/pl/Thunderbird%20Setup%20128.5.2esr.exe#/dl.7z",
+            "hash": "sha512:053539550eb3a01dff425cdff6077e05e06870ffbfe972ad25fdeebe2d409d484ce55150c1278ddf2472de6b1a76874ba49585a7842a248c47f7fa50e73c71dd"
+        }
+    },
+    "notes": [
+        "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+        "  - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.",
+        "  - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.",
+        "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles"
+    ],
+    "extract_dir": "core",
+    "post_install": [
+        "~\\scoop\\apps\\thunderbird-polish\\current\\thunderbird.exe -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "  info 'Copying additional items...'",
+        "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
+    "shortcuts": [
+        [
+            "thunderbird.exe",
+            "Thunderbird"
+        ],
+        [
+            "thunderbird.exe",
+            "Thunderbird Profile Manager",
+            "-P"
+        ]
+    ],
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "url": "https://www.thunderbird.net/thunderbird/all/",
+        "regex": "thunderbird-([\\d.]+esr)-SSL.*lang=pl"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://archive.mozilla.org/pub/thunderbird/releases/$version/win64/pl/Thunderbird%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/thunderbird/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win64/pl/$basename"
+                }
+            },
+            "32bit": {
+                "url": "https://archive.mozilla.org/pub/thunderbird/releases/$version/win32/pl/Thunderbird%20Setup%20$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://archive.mozilla.org/pub/thunderbird/releases/$version/SHA512SUMS",
+                    "regex": "$sha512\\s+win32/pl/$basename"
+                }
+            }
+        }
+    }
+}

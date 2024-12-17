@@ -1,0 +1,22 @@
+{
+    "version": "3.71.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/DopplerHQ/cli/releases/download/3.71.0/doppler_3.71.0_windows_amd64.zip",
+            "bin": [
+                "doppler.exe"
+            ],
+            "hash": "cf1c642c603448fe4f093d4a53e64df7c24ee0f8f547a0642d3b4186c72675b1"
+        },
+        "arm64": {
+            "url": "https://github.com/DopplerHQ/cli/releases/download/3.71.0/doppler_3.71.0_windows_arm64.zip",
+            "bin": [
+                "doppler.exe"
+            ],
+            "hash": "c4f258ca77d268e6c31c298f56344989716a9d6c7f0751c41dbf3c166d1bbc17"
+        }
+    },
+    "homepage": "https://doppler.com",
+    "license": "Apache-2.0",
+    "description": "The official Doppler CLI for managing your secrets"
+}

@@ -1,38 +1,38 @@
 {
-  "homepage": "https://brave.com",
-  "version": "1.75.100",
-  "description": "Secure, Fast & Private Web Browser with Adblocker (nightly release)",
-  "license": {
-    "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
-    "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
-  },
-  "architecture": {
-    "64bit": {
-      "url": "https://mirror.ghproxy.com/https://github.com/brave/brave-browser/releases/download/v1.75.100/brave-v1.75.100-win32-x64.zip",
-      "hash": "6839284f625122999924ed96016697dce6ee050dd2703f60305b1eb710040e18"
-    }
-  },
-  "bin": [
-    [
-      "brave.exe",
-      "brave-nightly"
-    ]
-  ],
-  "shortcuts": [
-    [
-      "brave.exe",
-      "Brave Nightly"
-    ]
-  ],
-  "checkver": {
-    "url": "https://github.com/brave/brave-browser/releases",
-    "regex": "Nightly v([\\d.]+)"
-  },
-  "autoupdate": {
+    "homepage": "https://brave.com",
+    "version": "1.75.104",
+    "description": "Secure, Fast & Private Web Browser with Adblocker (nightly release)",
+    "license": {
+        "identifier": "Freeware,BSD-3-Clause,GPL-3.0-only,...",
+        "url": "https://github.com/brave/brave-browser/blob/master/LICENSE"
+    },
     "architecture": {
-      "64bit": {
-        "url": "https://mirror.ghproxy.com/https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
-      }
+        "64bit": {
+            "url": "https://github.com/brave/brave-browser/releases/download/v1.75.104/brave-v1.75.104-win32-x64.zip",
+            "hash": "c45c0bc8e8bca50a3038cf44c7211c8dae22c9d196f3a0f1ba2630a578996fd9"
+        }
+    },
+    "bin": [
+        [
+            "brave.exe",
+            "brave-nightly"
+        ]
+    ],
+    "shortcuts": [
+        [
+            "brave.exe",
+            "Brave Nightly"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/brave/brave-browser/releases",
+        "regex": "Nightly v([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/brave/brave-browser/releases/download/v$version/brave-v$version-win32-x64.zip"
+            }
+        }
     }
-  }
 }

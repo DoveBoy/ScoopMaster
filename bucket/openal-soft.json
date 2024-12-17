@@ -1,0 +1,30 @@
+{
+    "version": "1.24.1",
+    "description": "A software implementation of the OpenAL 3D audio API",
+    "homepage": "https://www.openal-soft.org",
+    "license": "LGPL-2.0-only",
+    "notes": [
+        "For installation, copy the corresponding DLL file found in /bin depending on the architecture that is used by the app, to the directory where the app loads them from.",
+        "Refer to the included readme.txt for more details."
+    ],
+    "url": "https://github.com/kcat/openal-soft/releases/download/1.24.1/openal-soft-1.24.1-bin.zip",
+    "hash": "847eb616d75d4920b0ef186ce6557b4644443671479e8ef854d01958472f364d",
+    "extract_dir": "openal-soft-1.24.1-bin",
+    "bin": [
+        "openal-info32.exe",
+        "openal-info64.exe"
+    ],
+    "shortcuts": [
+        [
+            "alsoft-config\\alsoft-config.exe",
+            "OpenAL Soft Config"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/kcat/openal-soft"
+    },
+    "autoupdate": {
+        "url": "https://github.com/kcat/openal-soft/releases/download/$version/openal-soft-$version-bin.zip",
+        "extract_dir": "openal-soft-$version-bin"
+    }
+}

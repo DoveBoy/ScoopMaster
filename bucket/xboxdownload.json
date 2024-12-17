@@ -1,22 +1,33 @@
 {
+    "version": "v2.0.2.55",
+    "description": "Xbox 下载助手，支持Xbox、微软商店、PSN、NS、EA Desktop & Origin、战网国际服、Epic 下载加速。",
     "homepage": "https://github.com/skydevil88/XboxDownload",
-    "description": "Xbox下载助手",
-    "version": "2.0.2.55",
-    "license": "Unlicense",
-    "url": "https://github.com/skydevil88/XboxDownload/releases/download/v2.0.2.55/XboxDownload.zip",
-    "hash": "9f36155f0319cb0f437fda429ee1e572f5a44c2c07d4e9666a410955ff0d7bf3",
-    "extract_dir": "Xbox下载助手",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/skydevil88/XboxDownload/releases/download/v2.0.2.55/XboxDownload.zip",
+            "hash": "9f36155f0319cb0f437fda429ee1e572f5a44c2c07d4e9666a410955ff0d7bf3"
+        }
+    },
+    "pre_install": [
+        "Move-Item -Path \"$dir\\Xbox*\\*\" -Destination \"$dir\"",
+        "Get-ChildItem -Directory -Path \"$dir\" -Filter 'Xbox*' | Remove-Item -Force -Recurse"
+    ],
     "shortcuts": [
         [
             "XboxDownload.exe",
-            "Xbox下载助手"
+            "Xbox 下载助手"
         ]
     ],
     "checkver": {
         "url": "https://github.com/skydevil88/XboxDownload/releases/latest",
-        "regex": "/releases/tag/v([\\d.]+)"
+        "regex": "/skydevil88/XboxDownload/releases/tag/([^/]+?)\""
     },
     "autoupdate": {
-        "url": "https://github.com/skydevil88/XboxDownload/releases/download/v$version/XboxDownload.zip"
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/skydevil88/XboxDownload/releases/download/$version/XboxDownload.zip"
+            }
+        }
     }
 }

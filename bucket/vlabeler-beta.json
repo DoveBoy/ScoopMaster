@@ -1,0 +1,30 @@
+{
+    "version": "1.4.2-beta1",
+    "description": "Open source voice labeling application",
+    "homepage": "https://github.com/sdercolin/vlabeler/",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sdercolin/vlabeler/releases/download/1.4.2-beta1/vlabeler-1.4.2-beta1-win64.zip",
+            "hash": "8a6ca3bfc49bb65c254e3d7ec16a54a8647c8958dfaaf4d2fab91f79d7005a5f"
+        }
+    },
+    "bin": "vLabeler.exe",
+    "shortcuts": [
+        [
+            "vLabeler.exe",
+            "vLabeler"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/sdercolin/vlabeler/releases",
+        "regex": "tag/([\\d.]+-[a-z\\d]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/sdercolin/vlabeler/releases/download/$version/vlabeler-$version-win64.zip"
+            }
+        }
+    }
+}

@@ -1,28 +1,28 @@
 {
-  "version": "20241212163439-029d30fa7",
-  "description": "Snapshot releases of the video transcoder with extensive support for multiple formats. (CLI version)",
-  "homepage": "https://handbrake.fr",
-  "license": "GPL-2.0-only",
-  "architecture": {
-    "64bit": {
-      "url": "https://mirror.ghproxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-20241212163439-029d30fa7-master-win-x86_64.zip",
-      "hash": "c777871a7d3d738c450421c63026e5f4fe8c81419d50025b17da2257e52204ad"
-    }
-  },
-  "bin": "HandBrakeCLI.exe",
-  "checkver": {
-    "url": "https://github.com/HandBrake/handbrake-snapshots/releases/tag/win",
-    "regex": "<td>HandBrakeCLI-([\\d]+-[\\w]+)-master-win-x86_64.zip</td>"
-  },
-  "autoupdate": {
+    "version": "20241212163439-029d30fa7",
+    "description": "Snapshot releases of the video transcoder with extensive support for multiple formats. (CLI version)",
+    "homepage": "https://handbrake.fr",
+    "license": "GPL-2.0-only",
     "architecture": {
-      "64bit": {
-        "url": "https://mirror.ghproxy.com/https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-$version-master-win-x86_64.zip",
-        "hash": {
-          "url": "https://github.com/HandBrake/handbrake-snapshots/releases/tag/win",
-          "regex": "<td>$sha256</td>\\s+<td>HandBrakeCLI-([\\d]+-[\\w]+)-master-win-x86_64.zip</td>"
+        "64bit": {
+            "url": "https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-20241212163439-029d30fa7-master-win-x86_64.zip",
+            "hash": "c777871a7d3d738c450421c63026e5f4fe8c81419d50025b17da2257e52204ad"
         }
-      }
+    },
+    "bin": "HandBrakeCLI.exe",
+    "checkver": {
+        "url": "https://github.com/HandBrake/handbrake-snapshots/releases/tag/win",
+        "regex": "<td>HandBrakeCLI-([\\d]+-[\\w]+)-master-win-x86_64.zip</td>"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/HandBrake/HandBrake-snapshots/releases/download/win/HandBrakeCLI-$version-master-win-x86_64.zip",
+                "hash": {
+                    "url": "https://github.com/HandBrake/handbrake-snapshots/releases/tag/win",
+                    "regex": "<td>$sha256</td>\\s+<td>HandBrakeCLI-([\\d]+-[\\w]+)-master-win-x86_64.zip</td>"
+                }
+            }
+        }
     }
-  }
 }

@@ -1,8 +1,17 @@
 {
     "version": "1.30",
-    "description": "A tool to take and compare snapshots of Windows Registry.",
     "homepage": "https://www.nirsoft.net/utils/registry_changes_view.html",
-    "license": "Freeware",
+    "bin": "RegistryChangesView.exe",
+    "shortcuts": [
+        [
+            "RegistryChangesView.exe",
+            "NirSoft\\RegistryChangesView"
+        ]
+    ],
+    "persist": [
+        "registrychangesview_lng.ini",
+        "registrychangesview.cfg"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://www.nirsoft.net/utils/registrychangesview-x64.zip",
@@ -13,13 +22,13 @@
             "hash": "8b841e01afb2ddb45428d5565d98b6f1ddc13ee28d23babdb81a2858d4d95be5"
         }
     },
-    "shortcuts": [
-        [
-            "RegistryChangesView.exe",
-            "RegistryChangesView"
-        ]
-    ],
-    "checkver": "RegistryChangesView v(\\d+\\.\\d\\d)",
+    "description": "Compares 2 snapshots of Windows Registry.",
+    "license": "Freeware",
+    "notes": "If this application is useful to you, please consider donating to NirSoft - https://www.nirsoft.net/donate.html",
+    "checkver": {
+        "url": "https://www.nirsoft.net/pad/registrychangesview.xml",
+        "xpath": "/XML_DIZ_INFO/Program_Info/Program_Version"
+    },
     "autoupdate": {
         "architecture": {
             "64bit": {

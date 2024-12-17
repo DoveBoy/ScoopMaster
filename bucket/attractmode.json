@@ -1,16 +1,16 @@
 {
-    "version": "2.6.1",
+    "version": "2.7.0",
     "description": "a graphical frontend for command line emulators such as MAME, MESS, and Nestopia",
     "homepage": "http://attractmode.org",
     "license": "GPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/mickelson/attract/releases/download/v2.6.1/attract-v2.6.1-win64.zip",
-            "hash": "389e3e54c8c9c26cf8b4cc52960f5635f2a47abcb95e4bb48acb375a0ea8bd2b"
+            "url": "https://github.com/mickelson/attract/releases/download/v2.7.0/attract-v2.7.0-win64.zip",
+            "hash": "4b5914edca696939ca7d226eafe9a028c78fb01a5cd5dd05a08f0bc33feeea41"
         },
         "32bit": {
-            "url": "https://github.com/mickelson/attract/releases/download/v2.6.1/attract-v2.6.1-win32.zip",
-            "hash": "242a702f95f4f2d7a8c90e0c30ae3a695748836e915b5454c80e1a128e77a855"
+            "url": "https://github.com/mickelson/attract/releases/download/v2.7.0/attract-v2.7.0-win32.zip",
+            "hash": "9f7a538e73e8b51d77a64a22f9e95611d28963c21afa2be3c59222db8b672d97"
         }
     },
     "bin": "attract.exe",

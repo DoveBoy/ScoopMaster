@@ -1,56 +1,56 @@
 {
-    "version": "6.3.0.52884",
-    "description": "Zoom. Video and audio conferencing, chat, and webinars",
-    "homepage": "https://zoom.us",
-    "license": {
-        "identifier": "Proprietary",
-        "url": "https://zoom.us/terms"
+  "version": "6.3.0.52884",
+  "description": "Zoom. Video and audio conferencing, chat, and webinars",
+  "homepage": "https://zoom.us",
+  "license": {
+    "identifier": "Proprietary",
+    "url": "https://zoom.us/terms"
+  },
+  "architecture": {
+    "64bit": {
+      "url": "https://www.zoom.us/client/6.3.0.52884/ZoomInstallerFull.msi?archType=x64",
+      "hash": "bcd50e9b6b91e0942b2b8c0378a75fe9d0d2601d8e5408b7367f8a86f0926b1d",
+      "extract_dir": "Program Files (64-bit) Folder\\Zoom\\bin"
     },
-    "architecture": {
-        "64bit": {
-            "url": "https://www.zoom.us/client/6.3.0.52884/ZoomInstallerFull.msi?archType=x64",
-            "hash": "bcd50e9b6b91e0942b2b8c0378a75fe9d0d2601d8e5408b7367f8a86f0926b1d",
-            "extract_dir": "Program Files (64-bit) Folder\\Zoom\\bin"
-        },
-        "32bit": {
-            "url": "https://www.zoom.us/client/6.3.0.52884/ZoomInstallerFull.msi",
-            "hash": "7fbda50c1880edc5b3f76b4423ddb0fcff030044e81ccb289566c8f736888386",
-            "extract_dir": "Program Files (32-bit) Folder\\Zoom\\bin"
-        }
-    },
-    "extract_dir": "Program Files (64-bit) Folder\\Zoom\\bin",
-    "post_install": [
-        "Write-Host \"Registering zoommtg:// protocol handler\"",
-        "$regpath = \"HKCU:\\SOFTWARE\\Classes\\zoommtg\"",
-        "New-Item -Path $regpath -Value \"Zoom (Application Name)\" -Force | Out-Null",
-        "New-ItemProperty -Path $regpath -Name \"URL Protocol\" -PropertyType String -Force | Out-Null",
-        "New-Item -Path \"$regpath\\shell\\open\\command\" -Value \"`\"$dir\\Zoom.exe`\" --url=`\"%1`\"\" -Force| Out-Null"
-    ],
-    "uninstaller": {
-        "script": [
-            "Write-Host \"Unregistering zoommtg:// protocol handler\"",
-            "Remove-Item \"HKCU:\\SOFTWARE\\Classes\\zoommtg\" -Recurse -Force"
-        ]
-    },
-    "bin": "Zoom.exe",
-    "shortcuts": [
-        [
-            "Zoom.exe",
-            "Zoom"
-        ]
-    ],
-    "checkver": {
-        "url": "https://launcher.zoom.us/upgrade?os=win",
-        "regex": "Current-version=([\\d.]+)"
-    },
-    "autoupdate": {
-        "architecture": {
-            "64bit": {
-                "url": "https://www.zoom.us/client/$version/ZoomInstallerFull.msi?archType=x64"
-            },
-            "32bit": {
-                "url": "https://www.zoom.us/client/$version/ZoomInstallerFull.msi"
-            }
-        }
+    "32bit": {
+      "url": "https://www.zoom.us/client/6.3.0.52884/ZoomInstallerFull.msi",
+      "hash": "7fbda50c1880edc5b3f76b4423ddb0fcff030044e81ccb289566c8f736888386",
+      "extract_dir": "Program Files (32-bit) Folder\\Zoom\\bin"
     }
+  },
+  "extract_dir": "Program Files (64-bit) Folder\\Zoom\\bin",
+  "post_install": [
+    "Write-Host \"Registering zoommtg:// protocol handler\"",
+    "$regpath = \"HKCU:\\SOFTWARE\\Classes\\zoommtg\"",
+    "New-Item -Path $regpath -Value \"Zoom (Application Name)\" -Force | Out-Null",
+    "New-ItemProperty -Path $regpath -Name \"URL Protocol\" -PropertyType String -Force | Out-Null",
+    "New-Item -Path \"$regpath\\shell\\open\\command\" -Value \"`\"$dir\\Zoom.exe`\" --url=`\"%1`\"\" -Force| Out-Null"
+  ],
+  "uninstaller": {
+    "script": [
+      "Write-Host \"Unregistering zoommtg:// protocol handler\"",
+      "Remove-Item \"HKCU:\\SOFTWARE\\Classes\\zoommtg\" -Recurse -Force"
+    ]
+  },
+  "bin": "Zoom.exe",
+  "shortcuts": [
+    [
+      "Zoom.exe",
+      "Zoom"
+    ]
+  ],
+  "checkver": {
+    "url": "https://launcher.zoom.us/upgrade?os=win",
+    "regex": "Current-version=([\\d.]+)"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://www.zoom.us/client/$version/ZoomInstallerFull.msi?archType=x64"
+      },
+      "32bit": {
+        "url": "https://www.zoom.us/client/$version/ZoomInstallerFull.msi"
+      }
+    }
+  }
 }

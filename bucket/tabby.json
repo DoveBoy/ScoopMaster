@@ -12,8 +12,8 @@
                 "Remove-Item \"$dir\\`$*\", \"$dir\\Unins*\" -Force -Recurse"
             ],
             "post_install": [
-                "if (Test-Path $env:APPDATA\\Tabby) {",
-                "    Copy-Item -Path $env:APPDATA\\Tabby\\* -Destination \"$persist_dir\\data\" -PassThru",
+                "if ((Test-Path $env:APPDATA\\Tabby) -and (-not (Test-Path \"$persist_dir\\data\\*\"))) {",
+                "    Copy-Item -Path $env:APPDATA\\Tabby\\* -Destination \"$persist_dir\\data\" -Recurse",
                 "}"
             ]
         }
@@ -27,14 +27,15 @@
     ],
     "persist": "data",
     "checkver": {
-        "github": "https://github.com/Eugeny/tabby"
+        "url": "https://api.github.com/repos/Eugeny/tabby/releases",
+        "regex": "(?sm)browser_download_url.*?releases/download/v([\\d.]+)/tabby-([\\d.]+)-setup-x64\\.exe"
     },
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/Eugeny/tabby/releases/download/v$version/tabby-$version-setup-x64.exe#/dl.7z",
                 "hash": {
-                    "url": "$baseurl/latest.yml",
+                    "url": "$baseurl/latest-x64.yml",
                     "regex": "sha512: $base64"
                 }
             }

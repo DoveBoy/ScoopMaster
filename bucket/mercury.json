@@ -1,13 +1,13 @@
 {
-    "version": "129.0.2",
+    "version": "122.0.2",
     "description": "Firefox fork with compiler optimizations and patches from Librewolf, Waterfox, and GNU IceCat.",
     "homepage": "https://thorium.rocks/mercury",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Alex313031/Mercury/releases/download/v.129.0.2/mercury_129.0.2_win64_SSE4.zip",
-            "hash": "26480ec6df8276cc4680f674e9221c3fe880cb3bec0c1b6038c24ede6d2a667d",
-            "extract_dir": "mercury_129.0.2_win64_SSE4\\mercury"
+            "url": "https://github.com/Alex313031/Mercury/releases/download/v.122.0.2/mercury_122.0.2_win64_SSE3.zip",
+            "hash": "05cb92fa408e8fe608a47f6232d08f4ae86371156c38ea87944564b1e78b114e",
+            "extract_dir": "mercury"
         }
     },
     "pre_install": "Remove-Item \"$dir\\pingsender.exe\"",
@@ -15,7 +15,8 @@
     "shortcuts": [
         [
             "mercury.exe",
-            "Mercury"
+            "Mercury",
+            "MERCURY.BAT"
         ]
     ],
     "persist": [
@@ -30,8 +31,8 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "https://github.com/Alex313031/Mercury/releases/download/v.$version/mercury_$version_win64_SSE4.zip",
-                "extract_dir": "mercury_$version_win64_SSE4\\mercury"
+                "url": "https://github.com/Alex313031/Mercury/releases/download/v.$version/mercury_$version_win64_SSE3.zip",
+                "extract_dir": "mercury"
             }
         }
     }

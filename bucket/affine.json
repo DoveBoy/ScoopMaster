@@ -7,7 +7,7 @@
         "url": "https://github.com/toeverything/AFFiNE/blob/canary/LICENSE"
     },
     "url": "https://github.com/toeverything/AFFiNE/releases/download/v0.19.3/affine-0.19.3-stable-windows-x64.exe#/dl.7z",
-    "hash": "sha512:fec1f064aa5b92cf62d34655ec91ebf43b70ae8e4f2d3e3c386a683821b9a1f65a8e56f4179ae8c94a0d393023a27c032a8ddee707314e98d62150eb26ba085c",
+    "hash": "sha512:9aa0109f52d39cac8b8b809783c8c12f00312397a85c67cbc98b35d816aadf4756028b914c1ac8bbe93f55272e1ea692169d89c9d93b3f53f1bd6df3efc659bd",
     "shortcuts": [
         [
             "app\\AFFiNE.exe",

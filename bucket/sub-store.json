@@ -40,6 +40,8 @@
         "SUB_STORE_FRONTEND_PATH=./dist",
         "SUB_STORE_FRONTEND_HOST=localhost",
         "SUB_STORE_FRONTEND_PORT=3001",
+        "SUB_STORE_BACKEND_HOST=localhost",
+        "SUB_STORE_BACKEND_PORT=3000",
         "SUB_STORE_MMDB_COUNTRY_PATH=./GeoLite2-Country.mmdb",
         "SUB_STORE_MMDB_ASN_PATH=./GeoLite2-ASN.mmdb",
         "\"@ | Set-Content \"$persist_dir\\.env\" -Force",

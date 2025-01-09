@@ -23,11 +23,11 @@
     "shortcuts": [["lx-music-desktop.exe", "Lx Music"]],
     "persist": ["portable"],
     "post_install": [
-        "& \"$bucketsdir\\ocd\\bin\\prepare.ps1\" -PersistPath \"portable\\userData\\LxDatas\" -TargetPath \"$env:AppData\\lx-music-desktop\"",
-        "& \"$bucketsdir\\ocd\\bin\\holdver.ps1\" -ConfigPath \"portable\\userData\\LxDatas\\config_v2.json\" -PropPath @('setting', 'common.tryAutoUpdate')"
+        "& \"$bucketsdir\\ocd\\bin\\prepare.ps1\" \"$env:AppData\\lx-music-desktop\" -PersistPath \"portable\\userData\\LxDatas\"",
+        "& \"$bucketsdir\\ocd\\bin\\holdver.ps1\" \"portable\\userData\\LxDatas\\config_v2.json\" -PropPath 'setting', 'common.tryAutoUpdate'"
     ],
     "post_uninstall": [
-        "& \"$bucketsdir\\ocd\\bin\\cleanup.ps1\" -WithParent -TargetPath \"$env:AppData\\lx-music-desktop\\logs\""
+        "& \"$bucketsdir\\ocd\\bin\\cleanup.ps1\" \"$env:AppData\\lx-music-desktop\\logs\" -WithParent"
     ],
     "checkver": "github",
     "autoupdate": {

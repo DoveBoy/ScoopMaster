@@ -5,10 +5,7 @@
     "license": "ISC",
     "notes": [
         "Usage: Add 'Invoke-Expression (&starship init powershell)' to the end of your PowerShell $PROFILE.",
-        "Prerequisites: A Powerline font installed and enabled in your terminal.",
-        "Scoop sets Starship environment variables:",
-        "- STARSHIP_CONFIG for configuration file",
-        "- STARSHIP_CACHE for cache directory"
+        "Prerequisites: A Powerline font installed and enabled in your terminal."
     ],
     "suggest": {
         "vcredist": "extras/vcredist2022"
@@ -27,20 +24,7 @@
             "hash": "e70380ca76c9a83a7ded88c1d2edcf84ee79222b7274b8c8c6d74bc8a9b7b0d1"
         }
     },
-    "env_set": {
-        "STARSHIP_CONFIG": "$dir\\starship.toml",
-        "STARSHIP_CACHE": "$dir\\cache"
-    },
     "bin": "starship.exe",
-    "persist": [
-        "starship.toml",
-        "cache"
-    ],
-    "pre_install": [
-        "Import-Module $(Join-Path $(Find-BucketDirectory -Root -Name air) scripts/AirUtils.psm1)",
-        "EnsureFile \"$persist_dir\\starship.toml\"",
-        "Remove-Module -Name AirUtils"
-    ],
     "checkver": {
         "github": "https://github.com/starship/starship"
     },

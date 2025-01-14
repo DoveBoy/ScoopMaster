@@ -1,13 +1,13 @@
 {
-    "version": "20250112161902-57da748",
-    "description": "Microsoft Xbox 360 emulator",
+    "version": "20250114202208-e80d4ef",
+    "description": "Xbox 360 Research Emulator (development version)",
     "homepage": "https://xenia.jp",
     "license": {
         "identifier": "BSD-3-Clause",
         "url": "https://github.com/xenia-canary/xenia-canary/blob/canary_pr/LICENSE"
     },
-    "url": "https://github.com/xenia-canary/xenia-canary/releases/download/57da748/xenia_canary.zip",
-    "hash": "d114b473a961dd32fd677520a2c0c5aa3e5330e02067fa363cd67a75fabe4616",
+    "url": "https://github.com/xenia-canary/xenia-canary/releases/download/e80d4ef/xenia_canary.zip",
+    "hash": "10544b7219aa7ecb2102488dafef6060aa783ef59297781c856390a6391bcac9",
     "pre_install": [
         "if (!(Test-Path \"$persist_dir\")) {",
         "   New-Item \"$persist_dir\" -ItemType Directory | Out-Null",
@@ -24,7 +24,7 @@
     "shortcuts": [
         [
             "xenia_canary.exe",
-            "Microsoft Xbox 360 [x360][xenia] (canary)"
+            "Xenia Canary"
         ]
     ],
     "persist": [
@@ -36,14 +36,14 @@
     ],
     "checkver": {
         "url": "https://github.com/xenia-canary/xenia-canary/releases.atom",
-        "regex": "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}):(?<second>\\d{2})Z (?<commit>[a-f0-9]+)_canary_experimental",
-        "replace": "${year}${month}${day}${hour}${minute}${second}-${commit}",
         "script": [
             "$xml = [xml]$page",
             "$updated = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].updated",
             "$title = ($xml.feed.entry | Where-Object {$_.title -ne 'canary_experimental'} | Sort-Object -Descending { $_.updated })[0].title",
             "Write-Output \"$updated $title\""
-        ]
+        ],
+        "regex": "(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})T(?<hour>\\d{2}):(?<minute>\\d{2}):(?<second>\\d{2})Z (?<commit>[a-f0-9]+)_canary_experimental",
+        "replace": "${year}${month}${day}${hour}${minute}${second}-${commit}"
     },
     "autoupdate": {
         "url": "https://github.com/xenia-canary/xenia-canary/releases/download/$matchCommit/xenia_canary.zip"

@@ -1,41 +1,41 @@
 {
-  "version": "134.0.3076.0",
-  "description": "Microsoft Edge Canary. The chromium based Microsoft Edge browser (Canary Channel)",
-  "homepage": "https://www.microsoftedgeinsider.com/en-us/welcome?channel=canary",
-  "license": "Freeware",
-  "architecture": {
-    "64bit": {
-      "url": [
-        "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=134.0.3076.0&dl#/dl.7z",
-        "https://github.com/ACooper81/SharedFiles/raw/master/Icons/msedgecanary.ico"
-      ],
-      "hash": [
-        "f6b31c1729e3a9cceb105dfbc5d83951380859942eb468836391af56f59b2ddf",
-        "bc5d81fa6ad61ed114ba51f0736f55235c933f5180888abee0426691fdf6efea"
-      ]
-    }
-  },
-  "installer": {
-    "script": "Expand-7zipArchive -Path \"$dir\\MSEDGE.7z\" -ExtractDir \"Chrome-bin\\$version\" -Removal"
-  },
-  "shortcuts": [
-    [
-      "msedge.exe",
-      "Microsoft Edge Canary",
-      "--user-data-dir=\"$dir\\User Data\"",
-      "msedgecanary.ico"
-    ]
-  ],
-  "persist": "User Data",
-  "checkver": {
-    "script": "Write-Output $([System.Text.Encoding]::Unicode.GetString((Invoke-WebRequest -URI https://msedgedriver.azureedge.net/LATEST_CANARY).Content))",
-    "regex": "([\\d.]+)"
-  },
-  "autoupdate": {
+    "version": "134.0.3078.0",
+    "description": "Microsoft Edge Canary. The chromium based Microsoft Edge browser (Canary Channel)",
+    "homepage": "https://www.microsoftedgeinsider.com/en-us/welcome?channel=canary",
+    "license": "Freeware",
     "architecture": {
-      "64bit": {
-        "url": "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=$version&dl#/dl.7z"
-      }
+        "64bit": {
+            "url": [
+                "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=134.0.3078.0&dl#/dl.7z",
+                "https://github.com/ACooper81/SharedFiles/raw/master/Icons/msedgecanary.ico"
+            ],
+            "hash": [
+                "2aee53c92b74bd15e72bfec5d89e63358b323338e55015de000c9bb9e3f812d1",
+                "bc5d81fa6ad61ed114ba51f0736f55235c933f5180888abee0426691fdf6efea"
+            ]
+        }
+    },
+    "installer": {
+        "script": "Expand-7zipArchive -Path \"$dir\\MSEDGE.7z\" -ExtractDir \"Chrome-bin\\$version\" -Removal"
+    },
+    "shortcuts": [
+        [
+            "msedge.exe",
+            "Microsoft Edge Canary",
+            "--user-data-dir=\"$dir\\User Data\"",
+            "msedgecanary.ico"
+        ]
+    ],
+    "persist": "User Data",
+    "checkver": {
+        "script": "Write-Output $([System.Text.Encoding]::Unicode.GetString((Invoke-WebRequest -URI https://msedgedriver.azureedge.net/LATEST_CANARY).Content))",
+        "regex": "([\\d.]+)"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=$version&dl#/dl.7z"
+            }
+        }
     }
-  }
 }

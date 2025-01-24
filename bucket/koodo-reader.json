@@ -1,32 +1,32 @@
 {
-    "version": "1.7.6",
-    "description": "阅读器",
     "homepage": "https://github.com/troyeguo/koodo-reader",
-    "license": "MIT",
+    "description": "A modern ebook manager and reader with sync and backup capacities for Windows, macOS, Linux and Web",
+    "version": "1.7.7",
+    "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.7.6/Koodo-Reader-1.7.6-x64-Win.zip",
-            "hash": "5677057863175e4a997cfd5fa8a59c9d83b9a4990d8c58aa7e3de96df844e20a"
+            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.7.7/Koodo-Reader-1.7.7-x64-Win.zip",
+            "hash": "48e0734ded76d4d83374480872e8f4ef186660f31f9b59ab49e5d5c1dec7dacc"
+        },
+        "32bit": {
+            "url": "https://github.com/troyeguo/koodo-reader/releases/download/v1.7.7/Koodo-Reader-1.7.7-ia32-Win.zip",
+            "hash": "d9c3ecbacfb09aed59f8c6f3d56386b40dcf1cce44838b2abfeda4d7bbb01d55"
         }
     },
-    "bin": [
-        [
-            "Koodo Reader.exe",
-            "koodo"
-        ]
-    ],
     "shortcuts": [
         [
             "Koodo Reader.exe",
-            "koodo"
+            "Koodo Reader"
         ]
     ],
-    "persist": "data",
     "checkver": "github",
     "autoupdate": {
         "architecture": {
             "64bit": {
                 "url": "https://github.com/troyeguo/koodo-reader/releases/download/v$version/Koodo-Reader-$version-x64-Win.zip"
+            },
+            "32bit": {
+                "url": "https://github.com/troyeguo/koodo-reader/releases/download/v$version/Koodo-Reader-$version-ia32-Win.zip"
             }
         }
     }
